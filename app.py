@@ -333,17 +333,6 @@ st.markdown("""
         outline: none !important;
     }
 
-    .stTextArea textarea:disabled,
-    div[data-baseweb="textarea"] textarea:disabled,
-    [data-testid="stTextArea"] textarea:disabled {
-        background-color: #F8FAFC !important;
-        color: #0F172A !important;
-        -webkit-text-fill-color: #0F172A !important;
-        opacity: 1 !important;
-        cursor: not-allowed !important;
-        border-color: #CBD5E1 !important;
-    }
-
     .stTextInput input,
     div[data-baseweb="input"] input,
     div[data-baseweb="base-input"] input,
@@ -2833,12 +2822,6 @@ if "current_profile" in st.session_state and st.session_state.current_profile is
         st.session_state.last_selected_sample_jd = "-- Custom Job Description (Enter below) --"
     if "jd_text_content" not in st.session_state:
         st.session_state.jd_text_content = ""
-    if "jd_source" not in st.session_state:
-        st.session_state.jd_source = "custom"
-    if "last_uploaded_jd_sig" not in st.session_state:
-        st.session_state.last_uploaded_jd_sig = None
-    if "uploaded_jd_text" not in st.session_state:
-        st.session_state.uploaded_jd_text = ""
     if "jd_analysis_submitted" not in st.session_state:
         st.session_state.jd_analysis_submitted = False
     if "analyzed_jd_text" not in st.session_state:
@@ -2864,90 +2847,41 @@ if "current_profile" in st.session_state and st.session_state.current_profile is
             help="Upload a Job Description document to extract requirements automatically."
         )
 
-    # Detect source transitions
-    current_file_sig = f"{uploaded_jd_file.name}_{uploaded_jd_file.size}" if uploaded_jd_file is not None else None
-    dropdown_changed = (selected_sample_jd != st.session_state.last_selected_sample_jd)
-    file_uploaded_new = (current_file_sig is not None and current_file_sig != st.session_state.last_uploaded_jd_sig)
-    file_cleared = (current_file_sig is None and st.session_state.last_uploaded_jd_sig is not None)
+    # Handle dropdown selection changes cleanly without running auto-analysis
+    # Handle dropdown selection changes cleanly without running auto-analysis
+    if selected_sample_jd != st.session_state.last_selected_sample_jd:
+        st.session_state.last_selected_sample_jd = selected_sample_jd
+        st.session_state.jd_text_content = SAMPLE_JDS.get(selected_sample_jd, "")
+        reset_jd_and_insights_session_state()
+        st.session_state.jd_input_key += 1
 
-    if file_uploaded_new:
+    # Handle uploaded JD file cleanly without running auto-analysis
+    if uploaded_jd_file is not None:
         try:
             from src.resume.file_handler import FileHandler
             fh = FileHandler()
             raw_jd_bytes = uploaded_jd_file.read()
             f_info = fh.handle_uploaded_file(raw_jd_bytes, uploaded_jd_file.name)
-            if f_info.raw_text:
-                st.session_state.last_uploaded_jd_sig = current_file_sig
-                st.session_state.uploaded_jd_text = f_info.raw_text
+            if f_info.raw_text and f_info.raw_text != st.session_state.jd_text_content:
                 st.session_state.jd_text_content = f_info.raw_text
-                st.session_state.jd_source = "file"
                 reset_jd_and_insights_session_state()
                 st.session_state.jd_input_key += 1
         except Exception as e:
             st.warning(f"Unable to parse uploaded JD file: {e}")
 
-    elif dropdown_changed:
-        st.session_state.last_selected_sample_jd = selected_sample_jd
-        if selected_sample_jd != "-- Custom Job Description (Enter below) --":
-            st.session_state.jd_source = "benchmark"
-            st.session_state.jd_text_content = SAMPLE_JDS.get(selected_sample_jd, "")
-        else:
-            if current_file_sig is not None and st.session_state.get("uploaded_jd_text"):
-                st.session_state.jd_source = "file"
-                st.session_state.jd_text_content = st.session_state.uploaded_jd_text
-            else:
-                st.session_state.jd_source = "custom"
-                st.session_state.jd_text_content = ""
-        reset_jd_and_insights_session_state()
-        st.session_state.jd_input_key += 1
-
-    elif file_cleared:
-        st.session_state.last_uploaded_jd_sig = None
-        st.session_state.uploaded_jd_text = ""
-        if selected_sample_jd != "-- Custom Job Description (Enter below) --":
-            st.session_state.jd_source = "benchmark"
-            st.session_state.jd_text_content = SAMPLE_JDS.get(selected_sample_jd, "")
-        else:
-            st.session_state.jd_source = "custom"
-            st.session_state.jd_text_content = ""
-        reset_jd_and_insights_session_state()
-        st.session_state.jd_input_key += 1
-
-    is_benchmark = (st.session_state.get("jd_source") == "benchmark")
-    is_file = (st.session_state.get("jd_source") == "file")
-
-    if is_benchmark:
-        jd_label = "Job Description Text: 🔒 [Read-Only Benchmark]"
-        jd_help = "Pre-configured benchmark job descriptions are locked to ensure standardized matching evaluations. Select '-- Custom Job Description --' or upload a document to edit."
-    elif is_file:
-        jd_label = "Job Description Text: ✏️ [Extracted from Document — Editable]"
-        jd_help = "Text extracted from your uploaded document. You can edit, format, or append details before analyzing."
-    else:
-        jd_label = "Job Description Text:"
-        jd_help = "Paste or type a complete Job Description text here."
-
     jd_text_input = st.text_area(
-        jd_label,
+        "Job Description Text:",
         value=st.session_state.jd_text_content,
         height=180,
         placeholder="Paste complete Job Description text here...",
         key=f"jd_text_area_{st.session_state.jd_input_key}",
-        disabled=is_benchmark,
-        help=jd_help,
+        help="The system will extract target role, experience, required skills, and match against Module 1 candidate profile."
     )
-
-    # Keep session state synced with user edits when editable
-    if not is_benchmark:
-        st.session_state.jd_text_content = jd_text_input
-    else:
-        # Guarantee canonical benchmark text is retained in session state
-        st.session_state.jd_text_content = SAMPLE_JDS.get(selected_sample_jd, "")
-
-    # Canonical job description text to use for comparison and downstream analysis
-    canonical_jd_text = st.session_state.jd_text_content.strip() if is_benchmark else (jd_text_input or st.session_state.jd_text_content).strip()
+    # Keep session state synced with user typing
+    st.session_state.jd_text_content = jd_text_input
 
     # Reset downstream insights if text was changed away from the analyzed JD
-    if st.session_state.get("analyzed_jd_text") and canonical_jd_text != st.session_state.analyzed_jd_text:
+    if st.session_state.get("analyzed_jd_text") and jd_text_input.strip() != st.session_state.analyzed_jd_text:
         reset_jd_and_insights_session_state()
 
     col_btn, _ = st.columns([2, 3])
@@ -2955,11 +2889,11 @@ if "current_profile" in st.session_state and st.session_state.current_profile is
         analyze_jd_clicked = st.button("🚀 Analyze Match & Rank Candidates", type="primary", use_container_width=True)
 
     if analyze_jd_clicked:
-        if not canonical_jd_text:
+        if not jd_text_input or not jd_text_input.strip():
             st.warning("⚠️ Please enter or select a Job Description above before analyzing.")
             reset_jd_and_insights_session_state()
         else:
-            jd_text_clean = canonical_jd_text
+            jd_text_clean = jd_text_input.strip()
             new_jd_id = f"jd_{hashlib.md5(jd_text_clean.encode('utf-8')).hexdigest()[:10]}_{int(time.time()*1000)}"
             reset_jd_and_insights_session_state()
             st.session_state.current_jd_id = new_jd_id
