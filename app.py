@@ -137,15 +137,25 @@ st.markdown("""
         --danger: #EF4444;
     }
 
-    /* Global Canvas & Typography */
+    /* Global Canvas & Typography - Strict Horizontal Overflow Protection */
+    *, *::before, *::after {
+        box-sizing: border-box !important;
+    }
+
     html, body, [class*="css"], .stApp {
         font-family: 'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
         background-color: #F8FAFC !important;
         color: #1E293B !important;
+        overflow-x: hidden !important;
+        width: 100% !important;
+        max-width: 100% !important;
     }
 
     .stApp {
         background-image: radial-gradient(ellipse at 50% -10%, #EEF2FF 0%, #F8FAFC 60%) !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
     }
 
     /* =========================================================================
@@ -172,7 +182,7 @@ st.markdown("""
         color: #0F172A !important;
     }
 
-    /* Custom top breadcrumb bar */
+    /* Custom top breadcrumb bar - Fluid & Wrapping */
     .nr-top-bar {
         display: flex !important;
         justify-content: space-between !important;
@@ -187,7 +197,9 @@ st.markdown("""
         box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03) !important;
         box-sizing: border-box !important;
         width: 100% !important;
+        max-width: 100% !important;
         min-height: 58px !important;
+        flex-wrap: wrap !important;
     }
 
     .nr-top-bar p {
@@ -202,11 +214,12 @@ st.markdown("""
         display: inline-flex !important;
         align-items: center !important;
         gap: 6px !important;
-        white-space: nowrap !important;
+        white-space: normal !important;
+        word-break: break-word !important;
         min-width: 0 !important;
         flex: 1 1 auto !important;
         margin: 0 !important;
-        line-height: 1.3 !important;
+        line-height: 1.35 !important;
     }
 
     .nr-breadcrumb b {
@@ -214,7 +227,7 @@ st.markdown("""
         font-weight: 700 !important;
     }
 
-    /* Status badge with flex, no-wrap, proper padding and vertical centering */
+    /* Status badge with flex, proper padding and vertical centering */
     .nr-status-badge {
         display: inline-flex !important;
         align-items: center !important;
@@ -225,12 +238,14 @@ st.markdown("""
         font-size: 0.82rem !important;
         font-weight: 700 !important;
         line-height: 1.2 !important;
-        white-space: nowrap !important;
+        white-space: normal !important;
+        word-break: break-word !important;
         flex-shrink: 0 !important;
         box-sizing: border-box !important;
         min-width: fit-content !important;
+        max-width: 100% !important;
         margin: 0 !important;
-        margin-top: 2px !important; /* Moves badge slightly downward so it sits comfortably and vertically centered */
+        margin-top: 2px !important;
         align-self: center !important;
     }
 
@@ -254,6 +269,7 @@ st.markdown("""
         background: #FFFFFF !important;
         border-right: 1px solid #E2E8F0 !important;
         box-shadow: 2px 0 12px rgba(15, 23, 42, 0.02) !important;
+        box-sizing: border-box !important;
     }
 
     [data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p,
@@ -284,6 +300,7 @@ st.markdown("""
         margin-bottom: 2px !important;
         display: flex !important;
         align-items: center !important;
+        min-height: 42px !important;
     }
 
     [data-testid="stSidebar"] [data-testid="stRadio"] label:hover {
@@ -302,7 +319,7 @@ st.markdown("""
     }
 
     /* =========================================================================
-       4. JOB DESCRIPTION TEXTAREA & INPUTS (HIGH CONTRAST)
+       4. JOB DESCRIPTION TEXTAREA & INPUTS (HIGH CONTRAST & RESPONSIVE)
        ========================================================================= */
     .stTextArea textarea,
     div[data-baseweb="textarea"],
@@ -319,6 +336,9 @@ st.markdown("""
         line-height: 1.6 !important;
         font-family: 'Inter', sans-serif !important;
         box-shadow: 0 1px 4px rgba(15, 23, 42, 0.04) !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
     }
 
     .stTextArea textarea::placeholder,
@@ -344,6 +364,9 @@ st.markdown("""
         border-radius: 10px !important;
         padding: 0.65rem 0.9rem !important;
         font-size: 0.95rem !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
     }
 
     .stTextInput input:focus,
@@ -364,10 +387,13 @@ st.markdown("""
         font-size: 0.92rem !important;
         letter-spacing: -0.01em !important;
         margin-bottom: 0.35rem !important;
+        white-space: normal !important;
+        word-break: break-word !important;
+        max-width: 100% !important;
     }
 
     /* =========================================================================
-       5. RESUME UPLOAD AREA & UPLOADED FILE DISPLAY
+       5. RESUME UPLOAD AREA & UPLOADED FILE DISPLAY (FULLY RESPONSIVE)
        ========================================================================= */
     [data-testid="stFileUploader"],
     [data-testid="stFileUploader"] > section,
@@ -398,6 +424,9 @@ st.markdown("""
     [data-testid="stFileUploaderDropzoneInstructions"] span {
         color: #475569 !important;
         font-weight: 500 !important;
+        white-space: normal !important;
+        word-break: break-word !important;
+        overflow-wrap: break-word !important;
     }
 
     [data-testid="stFileUploader"] svg {
@@ -416,6 +445,9 @@ st.markdown("""
         border-radius: 10px !important;
         color: #0F172A !important;
         padding: 0.6rem 0.9rem !important;
+        box-sizing: border-box !important;
+        max-width: 100% !important;
+        overflow: hidden !important;
     }
 
     [data-testid="stFileUploaderFileName"],
@@ -425,6 +457,9 @@ st.markdown("""
         color: #0F172A !important;
         font-weight: 700 !important;
         font-size: 0.95rem !important;
+        word-break: break-all !important;
+        overflow-wrap: anywhere !important;
+        white-space: normal !important;
     }
 
     [data-testid="stFileUploader"] small,
@@ -444,6 +479,7 @@ st.markdown("""
         font-size: 0.88rem !important;
         padding: 0.45rem 1.3rem !important;
         transition: all 0.2s ease !important;
+        min-height: 40px !important;
     }
 
     [data-testid="stFileUploader"] button:hover {
@@ -454,7 +490,7 @@ st.markdown("""
     }
 
     /* =========================================================================
-       6. PRIMARY ACTION BUTTONS (BLUE-PURPLE GRADIENT, PURE WHITE TEXT)
+       6. PRIMARY & SECONDARY ACTION BUTTONS (TOUCH-FRIENDLY & RESPONSIVE)
        ========================================================================= */
     .stButton > button[kind="primary"],
     .stButton > button[type="primary"],
@@ -468,6 +504,13 @@ st.markdown("""
         padding: 0.7rem 2rem !important;
         box-shadow: 0 4px 14px 0 rgba(49, 94, 251, 0.38) !important;
         transition: all 0.2s ease !important;
+        min-height: 44px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        max-width: 100% !important;
+        touch-action: manipulation !important;
     }
 
     .stButton > button[kind="primary"]:hover,
@@ -485,6 +528,7 @@ st.markdown("""
     div.stButton > button[data-testid="baseButton-primary"] p {
         color: #FFFFFF !important;
         font-weight: 700 !important;
+        white-space: normal !important;
     }
 
     /* Secondary action buttons */
@@ -501,6 +545,13 @@ st.markdown("""
         padding: 0.55rem 1.4rem !important;
         box-shadow: 0 2px 6px rgba(15, 23, 42, 0.03) !important;
         transition: all 0.2s ease !important;
+        min-height: 44px !important;
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        max-width: 100% !important;
+        touch-action: manipulation !important;
     }
 
     .stButton > button:not([kind="primary"]):not([type="primary"]):hover {
@@ -514,10 +565,11 @@ st.markdown("""
     .stButton > button:not([kind="primary"]):not([type="primary"]) span {
         color: #2563EB !important;
         font-weight: 600 !important;
+        white-space: normal !important;
     }
 
     /* =========================================================================
-       7. NATIVE BORDERED CONTAINERS & EXPANDERS
+       7. NATIVE BORDERED CONTAINERS & EXPANDERS (FLUID WIDTH)
        ========================================================================= */
     [data-testid="stVerticalBlockBorderWrapper"],
     [data-testid="stVerticalBlockBorderWrapper"] > div {
@@ -527,6 +579,9 @@ st.markdown("""
         border-radius: 16px !important;
         box-shadow: 0 4px 16px rgba(15, 23, 42, 0.03) !important;
         color: #0F172A !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
     }
 
     [data-testid="stVerticalBlockBorderWrapper"] p,
@@ -552,22 +607,28 @@ st.markdown("""
         box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03) !important;
         overflow: hidden !important;
         margin-bottom: 0.75rem !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
     }
 
     [data-testid="stExpander"] summary {
         font-weight: 700 !important;
         color: #0F172A !important;
         padding: 0.85rem 1.25rem !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
     }
 
     [data-testid="stExpander"] summary p,
     [data-testid="stExpander"] summary span {
         color: #0F172A !important;
         font-weight: 700 !important;
+        word-break: break-word !important;
     }
 
     /* =========================================================================
-       8. METRICS CONTRAST (HIGH READABILITY)
+       8. METRICS CONTRAST & RESPONSIVE SCALING
        ========================================================================= */
     [data-testid="stMetric"] {
         background-color: #FFFFFF !important;
@@ -576,13 +637,20 @@ st.markdown("""
         border-radius: 14px !important;
         padding: 0.85rem 1rem !important;
         box-shadow: 0 2px 6px rgba(15, 23, 42, 0.02) !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        overflow: hidden !important;
     }
 
     [data-testid="stMetricValue"],
     [data-testid="stMetricValue"] > div {
         color: #0F172A !important;
         font-weight: 800 !important;
-        font-size: 1.6rem !important;
+        font-size: clamp(1.25rem, 2.2vw + 0.4rem, 1.6rem) !important;
+        word-break: break-word !important;
+        overflow-wrap: break-word !important;
+        line-height: 1.25 !important;
     }
 
     [data-testid="stMetricLabel"],
@@ -593,10 +661,14 @@ st.markdown("""
         font-size: 0.78rem !important;
         text-transform: uppercase !important;
         letter-spacing: 0.05em !important;
+        white-space: normal !important;
+        word-break: break-word !important;
+        overflow-wrap: break-word !important;
+        line-height: 1.35 !important;
     }
 
     /* =========================================================================
-       9. DROPDOWNS & SELECTBOXES
+       9. DROPDOWNS & SELECTBOXES (TOUCH-FRIENDLY)
        ========================================================================= */
     div[data-baseweb="select"],
     div[data-baseweb="select"] > div {
@@ -605,6 +677,10 @@ st.markdown("""
         border: 1.5px solid #DBE4F0 !important;
         border-radius: 10px !important;
         color: #0F172A !important;
+        min-height: 44px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
     }
 
     div[data-baseweb="select"] span,
@@ -624,6 +700,7 @@ st.markdown("""
         border: 1px solid #E2E8F0 !important;
         border-radius: 12px !important;
         box-shadow: 0 10px 25px rgba(15, 23, 42, 0.1) !important;
+        max-width: 100% !important;
     }
 
     li[role="option"] {
@@ -631,7 +708,8 @@ st.markdown("""
         background: #FFFFFF !important;
         color: #0F172A !important;
         font-weight: 500 !important;
-        padding: 0.6rem 1rem !important;
+        padding: 0.65rem 1rem !important;
+        min-height: 40px !important;
     }
 
     li[role="option"]:hover,
@@ -643,7 +721,7 @@ st.markdown("""
     }
 
     /* =========================================================================
-       10. SKILL CHIPS / BADGES
+       10. SKILL CHIPS, TABS & SUMMARY BOX
        ========================================================================= */
     code, .stMarkdown code {
         background-color: #EFF6FF !important;
@@ -656,9 +734,13 @@ st.markdown("""
         display: inline-block !important;
         margin: 2px !important;
         font-family: 'Inter', sans-serif !important;
+        word-break: break-word !important;
+        overflow-wrap: break-word !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
     }
 
-    /* Tabs: Modern Pill Navigation */
+    /* Tabs: Modern Pill Navigation with Touch Scrolling */
     .stTabs [data-baseweb="tab-list"] {
         background-color: #F1F5F9 !important;
         border-radius: 9999px !important;
@@ -669,6 +751,13 @@ st.markdown("""
         width: auto !important;
         max-width: 100% !important;
         overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+        scrollbar-width: none !important;
+        white-space: nowrap !important;
+    }
+
+    .stTabs [data-baseweb="tab-list"]::-webkit-scrollbar {
+        display: none !important;
     }
 
     .stTabs [data-baseweb="tab"] {
@@ -680,6 +769,8 @@ st.markdown("""
         font-size: 0.88rem !important;
         padding: 7px 18px !important;
         transition: all 0.2s ease !important;
+        min-height: 38px !important;
+        touch-action: manipulation !important;
     }
 
     .stTabs [aria-selected="true"] {
@@ -689,42 +780,62 @@ st.markdown("""
         box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08) !important;
     }
 
-    /* Headings Hierarchy */
+    /* Candidate Professional Summary Box */
+    .summary-box {
+        background-color: #F8FAFC !important;
+        border: 1px solid #E2E8F0 !important;
+        border-radius: 12px !important;
+        padding: 1rem 1.25rem !important;
+        font-size: 0.95rem !important;
+        line-height: 1.65 !important;
+        color: #1E293B !important;
+        word-break: break-word !important;
+        overflow-wrap: break-word !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Headings Hierarchy with Responsive Clamping */
     h1, .nr-hero-title {
         font-family: 'Plus Jakarta Sans', sans-serif !important;
-        font-size: 2.2rem !important;
+        font-size: clamp(1.4rem, 2.5vw + 0.5rem, 2.2rem) !important;
         font-weight: 800 !important;
         color: #0F172A !important;
         letter-spacing: -0.01em !important;
         word-spacing: normal !important;
         line-height: 1.25 !important;
+        word-break: break-word !important;
     }
 
     h2 {
         font-family: 'Plus Jakarta Sans', sans-serif !important;
-        font-size: 1.55rem !important;
+        font-size: clamp(1.2rem, 1.8vw + 0.4rem, 1.55rem) !important;
         font-weight: 800 !important;
         color: #0F172A !important;
         letter-spacing: -0.02em !important;
+        word-break: break-word !important;
     }
 
     h3 {
         font-family: 'Plus Jakarta Sans', sans-serif !important;
-        font-size: 1.22rem !important;
+        font-size: clamp(1.05rem, 1.2vw + 0.3rem, 1.22rem) !important;
         font-weight: 700 !important;
         color: #0F172A !important;
         letter-spacing: -0.01em !important;
+        word-break: break-word !important;
     }
 
     h4 {
         font-family: 'Plus Jakarta Sans', sans-serif !important;
-        font-size: 1.05rem !important;
+        font-size: clamp(0.92rem, 1vw + 0.2rem, 1.05rem) !important;
         font-weight: 700 !important;
         color: #1E293B !important;
+        word-break: break-word !important;
     }
 
     p, span, label {
         color: #475569 !important;
+        word-break: break-word !important;
     }
 
     /* Hero Badges & Subtitle */
@@ -742,6 +853,10 @@ st.markdown("""
         text-transform: uppercase;
         letter-spacing: 0.05em;
         margin-bottom: 0.75rem;
+        white-space: normal;
+        word-break: break-word;
+        max-width: 100%;
+        line-height: 1.4;
     }
 
     /* Streamlit captions & subtitles */
@@ -749,6 +864,7 @@ st.markdown("""
     .stCaption {
         color: #64748B !important;
         font-weight: 500 !important;
+        word-break: break-word !important;
     }
 
     /* Paragraphs and general text readability */
@@ -756,6 +872,7 @@ st.markdown("""
         color: #1E293B !important;
         font-size: 0.95rem !important;
         line-height: 1.6 !important;
+        word-break: break-word !important;
     }
     .stMarkdown strong, .stMarkdown b {
         color: #0F172A !important;
@@ -769,6 +886,8 @@ st.markdown("""
         border-radius: 12px !important;
         padding: 1rem !important;
         color: #0F172A !important;
+        overflow-x: auto !important;
+        max-width: 100% !important;
     }
     pre code {
         background-color: transparent !important;
@@ -777,8 +896,40 @@ st.markdown("""
         border-radius: 0 !important;
         padding: 0 !important;
     }
+
+    /* Tables: Internal Horizontal Scroll on Small Viewports */
+    table, .stMarkdown table {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+        border-collapse: collapse !important;
+        margin: 1rem 0 !important;
+    }
+
+    /* LaTeX / KaTeX formulas */
+    .katex-display {
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+        max-width: 100% !important;
+        padding: 0.5rem 0 !important;
+    }
+
+    /* Images and SVGs */
+    img, svg {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    /* Progress bars */
+    [data-testid="stProgress"] {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
     /* =========================================================================
-       11. FUNCTIONAL SIDEBAR IN-PAGE NAVIGATION (HIGH CONTRAST, SAAS LIGHT)
+       11. FUNCTIONAL SIDEBAR IN-PAGE NAVIGATION
        ========================================================================= */
     .rec-sidebar-nav {
         display: flex;
@@ -804,6 +955,8 @@ st.markdown("""
         position: relative;
         user-select: none;
         box-shadow: 0 1px 2px rgba(15, 23, 42, 0.02);
+        min-height: 44px;
+        touch-action: manipulation;
     }
 
     .rec-nav-item:hover {
@@ -836,13 +989,17 @@ st.markdown("""
         font-size: 1.15rem;
         flex-shrink: 0;
         line-height: 1;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .rec-nav-text {
         flex-grow: 1;
-        white-space: nowrap;
-        overflow: visible;
+        white-space: normal;
+        line-height: 1.35;
         font-size: 0.88rem;
+        word-break: break-word;
     }
 
     .rec-nav-dot {
@@ -852,6 +1009,7 @@ st.markdown("""
         background-color: #315EFB;
         opacity: 0;
         transition: opacity 0.2s ease;
+        flex-shrink: 0;
     }
 
     .rec-nav-item.active .rec-nav-dot {
@@ -867,6 +1025,7 @@ st.markdown("""
         border: 1px solid #A7F3D0;
         font-weight: 700;
         letter-spacing: 0.02em;
+        flex-shrink: 0;
     }
 
     /* Target Section Anchors & Header Offset */
@@ -900,22 +1059,22 @@ st.markdown("""
     }
 
     /* =========================================================================
-       12. APP SHELL LAYOUT ENGINE (TWO-COLUMN, ZERO OVERLAP)
+       12. APP SHELL LAYOUT ENGINE (DESKTOP & BASE)
        ========================================================================= */
     /* Outer AppShell flex container */
     [data-testid="stAppViewContainer"],
     .stAppViewContainer {
         display: flex !important;
         flex-direction: row !important;
-        width: 100vw !important;
-        max-width: 100vw !important;
+        width: 100% !important;
+        max-width: 100% !important;
         min-height: 100vh !important;
         overflow-x: hidden !important;
         position: relative !important;
         box-sizing: border-box !important;
     }
 
-    /* Column 1: Sidebar stays in normal flex flow, perfectly sticky & separate */
+    /* Column 1: Sidebar stays in normal flex flow on desktop */
     [data-testid="stSidebar"],
     section[data-testid="stSidebar"],
     .stSidebar {
@@ -928,7 +1087,7 @@ st.markdown("""
         z-index: 50 !important;
     }
 
-    /* Column 2: Main Content occupies 100% of remaining width AFTER the sidebar */
+    /* Column 2: Main Content occupies 100% of remaining width */
     [data-testid="stMain"],
     section[data-testid="stMain"],
     section.main,
@@ -942,6 +1101,7 @@ st.markdown("""
         display: flex !important;
         flex-direction: column !important;
         position: relative !important;
+        width: 100% !important;
     }
 
     /* Page Content inside Main Column */
@@ -953,10 +1113,22 @@ st.markdown("""
         min-width: 0 !important;
         padding-left: 2.25rem !important;
         padding-right: 2.25rem !important;
-        padding-top: 3.5rem !important; /* Moves top breadcrumb bar comfortably down below header */
+        padding-top: 3.5rem !important;
         padding-bottom: 6rem !important;
         box-sizing: border-box !important;
         flex: 1 0 auto !important;
+    }
+
+    /* Multi-column rows base behavior */
+    [data-testid="stHorizontalBlock"] {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    [data-testid="stHorizontalBlock"] > [data-testid="column"] {
+        min-width: 0 !important;
+        box-sizing: border-box !important;
     }
 
     /* Action Buttons Row */
@@ -988,18 +1160,292 @@ st.markdown("""
         max-width: 100% !important;
     }
 
-    /* Responsive adjustments for mobile and tablet */
-    @media (max-width: 768px) {
+    /* =========================================================================
+       13. RESPONSIVE BREAKPOINT: LARGE & 4K DISPLAYS (> 1920px, 2560px, 3840px)
+       ========================================================================= */
+    @media (min-width: 1921px) {
+        .block-container,
+        [data-testid="stMainBlockContainer"],
+        .stMainBlockContainer {
+            max-width: 1600px !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            padding-left: 3rem !important;
+            padding-right: 3rem !important;
+        }
+    }
+
+    /* =========================================================================
+       14. RESPONSIVE BREAKPOINT: TABLETS (601px - 1024px)
+       ========================================================================= */
+    @media (min-width: 601px) and (max-width: 1024px) {
         .block-container,
         [data-testid="stMainBlockContainer"] {
-            padding-left: 1rem !important;
-            padding-right: 1rem !important;
-            padding-top: 2.75rem !important;
+            padding-left: 1.5rem !important;
+            padding-right: 1.5rem !important;
+            padding-top: 3.25rem !important;
+            padding-bottom: 5rem !important;
         }
 
-        [data-testid="stHorizontalBlock"]:has([data-testid="stBaseButton-primary"]) > [data-testid="column"] {
-            flex: 1 1 100% !important;
+        [data-testid="stSidebar"],
+        section[data-testid="stSidebar"] {
+            min-width: 250px !important;
+            max-width: 285px !important;
+        }
+
+        .rec-nav-text {
+            white-space: normal !important;
+            line-height: 1.35 !important;
+        }
+
+        .nr-top-bar {
+            padding: 0.75rem 1.15rem !important;
+            gap: 12px !important;
+        }
+
+        .nr-breadcrumb {
+            font-size: 0.88rem !important;
+        }
+
+        .nr-status-badge {
+            font-size: 0.8rem !important;
+        }
+
+        /* 4-column metrics wrap to a clean 2x2 grid */
+        [data-testid="stHorizontalBlock"] {
+            flex-wrap: wrap !important;
+            gap: 12px !important;
+        }
+
+        [data-testid="stHorizontalBlock"]:has(> [data-testid="column"]:nth-child(4)) > [data-testid="column"] {
+            flex: 1 1 calc(50% - 12px) !important;
+            min-width: calc(50% - 12px) !important;
+        }
+
+        [data-testid="stHorizontalBlock"]:has(> [data-testid="column"]:nth-child(3):last-child) > [data-testid="column"] {
+            flex: 1 1 calc(33.333% - 12px) !important;
+            min-width: 160px !important;
+        }
+
+        [data-testid="stHorizontalBlock"]:has(> [data-testid="column"]:nth-child(2):last-child) > [data-testid="column"] {
+            flex: 1 1 calc(50% - 12px) !important;
+            min-width: 180px !important;
+        }
+    }
+
+    /* =========================================================================
+       15. RESPONSIVE BREAKPOINT: MOBILE & SMALL SCREENS (<= 768px)
+       ========================================================================= */
+    @media (max-width: 768px) {
+        [data-testid="stAppViewContainer"],
+        .stAppViewContainer {
+            flex-direction: column !important;
             width: 100% !important;
+            max-width: 100% !important;
+        }
+
+        /* Sidebar behaves as a slide-out drawer on mobile without squeezing main */
+        [data-testid="stSidebar"],
+        section[data-testid="stSidebar"],
+        .stSidebar {
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            bottom: 0 !important;
+            height: 100vh !important;
+            z-index: 999999 !important;
+            width: 280px !important;
+            max-width: 85vw !important;
+            box-shadow: 4px 0 24px rgba(15, 23, 42, 0.15) !important;
+            transition: transform 0.3s ease !important;
+        }
+
+        [data-testid="stSidebar"][aria-expanded="false"] {
+            transform: translateX(-100%) !important;
+            width: 0 !important;
+            margin-left: -280px !important;
+        }
+
+        [data-testid="stSidebar"][aria-expanded="true"] {
+            transform: translateX(0) !important;
+        }
+
+        [data-testid="stMain"],
+        section[data-testid="stMain"],
+        .stMain {
+            width: 100% !important;
+            max-width: 100% !important;
+            flex: 1 1 100% !important;
+            min-width: 0 !important;
+            height: 100vh !important;
+        }
+
+        [data-testid="stSidebarCollapsedControl"] {
+            top: 0.6rem !important;
+            left: 0.6rem !important;
+            z-index: 1000 !important;
+            background-color: #FFFFFF !important;
+            border: 1px solid #E2E8F0 !important;
+            border-radius: 8px !important;
+            box-shadow: 0 2px 6px rgba(15, 23, 42, 0.08) !important;
+        }
+    }
+
+    /* =========================================================================
+       16. RESPONSIVE BREAKPOINT: SMARTPHONES (< 600px: 320px, 375px, 390px, 414px, 480px)
+       ========================================================================= */
+    @media (max-width: 600px) {
+        .block-container,
+        [data-testid="stMainBlockContainer"] {
+            padding-left: 0.85rem !important;
+            padding-right: 0.85rem !important;
+            padding-top: 3.25rem !important;
+            padding-bottom: 4rem !important;
+        }
+
+        /* Top Bar: Vertical Flow */
+        .nr-top-bar {
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            gap: 10px !important;
+            padding: 0.75rem 0.9rem !important;
+            min-height: auto !important;
+            width: 100% !important;
+        }
+
+        .nr-breadcrumb {
+            white-space: normal !important;
+            word-break: break-word !important;
+            font-size: 0.84rem !important;
+            width: 100% !important;
+        }
+
+        .nr-status-badge {
+            align-self: flex-start !important;
+            font-size: 0.76rem !important;
+            padding: 0.35rem 0.8rem !important;
+            white-space: normal !important;
+            word-break: break-word !important;
+            max-width: 100% !important;
+        }
+
+        .nr-hero-badge {
+            font-size: 0.7rem !important;
+            padding: 0.3rem 0.65rem !important;
+            white-space: normal !important;
+            line-height: 1.4 !important;
+            max-width: 100% !important;
+        }
+
+        h1, .nr-hero-title {
+            font-size: 1.35rem !important;
+            line-height: 1.25 !important;
+        }
+
+        .nr-hero-subtitle {
+            font-size: 0.88rem !important;
+            line-height: 1.5 !important;
+        }
+
+        /* Stack all multi-column layouts into single full-width cards */
+        [data-testid="stHorizontalBlock"] {
+            flex-wrap: wrap !important;
+            gap: 12px !important;
+            width: 100% !important;
+        }
+
+        [data-testid="stHorizontalBlock"] > [data-testid="column"] {
+            flex: 1 1 100% !important;
+            min-width: 100% !important;
+            max-width: 100% !important;
+            width: 100% !important;
+        }
+
+        /* Full-width touch buttons */
+        .stButton > button,
+        div.stButton > button,
+        .stButton > button[kind="primary"],
+        div.stButton > button[data-testid="baseButton-primary"] {
+            width: 100% !important;
+            max-width: 100% !important;
+            min-height: 46px !important;
+            justify-content: center !important;
+            text-align: center !important;
+            padding: 0.65rem 1.2rem !important;
+            font-size: 0.92rem !important;
+        }
+
+        /* Resume Upload Box */
+        [data-testid="stFileUploaderDropzone"],
+        [data-testid="stFileUploader"] section {
+            padding: 1.15rem 0.85rem !important;
+        }
+
+        [data-testid="stFileUploader"] button {
+            width: 100% !important;
+            min-height: 44px !important;
+            margin-top: 0.4rem !important;
+        }
+
+        /* Navigation items touch sizing */
+        .rec-nav-item {
+            min-height: 44px !important;
+            padding: 0.75rem 1rem !important;
+        }
+
+        /* Tabs compact padding */
+        .stTabs [data-baseweb="tab"] {
+            padding: 6px 12px !important;
+            font-size: 0.82rem !important;
+        }
+
+        /* Metrics */
+        [data-testid="stMetric"] {
+            padding: 0.75rem 0.85rem !important;
+        }
+
+        [data-testid="stMetricValue"],
+        [data-testid="stMetricValue"] > div {
+            font-size: 1.3rem !important;
+        }
+
+        [data-testid="stMetricLabel"],
+        [data-testid="stMetricLabel"] p {
+            font-size: 0.74rem !important;
+        }
+    }
+
+    /* =========================================================================
+       17. RESPONSIVE BREAKPOINT: ULTRA-COMPACT MOBILE (320px - 380px)
+       ========================================================================= */
+    @media (max-width: 380px) {
+        .block-container,
+        [data-testid="stMainBlockContainer"] {
+            padding-left: 0.6rem !important;
+            padding-right: 0.6rem !important;
+            padding-top: 3.25rem !important;
+        }
+
+        .nr-top-bar {
+            padding: 0.65rem 0.75rem !important;
+        }
+
+        h1, .nr-hero-title {
+            font-size: 1.22rem !important;
+        }
+
+        .stButton > button {
+            font-size: 0.88rem !important;
+            padding: 0.6rem 1rem !important;
+        }
+
+        [data-testid="stMetricValue"],
+        [data-testid="stMetricValue"] > div {
+            font-size: 1.2rem !important;
+        }
+
+        [data-testid="stMetricLabel"] {
+            font-size: 0.72rem !important;
         }
     }
 </style>
