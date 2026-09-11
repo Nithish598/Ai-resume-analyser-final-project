@@ -138,43 +138,27 @@ st.markdown("""
     }
 
     /* =========================================================================
-       2. HIDE STREAMLIT BRANDING, TOOLBAR & DEFAULT FOOTER SAFELY
+       2. TOP NAVIGATION - ELIMINATE BLACK STRIP PERMANENTLY
        ========================================================================= */
-    #MainMenu {
-        visibility: hidden !important;
-        display: none !important;
+    header[data-testid="stHeader"],
+    [data-testid="stHeader"],
+    .stAppHeader,
+    div[data-testid="stToolbar"] {
+        background-color: #FFFFFF !important;
+        background: #FFFFFF !important;
+        border-bottom: 1px solid #E2E8F0 !important;
+        color: #0F172A !important;
+        box-shadow: 0 1px 3px rgba(15, 23, 42, 0.04) !important;
     }
 
-    [data-testid="stToolbar"] {
-        visibility: hidden !important;
-        display: none !important;
+    header[data-testid="stHeader"] svg,
+    div[data-testid="stToolbar"] svg {
+        fill: #0F172A !important;
     }
 
-    [data-testid="stDecoration"] {
-        visibility: hidden !important;
-        display: none !important;
-    }
-
-    [data-testid="stStatusWidget"] {
-        visibility: hidden !important;
-        display: none !important;
-    }
-
-    .stAppDeployButton {
-        display: none !important;
-    }
-
-    footer {
-        visibility: hidden !important;
-        display: none !important;
-    }
-
-    /* Target specific Streamlit Cloud viewer badges without touching app containers */
-    [class*="viewerBadge_container"],
-    [class*="viewerBadge_link"],
-    [data-testid="manage-app-button"] {
-        display: none !important;
-        visibility: hidden !important;
+    header[data-testid="stHeader"] button,
+    div[data-testid="stToolbar"] button {
+        color: #0F172A !important;
     }
 
     /* Custom top breadcrumb bar */

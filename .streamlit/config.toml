@@ -9,7 +9,3 @@ font = "sans serif"
 [server]
 enableCORS = false
 enableXsrfProtection = false
-
-[client]
-toolbarMode = "minimal"
-showErrorDetails = false
