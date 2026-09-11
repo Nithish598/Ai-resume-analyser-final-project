@@ -2014,12 +2014,10 @@ if "current_profile" in st.session_state and st.session_state.current_profile is
 
         loss_warnings = getattr(meta, "information_loss_warnings", [])
         if loss_warnings:
-            with st.expander(f"⚠️ **{len(loss_warnings)} Information Loss Warning(s) Detected** — click to review", expanded=False):
-                for w in loss_warnings:
-                    if w.startswith("[ERROR]"):
-                        st.error(w)
-                    else:
-                        st.warning(w)
+            import logging
+            logger = logging.getLogger(__name__)
+            for w in loss_warnings:
+                logger.warning(f"Information loss warning: {w}")
 
     unique_skills_list = get_all_unique_skills(profile.skills)
     total_skills = len(unique_skills_list)
