@@ -9,10 +9,14 @@ import os
 import re
 import sys
 import logging
-import cv2
 import numpy as np
 from typing import Tuple, List, Optional, Any, Dict
 from PIL import Image
+
+try:
+    import cv2
+except Exception:
+    cv2 = None
 
 logger = logging.getLogger(__name__)
 
@@ -232,13 +236,13 @@ class OCREngine:
 
         # Convert input to BGR numpy array expected by RapidOCR/OpenCV
         if isinstance(image_input, bytes):
-            img_np = cv2.imdecode(np.frombuffer(image_input, dtype=np.uint8), cv2.IMREAD_COLOR)
+            img_np = cv2.imdecode(np.frombuffer(image_input, dtype=np.uint8), cv2.IMREAD_COLOR) if cv2 is not None else None
             if img_np is None:
                 img = Image.open(io.BytesIO(image_input)).convert("RGB")
-                img_np = cv2.cvtColor(np.array(img), cv2.COLOR_RGB2BGR)
+                img_np = cv2.cvtColor(np.array(img), cv2.COLOR_RGB2BGR) if cv2 is not None else np.array(img)[:, :, ::-1]
         elif isinstance(image_input, Image.Image):
             rgb_np = np.array(image_input.convert("RGB"))
-            img_np = cv2.cvtColor(rgb_np, cv2.COLOR_RGB2BGR)
+            img_np = cv2.cvtColor(rgb_np, cv2.COLOR_RGB2BGR) if cv2 is not None else rgb_np[:, :, ::-1]
         elif isinstance(image_input, np.ndarray):
             img_np = image_input
         else:
@@ -308,10 +312,10 @@ class OCREngine:
         try:
             pix = page.get_pixmap(dpi=dpi)
             png_bytes = pix.tobytes("png")
-            img_np = cv2.imdecode(np.frombuffer(png_bytes, dtype=np.uint8), cv2.IMREAD_COLOR)
+            img_np = cv2.imdecode(np.frombuffer(png_bytes, dtype=np.uint8), cv2.IMREAD_COLOR) if cv2 is not None else None
             if img_np is None:
                 img = Image.open(io.BytesIO(png_bytes)).convert("RGB")
-                img_np = cv2.cvtColor(np.array(img), cv2.COLOR_RGB2BGR)
+                img_np = cv2.cvtColor(np.array(img), cv2.COLOR_RGB2BGR) if cv2 is not None else np.array(img)[:, :, ::-1]
             return cls.ocr_image(img_np)
         except Exception:
             return "", None, 0, []
