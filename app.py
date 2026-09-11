@@ -19,6 +19,7 @@ import streamlit.components.v1 as components
 import pandas as pd
 import numpy as np
 
+from services.llm.llm_factory import llm_config
 from src.resume.pipeline import ResumeExtractionPipeline
 from src.resume.profile_schema import (
     ParsingStatus,
