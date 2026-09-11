@@ -2001,82 +2001,14 @@ if "current_profile" in st.session_state and st.session_state.current_profile is
         # Professional Product-Facing Status Banner
         st.success("✓ **Resume Analysis Completed** — Candidate profile generated successfully.")
 
-        # Display technical engine status and runtime traces
-        engine = getattr(meta, "extraction_engine", "deterministic")
-        llm_enhanced = getattr(meta, "llm_enhanced", False)
-        llm_provider = getattr(meta, "llm_provider", "Gemini") or "Gemini"
-        llm_model = getattr(meta, "llm_model", "") or ""
-        
-        if engine == "llm" or llm_enhanced:
-            pass2 = getattr(meta, "llm_pass2_used", False)
-            pass_info = "Pass 1 + Pass 2 (Validated)" if pass2 else "Single-Pass Direct"
-            cache_str = " (⚡ Cached)" if getattr(meta, "cache_hit", False) else ""
-            st.info(
-                f"🤖 **LLM Extraction Active** — Engine: **{llm_provider}** (`{llm_model}`)"
-                + f" | Mode: {pass_info}{cache_str} | Call ID: `{getattr(meta, 'llm_call_id', 'N/A')}`"
-            )
-        elif getattr(meta, "fallback_used", False):
-            st.warning(
-                f"⚠️ **LLM Unavailable — Deterministic Fallback Used** (Reason: `{getattr(meta, 'fallback_reason', 'LLM call failed')}`)"
-            )
-        else:
-            st.info("⚙️ **Extraction Engine: Deterministic Mode**")
-
-        with st.expander("🔬 **LLM Diagnostics & Runtime Trace**", expanded=False):
-            d_col1, d_col2, d_col3, d_col4 = st.columns(4)
-            with d_col1:
-                st.markdown(f"**Engine:** `{getattr(meta, 'extraction_engine', 'deterministic')}`")
-                st.markdown(f"**LLM Enabled:** {'YES' if getattr(meta, 'llm_enabled', False) else 'NO'}")
-                st.markdown(f"**Provider:** `{getattr(meta, 'llm_provider', 'None') or 'None'}`")
-                st.markdown(f"**Call ID:** `{getattr(meta, 'llm_call_id', 'N/A') or 'N/A'}`")
-            with d_col2:
-                st.markdown(f"**Model:** `{getattr(meta, 'llm_model', 'None') or 'None'}`")
-                st.markdown(f"**Validation Model:** `{getattr(meta, 'llm_validation_model', 'None') or 'None'}`")
-                st.markdown(f"**API Key Configured:** {'YES' if bool(llm_config.api_key) else 'NO'}")
-                st.markdown(f"**Client Initialized:** {'YES' if (getattr(meta, 'extraction_engine') == 'llm' or not getattr(meta, 'fallback_used', False)) else ('YES' if getattr(meta, 'llm_call_id') else 'NO')}")
-                with d_col3:
-                    pass1_st = "SUCCESS" if (getattr(meta, 'llm_pass1_used', False) or getattr(meta, 'extraction_engine') == 'llm') else ("FAILED" if getattr(meta, 'fallback_used', False) else "NOT_RUN")
-                    pass2_st = "SUCCESS" if getattr(meta, 'llm_pass2_used', False) else "SKIPPED"
-                    st.markdown(f"**Extraction Request:** `{pass1_st}`")
-                    st.markdown(f"**Validation Request:** `{pass2_st}`")
-                    st.markdown(f"**Cache Hit:** {'YES' if getattr(meta, 'cache_hit', False) else 'NO'}")
-                    st.markdown(f"**Prompt Version:** `{getattr(meta, 'prompt_version', 'v2')}`")
-                with d_col4:
-                    st.markdown(f"**Fallback Used:** {'YES' if getattr(meta, 'fallback_used', False) else 'NO'}")
-                    st.markdown(f"**Final Result Source:** `{getattr(meta, 'final_result_source', 'DETERMINISTIC')}`")
-                    if getattr(meta, 'fallback_reason', None):
-                        st.markdown(f"**Fallback Reason:** `{meta.fallback_reason}`")
-                    if getattr(meta, 'last_error', None):
-                        st.caption(f"Error Trace: `{meta.last_error}`")
-
-                # Compare Pipeline Stages (3-Stage Snapshot & Diff)
-                snapshots = getattr(meta, "stage_snapshots", {})
-                if snapshots:
-                    st.markdown("---")
-                    st.markdown("#### 🔍 3-Stage Pipeline Snapshots & Fidelity Verification")
-                    tab_sa, tab_sb, tab_sc = st.tabs([
-                        "Stage A: RAW LLM JSON",
-                        "Stage B: INTERNAL POST-LLM OBJECT",
-                        "Stage C: FINAL SERIALIZED JSON",
-                    ])
-                    with tab_sa:
-                        st.caption("Exact raw parsed response returned by Gemini LLM:")
-                        st.json(snapshots.get("stage_a_raw_llm") or snapshots.get("llm_pass1") or {"status": "Not recorded"})
-                    with tab_sb:
-                        st.caption("CandidateProfile internal object immediately post schema conversion:")
-                        st.json(snapshots.get("stage_b_post_llm") or profile.to_dict())
-                    with tab_sc:
-                        st.caption("Final lossless serialized JSON delivered to UI / API:")
-                        st.json(snapshots.get("stage_c_final_json") or profile.to_dict())
-
-            loss_warnings = getattr(meta, "information_loss_warnings", [])
-            if loss_warnings:
-                with st.expander(f"⚠️ **{len(loss_warnings)} Information Loss Warning(s) Detected** — click to review", expanded=False):
-                    for w in loss_warnings:
-                        if w.startswith("[ERROR]"):
-                            st.error(w)
-                        else:
-                            st.warning(w)
+        loss_warnings = getattr(meta, "information_loss_warnings", [])
+        if loss_warnings:
+            with st.expander(f"⚠️ **{len(loss_warnings)} Information Loss Warning(s) Detected** — click to review", expanded=False):
+                for w in loss_warnings:
+                    if w.startswith("[ERROR]"):
+                        st.error(w)
+                    else:
+                        st.warning(w)
 
     unique_skills_list = get_all_unique_skills(profile.skills)
     total_skills = len(unique_skills_list)
