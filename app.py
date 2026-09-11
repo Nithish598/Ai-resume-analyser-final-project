@@ -138,83 +138,43 @@ st.markdown("""
     }
 
     /* =========================================================================
-       2. HIDE STREAMLIT BRANDING, TOOLBAR, FORK/GITHUB ICONS & CLOUD BADGES
+       2. HIDE STREAMLIT BRANDING, TOOLBAR & DEFAULT FOOTER SAFELY
        ========================================================================= */
-    /* 1. Completely hide Streamlit default header toolbar, GitHub icon, Fork, Deploy, and Menu */
-    #MainMenu,
-    [data-testid="stToolbar"],
-    [data-testid="stDecoration"],
-    [data-testid="stStatusWidget"],
-    .stAppDeployButton,
-    header[data-testid="stHeader"] [data-testid="stToolbar"],
-    header[data-testid="stHeader"] a[href*="github.com"],
-    header[data-testid="stHeader"] button[title*="GitHub"],
-    header[data-testid="stHeader"] button[title*="Fork"],
-    div[class*="viewerBadge"],
-    div[class*="ProfileBadge"],
-    div[class*="manage-app"] {
+    #MainMenu {
+        visibility: hidden !important;
+        display: none !important;
+    }
+
+    [data-testid="stToolbar"] {
+        visibility: hidden !important;
+        display: none !important;
+    }
+
+    [data-testid="stDecoration"] {
+        visibility: hidden !important;
+        display: none !important;
+    }
+
+    [data-testid="stStatusWidget"] {
+        visibility: hidden !important;
+        display: none !important;
+    }
+
+    .stAppDeployButton {
+        display: none !important;
+    }
+
+    footer {
+        visibility: hidden !important;
+        display: none !important;
+    }
+
+    /* Target specific Streamlit Cloud viewer badges without touching app containers */
+    [class*="viewerBadge_container"],
+    [class*="viewerBadge_link"],
+    [data-testid="manage-app-button"] {
         display: none !important;
         visibility: hidden !important;
-        opacity: 0 !important;
-        height: 0 !important;
-        width: 0 !important;
-        pointer-events: none !important;
-    }
-
-    /* 2. Streamlit Header - Make completely transparent and non-intrusive */
-    header[data-testid="stHeader"],
-    [data-testid="stHeader"],
-    .stAppHeader {
-        background-color: transparent !important;
-        background: transparent !important;
-        border-bottom: none !important;
-        box-shadow: none !important;
-        height: 0 !important;
-        min-height: 0 !important;
-        padding: 0 !important;
-        pointer-events: none !important;
-    }
-
-    /* Keep the sidebar expand/collapse chevron accessible if sidebar is closed */
-    header[data-testid="stHeader"] [data-testid="stSidebarCollapseButton"],
-    header[data-testid="stHeader"] [data-testid="collapsedControl"],
-    [data-testid="collapsedControl"] {
-        pointer-events: auto !important;
-        display: flex !important;
-        visibility: visible !important;
-        background: #FFFFFF !important;
-        border: 1px solid #E2E8F0 !important;
-        border-radius: 8px !important;
-        box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08) !important;
-        z-index: 99999 !important;
-    }
-
-    /* 3. Hide Streamlit Footer and Cloud "Hosted with Streamlit" ribbon / avatar */
-    footer,
-    [data-testid="stFooter"],
-    footer[data-testid="stFooter"],
-    .reportview-container footer,
-    a[href*="streamlit.io"],
-    a[href*="share.streamlit.io"],
-    div[class*="viewerBadge"],
-    div[class*="floatingBadge"],
-    div[data-testid="stBottomRight"],
-    div:has(> a[href*="streamlit.io"]),
-    div:has(> a[href*="share.streamlit.io"]),
-    div[style*="bottom: 0px"][style*="right: 0px"],
-    div[style*="bottom: 0"][style*="right: 0"],
-    div[style*="bottom: 1rem"][style*="right: 1rem"],
-    div[style*="bottom: 16px"][style*="right: 16px"] {
-        display: none !important;
-        visibility: hidden !important;
-        opacity: 0 !important;
-        height: 0 !important;
-        pointer-events: none !important;
-    }
-
-    /* Adjust main content block top spacing cleanly */
-    div[data-testid="stAppViewBlockContainer"] {
-        padding-top: 1.5rem !important;
     }
 
     /* Custom top breadcrumb bar */
@@ -1851,69 +1811,6 @@ with st.sidebar:
             }, 300);
         }
     }
-
-    // 6. Platform Brand Hardening: Aggressively eliminate Streamlit Cloud host overlays
-    function cleanBranding() {
-        var docs = [doc];
-        try {
-            if (window.document && window.document !== doc) {
-                docs.push(window.document);
-            }
-        } catch (e) {}
-
-        docs.forEach(function(d) {
-            if (!d) return;
-
-            // Remove Toolbar / Fork / GitHub buttons
-            var toolbars = d.querySelectorAll('[data-testid="stToolbar"], #MainMenu, .stAppDeployButton, [data-testid="stDecoration"]');
-            toolbars.forEach(function(el) {
-                el.style.setProperty('display', 'none', 'important');
-                el.style.setProperty('visibility', 'hidden', 'important');
-            });
-
-            // Remove any header elements with "Fork" or GitHub references
-            var headerItems = d.querySelectorAll('header a, header button, div[class*="toolbar"] a, div[class*="toolbar"] button');
-            headerItems.forEach(function(el) {
-                if (el.getAttribute('data-testid') === 'stSidebarCollapseButton' || el.getAttribute('data-testid') === 'collapsedControl') {
-                    return;
-                }
-                var txt = (el.innerText || '').toLowerCase().trim();
-                var href = (el.getAttribute('href') || '').toLowerCase();
-                var title = (el.getAttribute('title') || '').toLowerCase();
-                if (txt === 'fork' || txt.includes('fork') || href.includes('github.com') || title.includes('github') || title.includes('fork')) {
-                    el.style.setProperty('display', 'none', 'important');
-                    el.style.setProperty('visibility', 'hidden', 'important');
-                }
-            });
-
-            // Remove "Hosted with Streamlit" ribbon and avatar badge at bottom right
-            var bottomBadges = d.querySelectorAll('footer, [data-testid="stFooter"], [class*="viewerBadge"], [class*="floatingBadge"], [class*="ProfileBadge"], a[href*="streamlit.io"]');
-            bottomBadges.forEach(function(el) {
-                var container = el.closest ? (el.closest('div[style*="fixed"]') || el.closest('div[style*="z-index"]') || el.parentElement) : el.parentElement;
-                if (container && container !== d.body) {
-                    container.style.setProperty('display', 'none', 'important');
-                    container.style.setProperty('visibility', 'hidden', 'important');
-                }
-                el.style.setProperty('display', 'none', 'important');
-                el.style.setProperty('visibility', 'hidden', 'important');
-            });
-
-            // Deep text-content inspection for floating Streamlit Cloud ribbons
-            var allElements = d.querySelectorAll('div, a, span');
-            allElements.forEach(function(el) {
-                var t = (el.innerText || '').trim();
-                if (t === 'Hosted with Streamlit' || t.includes('Hosted with Streamlit') || t === 'Fork') {
-                    var c = el.closest ? (el.closest('div[style*="fixed"]') || el.closest('div[style*="bottom"]') || el) : el;
-                    if (c && c !== d.body && c !== d.documentElement) {
-                        c.style.setProperty('display', 'none', 'important');
-                    }
-                }
-            });
-        });
-    }
-
-    cleanBranding();
-    setInterval(cleanBranding, 400);
 })();
 </script>
 """
