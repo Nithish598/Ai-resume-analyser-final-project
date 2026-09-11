@@ -37,8 +37,8 @@ ENV/
 .coverage
 htmlcov/
 
-# Streamlit logs & cache
-.streamlit/
+# Streamlit secrets & cache
+.streamlit/secrets.toml
 
 # Sensitive data / Uploaded files
 data/raw/*
