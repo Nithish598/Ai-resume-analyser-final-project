@@ -1,0 +1,54 @@
+{
+  "intra_dataset_analysis": {
+    "conversational_22k": {
+      "total_records": 22855,
+      "unique_hashes": 21373,
+      "internal_duplicates": 1482,
+      "duplicate_rate_pct": 6.48
+    },
+    "job_role_10k": {
+      "total_records": 10000,
+      "unique_hashes": 10000,
+      "internal_duplicates": 0,
+      "duplicate_rate_pct": 0.0
+    },
+    "resume_samples_3.5k": {
+      "total_records": 3500,
+      "unique_hashes": 3270,
+      "internal_duplicates": 230,
+      "duplicate_rate_pct": 6.57
+    },
+    "screening_1k": {
+      "total_records": 1000,
+      "unique_hashes": 1000,
+      "internal_duplicates": 0,
+      "duplicate_rate_pct": 0.0
+    }
+  },
+  "cross_dataset_overlap": {
+    "conversational_22k <-> job_role_10k": {
+      "overlap_candidate_count": 0,
+      "risk_assessment": "Zero Risk - Isolated Distributions"
+    },
+    "conversational_22k <-> resume_samples_3.5k": {
+      "overlap_candidate_count": 0,
+      "risk_assessment": "Zero Risk - Isolated Distributions"
+    },
+    "conversational_22k <-> screening_1k": {
+      "overlap_candidate_count": 0,
+      "risk_assessment": "Zero Risk - Isolated Distributions"
+    },
+    "job_role_10k <-> resume_samples_3.5k": {
+      "overlap_candidate_count": 0,
+      "risk_assessment": "Zero Risk - Isolated Distributions"
+    },
+    "job_role_10k <-> screening_1k": {
+      "overlap_candidate_count": 0,
+      "risk_assessment": "Zero Risk - Isolated Distributions"
+    },
+    "resume_samples_3.5k <-> screening_1k": {
+      "overlap_candidate_count": 0,
+      "risk_assessment": "Zero Risk - Isolated Distributions"
+    }
+  }
+}

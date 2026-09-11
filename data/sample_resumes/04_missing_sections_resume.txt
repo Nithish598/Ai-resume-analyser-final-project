@@ -1,0 +1,14 @@
+David Chen
+david.chen@mailbox.net
++1 206 555 4321
+Seattle, WA
+
+EDUCATION
+Bachelor of Science in Computer Engineering
+University of Washington, 2019 - 2023
+
+WORK EXPERIENCE
+Software Developer at CloudPeak Technologies (Jul 2023 - Present)
+- Writing backend services in Go and Python.
+- Maintaining PostgreSQL relational databases and building queries.
+- Participating in daily standups and sprint planning.

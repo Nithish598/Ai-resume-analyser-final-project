@@ -1,0 +1,33 @@
+{
+  "job_id": "JOB-PY-001",
+  "title": "Python Developer",
+  "company": "Nexus Technologies Inc.",
+  "location": "Chennai / Hybrid",
+  "employment_type": "Full-Time",
+  "experience_years": 2.0,
+  "education": "B.E / B.Tech / B.Sc in Computer Science or related",
+  "required_skills": [
+    "Python",
+    "SQL",
+    "Django",
+    "REST APIs",
+    "Git"
+  ],
+  "preferred_skills": [
+    "AWS",
+    "Docker",
+    "PostgreSQL",
+    "FastAPI",
+    "Redis"
+  ],
+  "salary_range": "₹6,00,000 - ₹9,50,000 / year",
+  "description": "We are seeking a talented Python Developer to design, develop, and maintain robust backend APIs and data integration pipelines for our cloud recruitment platforms.",
+  "responsibilities": [
+    "Build scalable RESTful API endpoints using Python, Django/FastAPI, and PostgreSQL.",
+    "Collaborate with frontend engineers and data scientists to integrate AI analytics features.",
+    "Write clean, maintainable unit and integration test suites with CI/CD automation.",
+    "Optimize database queries and implement caching layers with Redis."
+  ],
+  "status": "Active",
+  "created_at": "2026-08-20T10:00:00"
+}

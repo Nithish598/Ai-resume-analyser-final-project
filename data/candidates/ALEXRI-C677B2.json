@@ -1,0 +1,758 @@
+{
+  "candidate_id": "ALEXRI-C677B2",
+  "name": "Alex Rivera",
+  "professional_title": "",
+  "email": "alex.rivera@email.com",
+  "phone": "+1 (555) 234-5678",
+  "location": "San Francisco, CA",
+  "employment_status": "Fresher with Internship Experience",
+  "experience_years": 0.5,
+  "highest_education": "Bachelor of Science in Computer Science",
+  "skills": [
+    "Python",
+    "Java",
+    "C++",
+    "JavaScript",
+    "TypeScript",
+    "SQL",
+    "PostgreSQL",
+    "MongoDB",
+    "Redis",
+    "SQ Lite",
+    "React",
+    "Node.js",
+    "Django",
+    "FastAPI",
+    "Flask",
+    "Express.js",
+    "Git",
+    "Docker",
+    "Postman",
+    "CI/CD",
+    "AWS",
+    "AWS EC2",
+    "AWS S3",
+    "Linux",
+    "English (Fluent)",
+    "Spanish (Native)",
+    "{'skill': 'Python', 'canonical_name': 'Python', 'category': 'programming_languages', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Java', 'canonical_name': 'Java', 'category': 'programming_languages', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'C++', 'canonical_name': 'C++', 'category': 'programming_languages', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'JavaScript', 'canonical_name': 'JavaScript', 'category': 'programming_languages', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'TypeScript', 'canonical_name': 'TypeScript', 'category': 'programming_languages', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'SQL', 'canonical_name': 'SQL', 'category': 'programming_languages', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'PostgreSQL', 'canonical_name': 'PostgreSQL', 'category': 'databases', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'MongoDB', 'canonical_name': 'MongoDB', 'category': 'databases', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Redis', 'canonical_name': 'Redis', 'category': 'databases', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'SQ Lite', 'canonical_name': 'SQ Lite', 'category': 'databases', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'React', 'canonical_name': 'React', 'category': 'frameworks', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Node.js', 'canonical_name': 'Node.js', 'category': 'frameworks', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Django', 'canonical_name': 'Django', 'category': 'frameworks', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'FastAPI', 'canonical_name': 'FastAPI', 'category': 'frameworks', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Flask', 'canonical_name': 'Flask', 'category': 'frameworks', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Express.js', 'canonical_name': 'Express.js', 'category': 'frameworks', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Git', 'canonical_name': 'Git', 'category': 'tools', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Docker', 'canonical_name': 'Docker', 'category': 'tools', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Postman', 'canonical_name': 'Postman', 'category': 'tools', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'CI/CD', 'canonical_name': 'CI/CD', 'category': 'tools', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'AWS', 'canonical_name': 'AWS', 'category': 'cloud', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'AWS EC2', 'canonical_name': 'AWS EC2', 'category': 'cloud', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'AWS S3', 'canonical_name': 'AWS S3', 'category': 'cloud', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Linux', 'canonical_name': 'Linux', 'category': 'platforms', 'source': 'llm', 'confidence': 'high'}"
+  ],
+  "total_skills_count": 50,
+  "projects_count": 2,
+  "certifications_count": 2,
+  "summary": "Motivated Computer Science graduate with a strong foundation in data structures, algorithms, and full-stack web development. Passionate about building scalable backend services and distributed systems using Python and Java.",
+  "resume_filename": "01_fresher_software_engineer.pdf",
+  "profile_data": {
+    "personal_info": {
+      "full_name": "Alex Rivera",
+      "name": "Alex Rivera",
+      "email": "alex.rivera@email.com",
+      "phone": "+1 (555) 234-5678",
+      "location": "San Francisco, CA",
+      "professional_title": null,
+      "profiles": {
+        "linkedin": {
+          "label": "alexrivera-cs",
+          "display": "alexrivera-cs",
+          "url": "https://linkedin.com/in/alexrivera-cs",
+          "raw": "linkedin.com/in/alexrivera-cs",
+          "source": "llm",
+          "confidence": "high",
+          "valid": true,
+          "valid_format": true
+        },
+        "github": {
+          "label": "GitHub.com/alexrivera-dev",
+          "display": "GitHub.com/alexrivera-dev",
+          "url": "https://GitHub.com/alexrivera-dev",
+          "raw": "GitHub.com/alexrivera-dev",
+          "source": "llm",
+          "confidence": "high",
+          "valid": true,
+          "valid_format": true
+        },
+        "leetcode": null,
+        "kaggle": null,
+        "portfolio": {
+          "label": "alexrivera.dev",
+          "display": "alexrivera.dev",
+          "url": "https://alexrivera.dev",
+          "raw": "https://alexrivera.dev",
+          "source": "llm",
+          "confidence": "high",
+          "valid": true,
+          "valid_format": true
+        },
+        "personal_website": null,
+        "other": []
+      },
+      "linkedin": "https://linkedin.com/in/alexrivera-cs",
+      "github": "https://GitHub.com/alexrivera-dev",
+      "leetcode": null,
+      "kaggle": null,
+      "portfolio": "https://alexrivera.dev",
+      "personal_website": null,
+      "other_profiles": []
+    },
+    "candidate": {
+      "full_name": "Alex Rivera",
+      "email": "alex.rivera@email.com",
+      "phone": "+1 (555) 234-5678",
+      "location": "San Francisco, CA",
+      "professional_title": null,
+      "linkedin_url": "https://linkedin.com/in/alexrivera-cs",
+      "github_url": "https://GitHub.com/alexrivera-dev",
+      "leetcode_url": null,
+      "kaggle_url": null,
+      "portfolio_url": "https://alexrivera.dev",
+      "personal_website_url": null
+    },
+    "professional_summary": {
+      "heading": "Professional Summary",
+      "text": "Motivated Computer Science graduate with a strong foundation in data structures, algorithms, and full-stack web development. Passionate about building scalable backend services and distributed systems using Python and Java.",
+      "source_text": "Motivated Computer Science graduate with a strong foundation in data structures, algorithms, and full-stack web development. Passionate about building scalable backend services and distributed systems using Python and Java."
+    },
+    "summary": "Motivated Computer Science graduate with a strong foundation in data structures, algorithms, and full-stack web development. Passionate about building scalable backend services and distributed systems using Python and Java.",
+    "skills": {
+      "technical": [],
+      "programming_languages": [
+        "Python",
+        "Java",
+        "C++",
+        "JavaScript",
+        "TypeScript",
+        "SQL"
+      ],
+      "frontend": [],
+      "backend": [],
+      "databases": [
+        "PostgreSQL",
+        "MongoDB",
+        "Redis",
+        "SQ Lite"
+      ],
+      "frameworks": [
+        "React",
+        "Node.js",
+        "Django",
+        "FastAPI",
+        "Flask",
+        "Express.js"
+      ],
+      "libraries": [],
+      "tools": [
+        "Git",
+        "Docker",
+        "Postman",
+        "CI/CD"
+      ],
+      "ui_ux_tools": [],
+      "office_productivity": [],
+      "cloud": [
+        "AWS",
+        "AWS EC2",
+        "AWS S3"
+      ],
+      "platforms": [
+        "Linux"
+      ],
+      "apis": [],
+      "other_technical_skills": [],
+      "soft_skills": [],
+      "business_skills": [],
+      "languages": [
+        "English (Fluent)",
+        "Spanish (Native)"
+      ],
+      "web_technologies": [],
+      "technical_disciplines": [],
+      "other": [],
+      "skill_evidence": [
+        {
+          "skill": "Python",
+          "canonical_name": "Python",
+          "category": "programming_languages",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Java",
+          "canonical_name": "Java",
+          "category": "programming_languages",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "C++",
+          "canonical_name": "C++",
+          "category": "programming_languages",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "JavaScript",
+          "canonical_name": "JavaScript",
+          "category": "programming_languages",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "TypeScript",
+          "canonical_name": "TypeScript",
+          "category": "programming_languages",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "SQL",
+          "canonical_name": "SQL",
+          "category": "programming_languages",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "PostgreSQL",
+          "canonical_name": "PostgreSQL",
+          "category": "databases",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "MongoDB",
+          "canonical_name": "MongoDB",
+          "category": "databases",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Redis",
+          "canonical_name": "Redis",
+          "category": "databases",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "SQ Lite",
+          "canonical_name": "SQ Lite",
+          "category": "databases",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "React",
+          "canonical_name": "React",
+          "category": "frameworks",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Node.js",
+          "canonical_name": "Node.js",
+          "category": "frameworks",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Django",
+          "canonical_name": "Django",
+          "category": "frameworks",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "FastAPI",
+          "canonical_name": "FastAPI",
+          "category": "frameworks",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Flask",
+          "canonical_name": "Flask",
+          "category": "frameworks",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Express.js",
+          "canonical_name": "Express.js",
+          "category": "frameworks",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Git",
+          "canonical_name": "Git",
+          "category": "tools",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Docker",
+          "canonical_name": "Docker",
+          "category": "tools",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Postman",
+          "canonical_name": "Postman",
+          "category": "tools",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "CI/CD",
+          "canonical_name": "CI/CD",
+          "category": "tools",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "AWS",
+          "canonical_name": "AWS",
+          "category": "cloud",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "AWS EC2",
+          "canonical_name": "AWS EC2",
+          "category": "cloud",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "AWS S3",
+          "canonical_name": "AWS S3",
+          "category": "cloud",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Linux",
+          "canonical_name": "Linux",
+          "category": "platforms",
+          "source": "llm",
+          "confidence": "high"
+        }
+      ],
+      "source_text": null
+    },
+    "employment_status": "Fresher with Internship Experience",
+    "experience_summary": {
+      "employment_status": "Fresher with Internship Experience",
+      "total_years": null,
+      "total_months": null,
+      "total_display": "Duration not specified",
+      "full_time": [],
+      "internships": [
+        {
+          "role": "Software Engineer Intern",
+          "title": "Software Engineer Intern",
+          "company": "Nexus Tech Labs",
+          "location": null,
+          "start_date": "Jun 2023",
+          "end_date": "2023",
+          "duration": null,
+          "original_duration": null,
+          "derived_duration": null,
+          "description": null,
+          "responsibilities": [
+            "Designed and implemented RESTful AP Is using Python FastAPI and PostgreSQL, serving 10,000+ daily requests.",
+            "Containerized microservices using Docker and automated integration tests via GitHub Actions.",
+            "Optimized database indexing queries, reducing average API response latency by 28%."
+          ],
+          "technologies": [
+            "Python",
+            "FastAPI",
+            "PostgreSQL",
+            "Docker",
+            "GitHub Actions"
+          ],
+          "details": [],
+          "source_text": "Software Engineer Intern at Nexus Tech Labs (Jun 2023–2023)\n- Designed and implemented RESTful AP Is using Python FastAPI and PostgreSQL, serving 10,000+ daily requests.\n- Containerized microservices using Docker and automated integration tests via GitHub Actions.\n- Optimized database indexing queries, reducing average API response latency by 28%."
+        }
+      ]
+    },
+    "experience": [
+      {
+        "job_title": "Software Engineer Intern",
+        "role": "Software Engineer Intern",
+        "title": "Software Engineer Intern",
+        "company": "Nexus Tech Labs",
+        "organization": "Nexus Tech Labs",
+        "location": null,
+        "experience_type": "internship",
+        "type": "internship",
+        "start_date": "Jun 2023",
+        "end_date": "2023",
+        "duration": null,
+        "original_duration": null,
+        "derived_duration": null,
+        "duration_display": "Duration not specified",
+        "currently_working": false,
+        "description": null,
+        "responsibilities": [
+          "Designed and implemented RESTful AP Is using Python FastAPI and PostgreSQL, serving 10,000+ daily requests.",
+          "Containerized microservices using Docker and automated integration tests via GitHub Actions.",
+          "Optimized database indexing queries, reducing average API response latency by 28%."
+        ],
+        "technologies": [
+          "Python",
+          "FastAPI",
+          "PostgreSQL",
+          "Docker",
+          "GitHub Actions"
+        ],
+        "details": [
+          "Designed and implemented RESTful AP Is using Python FastAPI and PostgreSQL, serving 10,000+ daily requests.",
+          "Containerized microservices using Docker and automated integration tests via GitHub Actions.",
+          "Optimized database indexing queries, reducing average API response latency by 28%."
+        ],
+        "source_text": "Software Engineer Intern at Nexus Tech Labs (Jun 2023–2023)\n- Designed and implemented RESTful AP Is using Python FastAPI and PostgreSQL, serving 10,000+ daily requests.\n- Containerized microservices using Docker and automated integration tests via GitHub Actions.\n- Optimized database indexing queries, reducing average API response latency by 28%.",
+        "achievements": []
+      }
+    ],
+    "internships": [
+      {
+        "job_title": "Software Engineer Intern",
+        "role": "Software Engineer Intern",
+        "title": "Software Engineer Intern",
+        "company": "Nexus Tech Labs",
+        "organization": "Nexus Tech Labs",
+        "location": null,
+        "experience_type": "internship",
+        "type": "internship",
+        "start_date": "Jun 2023",
+        "end_date": "2023",
+        "duration": null,
+        "original_duration": null,
+        "derived_duration": null,
+        "duration_display": "Duration not specified",
+        "currently_working": false,
+        "description": null,
+        "responsibilities": [
+          "Designed and implemented RESTful AP Is using Python FastAPI and PostgreSQL, serving 10,000+ daily requests.",
+          "Containerized microservices using Docker and automated integration tests via GitHub Actions.",
+          "Optimized database indexing queries, reducing average API response latency by 28%."
+        ],
+        "technologies": [
+          "Python",
+          "FastAPI",
+          "PostgreSQL",
+          "Docker",
+          "GitHub Actions"
+        ],
+        "details": [
+          "Designed and implemented RESTful AP Is using Python FastAPI and PostgreSQL, serving 10,000+ daily requests.",
+          "Containerized microservices using Docker and automated integration tests via GitHub Actions.",
+          "Optimized database indexing queries, reducing average API response latency by 28%."
+        ],
+        "source_text": "Software Engineer Intern at Nexus Tech Labs (Jun 2023–2023)\n- Designed and implemented RESTful AP Is using Python FastAPI and PostgreSQL, serving 10,000+ daily requests.\n- Containerized microservices using Docker and automated integration tests via GitHub Actions.\n- Optimized database indexing queries, reducing average API response latency by 28%.",
+        "achievements": []
+      }
+    ],
+    "education": [
+      {
+        "qualification": "Bachelor of Science in Computer Science",
+        "degree": "Bachelor of Science in Computer Science",
+        "field_of_study": "Computer Science",
+        "specialization": "Computer Science",
+        "institution": "University of California, Berkeley",
+        "college": "University of California, Berkeley",
+        "school": null,
+        "university": "University of California, Berkeley",
+        "location": null,
+        "education_level": "College/University",
+        "category": "Bachelor's degree",
+        "type": "College/University",
+        "classification": "Degree",
+        "education_classification": "degree",
+        "canonical_education_category": "degree",
+        "status": "Completed",
+        "start_date": "2020",
+        "start_year": "2020",
+        "end_date": "2024",
+        "end_year": "2024",
+        "expected_year": null,
+        "expected_graduation_year": null,
+        "year": "2024",
+        "completion_date": "2024",
+        "completion_year": "2024",
+        "graduation_year": "2024",
+        "percentage": null,
+        "grade": null,
+        "gpa": "3.85",
+        "cgpa": null,
+        "aggregate_score": null,
+        "score": "3.85",
+        "score_type": "GPA",
+        "stream": null,
+        "details": [
+          "Dean's Honor List"
+        ],
+        "academic_details": [
+          "Dean's Honor List"
+        ],
+        "source_text": "Bachelor of Science in Computer Science\nUniversity of California, Berkeley (2020–2024)\nGPA: 3.85 / 4.0 | Dean's Honor List",
+        "institution_type": "College/University",
+        "qualification_type": "Bachelor's degree"
+      }
+    ],
+    "projects": [
+      {
+        "project_name": "Dev Connect - Developer Community Platform",
+        "name": "Dev Connect - Developer Community Platform",
+        "title": "Dev Connect - Developer Community Platform",
+        "type": null,
+        "project_type": null,
+        "description": "Built a full-stack discussion forum with real-time notifications using React, Node.js, and Redis.",
+        "technologies": [
+          "React",
+          "Node.js",
+          "Redis"
+        ],
+        "programming_languages": [],
+        "frontend": [],
+        "backend": [],
+        "database": [],
+        "frameworks": [],
+        "tools": [],
+        "links": [
+          "https://GitHub.com/alexrivera-dev/devconnect"
+        ],
+        "details": [],
+        "role": null,
+        "link": "https://GitHub.com/alexrivera-dev/devconnect",
+        "url": "https://GitHub.com/alexrivera-dev/devconnect",
+        "date": null,
+        "source_text": "Dev Connect - Developer Community Platform\n- Built a full-stack discussion forum with real-time notifications using React, Node.js, and Redis.\n- GitHub: https://GitHub.com/alexrivera-dev/devconnect"
+      },
+      {
+        "project_name": "Automated Code Reviewer Bot",
+        "name": "Automated Code Reviewer Bot",
+        "title": "Automated Code Reviewer Bot",
+        "type": null,
+        "project_type": null,
+        "description": "Developed a Python CLI tool using AST parsing to detect code smells and style violations.",
+        "technologies": [
+          "Python"
+        ],
+        "programming_languages": [
+          "Python"
+        ],
+        "frontend": [],
+        "backend": [],
+        "database": [],
+        "frameworks": [],
+        "tools": [],
+        "links": [
+          "https://GitHub.com/alexrivera-dev/code-reviewer"
+        ],
+        "details": [],
+        "role": null,
+        "link": "https://GitHub.com/alexrivera-dev/code-reviewer",
+        "url": "https://GitHub.com/alexrivera-dev/code-reviewer",
+        "date": null,
+        "source_text": "Automated Code Reviewer Bot\n- Developed a Python CLI tool using AST parsing to detect code smells and style violations.\n- GitHub: https://GitHub.com/alexrivera-dev/code-reviewer"
+      }
+    ],
+    "certifications": [
+      {
+        "name": "AWS Certified Cloud Practitioner",
+        "certification_name": "AWS Certified Cloud Practitioner",
+        "issuer": "Amazon Web services",
+        "issuing_organization": "Amazon Web services",
+        "date": "2023",
+        "credential_id": null,
+        "credential_url": null,
+        "url": null,
+        "details": null,
+        "source_text": "AWS Certified Cloud Practitioner - Amazon Web services (2023)"
+      },
+      {
+        "name": "Meta Full-Stack Software Engineer Certificate",
+        "certification_name": "Meta Full-Stack Software Engineer Certificate",
+        "issuer": "Coursera",
+        "issuing_organization": "Coursera",
+        "date": "2023",
+        "credential_id": null,
+        "credential_url": null,
+        "url": null,
+        "details": null,
+        "source_text": "Meta Full-Stack Software Engineer Certificate - Coursera (2023)"
+      }
+    ],
+    "achievements": [],
+    "awards_achievements": [],
+    "publications": [],
+    "additional_qualifications": [],
+    "languages": [
+      "English (Fluent)",
+      "Spanish (Native)"
+    ],
+    "interests": [],
+    "hobbies": [],
+    "strengths": [],
+    "declaration": {
+      "text": null,
+      "source_text": null,
+      "signature": "Alex Rivera"
+    },
+    "signature": {
+      "present": false,
+      "text": null
+    },
+    "other_sections": [],
+    "source_spans": {
+      "name": {
+        "value": "Alex Rivera",
+        "source": "llm"
+      },
+      "full_name": {
+        "value": "Alex Rivera",
+        "source": "llm"
+      },
+      "email": {
+        "value": "alex.rivera@email.com",
+        "source": "llm"
+      },
+      "phone": {
+        "value": "+1 (555) 234-5678",
+        "source": "llm"
+      },
+      "location": {
+        "value": "San Francisco, CA",
+        "source": "llm"
+      },
+      "summary": {
+        "value": "Motivated Computer Science graduate with a strong foundation in data structures, algorithms, and full-stack web development. Passionate about building scalable backend services and distributed systems using Python and Java.",
+        "source": "llm"
+      },
+      "professional_summary": {
+        "value": "Motivated Computer Science graduate with a strong foundation in data structures, algorithms, and full-stack web development. Passionate about building scalable backend services and distributed systems using Python and Java.",
+        "source": "llm"
+      },
+      "education": [
+        {
+          "degree": "Bachelor of Science in Computer Science",
+          "institution": "University of California, Berkeley",
+          "source": "llm"
+        }
+      ],
+      "skills": [
+        {
+          "skill": "Git",
+          "source": "llm"
+        },
+        {
+          "skill": "Docker",
+          "source": "llm"
+        },
+        {
+          "skill": "Postman",
+          "source": "llm"
+        },
+        {
+          "skill": "CI/CD",
+          "source": "llm"
+        },
+        {
+          "skill": "Python",
+          "source": "llm"
+        },
+        {
+          "skill": "Java",
+          "source": "llm"
+        },
+        {
+          "skill": "C++",
+          "source": "llm"
+        },
+        {
+          "skill": "JavaScript",
+          "source": "llm"
+        },
+        {
+          "skill": "TypeScript",
+          "source": "llm"
+        },
+        {
+          "skill": "SQL",
+          "source": "llm"
+        }
+      ],
+      "declaration": {
+        "value": {
+          "text": null,
+          "source_text": null,
+          "signature": "Alex Rivera"
+        },
+        "source": "llm"
+      }
+    },
+    "other_information": [],
+    "raw_text": "Alex Rivera\nalex.rivera@email.com | +1 (555) 234-5678 | San Francisco, CA\nLinkedIn: linkedin.com/in/alexrivera-cs | GitHub: github.com/alexrivera-dev | Portfolio: https://alexrivera.dev\nPROFESSIONAL SUMMARY\nMotivated Computer Science graduate with a strong foundation in data structures, algorithms, and full-stack web development.\nPassionate about building scalable backend services and distributed systems using Python and Java.\nEDUCATION\nBachelor of Science in Computer Science\nUniversity of California, Berkeley (2020 - 2024)\nGPA: 3.85 / 4.0 | Dean's Honor List\nTECHNICAL SKILLS\nProgramming Languages: Python, Java, C++, JavaScript, TypeScript, SQL\nFrameworks & Libraries: React, Node.js, Django, FastAPI, Flask, Express.js\nDatabases: PostgreSQL, MongoDB, Redis, SQLite\nTools & Cloud: Git, Docker, AWS EC2, AWS S3, Linux, Postman, CI/CD\nEXPERIENCE\nSoftware Engineer Intern at Nexus Tech Labs (Jun 2023 - Aug 2023)\n• Designed and implemented RESTful APIs using Python FastAPI and PostgreSQL, serving 10,000+ daily requests.\n• Containerized microservices using Docker and automated integration tests via GitHub Actions.\n• Optimized database indexing queries, reducing average API response latency by 28%.\nPROJECTS\nDevConnect - Developer Community Platform\n• Built a full-stack discussion forum with real-time notifications using React, Node.js, and Redis.\n• GitHub: https://github.com/alexrivera-dev/devconnect\nAutomated Code Reviewer Bot\n• Developed a Python CLI tool using AST parsing to detect code smells and style violations.\n• GitHub: https://github.com/alexrivera-dev/code-reviewer\nCERTIFICATIONS\n• AWS Certified Cloud Practitioner - Amazon Web Services (2023)\n• Meta Full-Stack Software Engineer Certificate - Coursera (2023)\nLANGUAGES\nEnglish (Fluent), Spanish (Native)",
+    "extraction_metadata": {
+      "method": "native",
+      "lossless_extraction": true,
+      "character_count": 1550
+    },
+    "metadata": {
+      "file_name": "01_fresher_software_engineer.pdf",
+      "file_type": "pdf",
+      "status": "success",
+      "extraction_method": "native",
+      "ocr_confidence": null,
+      "ocr_pages_count": 0,
+      "is_scanned": false,
+      "raw_text": "Alex Rivera\nalex.rivera@email.com | +1 (555) 234-5678 | San Francisco, CA\nLinkedIn: linkedin.com/in/alexrivera-cs | GitHub: github.com/alexrivera-dev | Portfolio: https://alexrivera.dev\nPROFESSIONAL SUMMARY\nMotivated Computer Science graduate with a strong foundation in data structures, algorithms, and full-stack web development.\nPassionate about building scalable backend services and distributed systems using Python and Java.\nEDUCATION\nBachelor of Science in Computer Science\nUniversity of California, Berkeley (2020 - 2024)\nGPA: 3.85 / 4.0 | Dean's Honor List\nTECHNICAL SKILLS\nProgramming Languages: Python, Java, C++, JavaScript, TypeScript, SQL\nFrameworks & Libraries: React, Node.js, Django, FastAPI, Flask, Express.js\nDatabases: PostgreSQL, MongoDB, Redis, SQLite\nTools & Cloud: Git, Docker, AWS EC2, AWS S3, Linux, Postman, CI/CD\nEXPERIENCE\nSoftware Engineer Intern at Nexus Tech Labs (Jun 2023 - Aug 2023)\n• Designed and implemented RESTful APIs using Python FastAPI and PostgreSQL, serving 10,000+ daily requests.\n• Containerized microservices using Docker and automated integration tests via GitHub Actions.\n• Optimized database indexing queries, reducing average API response latency by 28%.\nPROJECTS\nDevConnect - Developer Community Platform\n• Built a full-stack discussion forum with real-time notifications using React, Node.js, and Redis.\n• GitHub: https://github.com/alexrivera-dev/devconnect\nAutomated Code Reviewer Bot\n• Developed a Python CLI tool using AST parsing to detect code smells and style violations.\n• GitHub: https://github.com/alexrivera-dev/code-reviewer\nCERTIFICATIONS\n• AWS Certified Cloud Practitioner - Amazon Web Services (2023)\n• Meta Full-Stack Software Engineer Certificate - Coursera (2023)\nLANGUAGES\nEnglish (Fluent), Spanish (Native)"
+    },
+    "confidence": {
+      "personal_info.name": "high",
+      "personal_info.email": "high",
+      "personal_info.phone": "high",
+      "personal_info.location": "high",
+      "personal_info.linkedin": "not_found",
+      "personal_info.github": "not_found",
+      "personal_info.leetcode": "not_found",
+      "personal_info.portfolio": "not_found",
+      "summary": "high",
+      "experience": "not_found",
+      "education": "high",
+      "skills": "high",
+      "certifications": "not_found",
+      "projects": "not_found",
+      "languages": "not_found",
+      "publications": "not_found",
+      "additional_qualifications": "not_found",
+      "interests": "not_found"
+    }
+  },
+  "created_at": "2026-08-31T21:59:35.747072",
+  "updated_at": "2026-08-31T21:59:35.747072"
+}

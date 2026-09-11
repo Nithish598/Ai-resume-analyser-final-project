@@ -1,0 +1,117 @@
+{
+  "personal_info": {
+    "full_name": "NIRANJANA GANAPATHY",
+    "email": "niranjanayadav69@gmail.com",
+    "phone": "+91 9080469657",
+    "professional_title": "Data Scientist",
+    "location": null,
+    "linkedin": null,
+    "github": null,
+    "other_profile_links": ["Niranjana G Yadav"]
+  },
+  "professional_summary": {
+    "text": "Aspiring Data Scientist with strong analytical and problem-solving skills, seeking to apply machine learning and data analysis techniques to solve real-world problems."
+  },
+  "skills": {
+    "programming_languages": [
+      "Python",
+      "R",
+      "SQL",
+      "Java"
+    ],
+    "databases": [
+      "MySQL",
+      "MongoDB"
+    ],
+    "tools": [
+      "Power BI",
+      "Tableau",
+      "JIRA",
+      "Selenium"
+    ],
+    "office_productivity": [
+      "MS Excel"
+    ],
+    "soft_skills": [
+      "Strong Analytical Thinking",
+      "Attention to Detail",
+      "Process-Oriented Mindset"
+    ],
+    "business_skills": [
+      "Marketing Analytics",
+      "Competitor Analysis",
+      "Business Process Improvement"
+    ]
+  },
+  "internships": [
+    {
+      "role": "Software Testing",
+      "company": "Synapse Spark Software Pivate Ltd.",
+      "start_date": "01 Jan 2025",
+      "end_date": "28 Feb 2025"
+    },
+    {
+      "role": "Digital Marketing",
+      "company": "Synapse Spark Software Pivate Ltd.",
+      "start_date": "01 Mar 2025",
+      "end_date": "30 Apr 2025"
+    }
+  ],
+  "education": [
+    {
+      "degree": "BACHELORS OF SCIENCE",
+      "field_of_study": "Data Science",
+      "institution": "M.O.P. Vaishnav College for Women",
+      "cgpa": "8.8",
+      "score": "8.8",
+      "score_type": "CGPA",
+      "details": [
+        "Joint Secretary in DS Club (2025)",
+        "Executive Member in DS Club (2024)"
+      ]
+    },
+    {
+      "qualification_type": "higher_secondary",
+      "degree": "HSE",
+      "institution": "Higher Secondary School"
+    },
+    {
+      "qualification_type": "sslc_secondary",
+      "degree": "SSLC",
+      "institution": "Secondary School"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Digital Application Fundamentals",
+      "issuer": "STEM",
+      "date": "2026",
+      "details": "Secured Gold Category with 97.39%"
+    },
+    {
+      "name": "Python for Data Science",
+      "issuer": "NPTEL"
+    },
+    {
+      "name": "Database Management Systems",
+      "issuer": "Coursera"
+    },
+    {
+      "name": "Machine Learning Basics",
+      "issuer": "Udemy"
+    }
+  ],
+  "publications": [
+    {
+      "title": "Artificial Intelligence in Drug Discovery: Transforming Pharmaceutical Research through Machine Learning and Deep Learning Approaches",
+      "conference": "International Conference on Artificial Intelligence Trends in Biotechnology, Precision Medicine, and Biosciences (ICAIBPB 2026)",
+      "publisher": "Department of Biotechnology, Prathyusha Engineering College, in association with the Biotech Research Society India",
+      "year": 2026,
+      "details": [
+        "Presented and published research paper on ML in drug discovery"
+      ],
+      "url": null,
+      "source_text": "Artificial Intelligence in Drug Discovery: Transforming Pharmaceutical Research through Machine Learning and Deep Learning Approaches"
+    }
+  ]
+}

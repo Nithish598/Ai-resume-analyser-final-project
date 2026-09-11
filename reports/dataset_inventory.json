@@ -1,0 +1,238 @@
+{
+  "screening_dataset": {
+    "dataset_name": "AI_Resume_Screening",
+    "file_path": "AI_Resume_Screening.csv",
+    "file_size_bytes": 105089,
+    "file_size_kb": 102.63,
+    "total_rows": 1000,
+    "columns": [
+      "Resume_ID",
+      "Name",
+      "Skills",
+      "Experience (Years)",
+      "Education",
+      "Certifications",
+      "Job Role",
+      "Recruiter Decision",
+      "Salary Expectation ($)",
+      "Projects Count",
+      "AI Score (0-100)"
+    ],
+    "column_types": {
+      "Resume_ID": "int64",
+      "Name": "str",
+      "Skills": "str",
+      "Experience (Years)": "int64",
+      "Education": "str",
+      "Certifications": "str",
+      "Job Role": "str",
+      "Recruiter Decision": "str",
+      "Salary Expectation ($)": "int64",
+      "Projects Count": "int64",
+      "AI Score (0-100)": "int64"
+    },
+    "missing_values": {
+      "Resume_ID": 0,
+      "Name": 0,
+      "Skills": 0,
+      "Experience (Years)": 0,
+      "Education": 0,
+      "Certifications": 274,
+      "Job Role": 0,
+      "Recruiter Decision": 0,
+      "Salary Expectation ($)": 0,
+      "Projects Count": 0,
+      "AI Score (0-100)": 0
+    },
+    "target_distribution": {
+      "Recruiter Decision": {
+        "Hire": 812,
+        "Reject": 188
+      },
+      "Unique Job Roles": 4,
+      "Top Job Roles": {
+        "AI Researcher": 257,
+        "Data Scientist": 255,
+        "Cybersecurity Analyst": 255,
+        "Software Engineer": 233
+      }
+    },
+    "numerical_summary": {
+      "Experience (Years)": {
+        "mean": 4.9,
+        "min": 0,
+        "max": 10
+      },
+      "AI Score (0-100)": {
+        "mean": 83.95,
+        "min": 15,
+        "max": 100
+      },
+      "Projects Count": {
+        "mean": 5.13,
+        "min": 0,
+        "max": 10
+      }
+    },
+    "sample_record": {
+      "Resume_ID": 1,
+      "Name": "Ashley Ali",
+      "Skills": "TensorFlow, NLP, Pytorch",
+      "Experience (Years)": 10,
+      "Education": "B.Sc",
+      "Certifications": NaN,
+      "Job Role": "AI Researcher",
+      "Recruiter Decision": "Hire",
+      "Salary Expectation ($)": 104895,
+      "Projects Count": 8,
+      "AI Score (0-100)": 100
+    }
+  },
+  "job_role_dataset": {
+    "dataset_name": "AI Resume Analyzer \u2013 Job Role Prediction Dataset",
+    "directory": "AI Resume Analyzer \u2013 Job Role Prediction Dataset",
+    "files": {
+      "training_data.csv": {
+        "file_size_mb": 3.42,
+        "total_rows": 10000,
+        "columns": [
+          "Resume ID",
+          "Resume Text",
+          "Education",
+          "Experience Years",
+          "Skills",
+          "Job Role",
+          "Category"
+        ],
+        "unique_job_roles": 324,
+        "unique_categories": 42,
+        "top_categories": {
+          "Technology": 2511,
+          "Data & Analytics": 568,
+          "Healthcare": 488,
+          "Marketing & Sales": 463,
+          "Engineering & Manufacturing": 435,
+          "Creative & Design": 334,
+          "Skilled Trades": 279,
+          "Operations & Supply Chain": 266,
+          "Human Resources": 263,
+          "Finance & Accounting": 252
+        },
+        "top_roles": {
+          "Java Backend Developer": 50,
+          "Automotive Engineer": 47,
+          "Electronics Engineer": 44,
+          "School Principal": 44,
+          "Announcer": 43,
+          "Hairstylist": 43,
+          "Cashier": 42,
+          "Audit Manager": 42,
+          "Executive Assistant": 41,
+          "HVAC Technician": 41
+        },
+        "missing_values": {
+          "Resume ID": 0,
+          "Resume Text": 0,
+          "Education": 0,
+          "Experience Years": 0,
+          "Skills": 0,
+          "Job Role": 0,
+          "Category": 0
+        },
+        "sample_record": {
+          "Resume ID": "R000000",
+          "Resume Text": "Education: Bachelor's in Computer Science Experience: 2 years Skills: Market Research, Maven, Java, REST API, Spring Boot, Microservices, Statistics, SQL",
+          "Education": "Bachelor's in Computer Science",
+          "Experience Years": 2,
+          "Skills": "Market Research|Maven|Java|REST API|Spring Boot|Microservices|Statistics|SQL",
+          "Job Role": "Java Backend Developer",
+          "Category": "Technology"
+        }
+      },
+      "job_roles.csv": {
+        "file_size_kb": 52.22,
+        "total_roles_defined": 324,
+        "columns": [
+          "Job Title",
+          "Category",
+          "Education Requirement",
+          "Experience Years",
+          "Required Skills",
+          "Salary Range"
+        ],
+        "sample_role": {
+          "Job Title": "Software Engineer",
+          "Category": "Technology",
+          "Education Requirement": "Bachelor's in Computer Science|Bachelor's in Engineering",
+          "Experience Years": 2,
+          "Required Skills": "Python|Java|C++|Git|Software Design|Problem Solving",
+          "Salary Range": "80-150K"
+        }
+      }
+    }
+  },
+  "resume_samples_dataset": {
+    "dataset_name": "resume dataset samples (3500 resume samples)",
+    "file_path": "resume dataset samples(3500 resume samples)/resumes_dataset.jsonl",
+    "file_size_mb": 16.32,
+    "total_records": 3500,
+    "unique_categories": 36,
+    "top_categories": {
+      "Java Developer": 200,
+      "Python Developer": 200,
+      "Data Science": 200,
+      "DevOps": 180,
+      "SQL Developer": 180,
+      "Database": 150,
+      "Testing": 150,
+      "Web Designing": 150,
+      "React Developer": 150,
+      "Business Analyst": 150
+    },
+    "missing_fields": {
+      "Name": 0,
+      "Email": 0,
+      "Phone": 0,
+      "Location": 0,
+      "Summary": 0,
+      "Skills": 0,
+      "Experience": 0,
+      "Education": 0,
+      "Text": 0
+    },
+    "text_length_chars": {
+      "mean": 3402.14,
+      "min": 202,
+      "max": 56216
+    },
+    "sample_record_preview": {
+      "ResumeID": "REAL_0001...",
+      "Category": "Java Developer...",
+      "Name": "Chad Griffin...",
+      "Email": "contact@email.com...",
+      "Phone": "94105 555 4321000          10                     2014                                    102011 112013                 ...",
+      "Location": "City, State...",
+      "Summary": "jessica claire montgomery street san francisco ca 94105 555 4321000 resumesampleexamplecom professional summary highly s...",
+      "Skills": "Python, SQL, Git, Linux...",
+      "Experience": "jessica claire montgomery street san francisco ca 94105 555 4321000 resumesampleexamplecom professional summary highly s...",
+      "Education": "Computer Science degree...",
+      "Text": "jessica claire montgomery street san francisco ca 94105 555 4321000 resumesampleexamplecom professional summary highly s...",
+      "Source": "ResumeAtlas..."
+    }
+  },
+  "conversational_dataset": {
+    "dataset_name": "training_data.jsonl (Conversational Resume Assistant)",
+    "file_path": "training_data.jsonl",
+    "file_size_mb": 136.54,
+    "total_records": 22855,
+    "format": "conversational JSONL (messages: [system, user, assistant])",
+    "tasks_supported": [
+      "Summarization",
+      "Skills",
+      "Critique",
+      "Rewrite",
+      "Classification",
+      "Extraction"
+    ]
+  }
+}

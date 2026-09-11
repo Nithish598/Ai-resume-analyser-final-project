@@ -1,0 +1,25 @@
+Emily Watson
+emily.watson@enterprise.com | (555) 789-0123 | Chicago, IL
+https://linkedin.com/in/emilywatson-pm
+
+PROFESSIONAL SUMMARY
+Experienced Technical Project Manager with 5 years driving agile software development teams to deliver enterprise cloud solutions.
+
+EXPERIENCE
+Technical Project Manager at FinTech Global Corp (2021 - Present)
+- Managed cross-functional squads utilizing Agile and Scrum methodologies.
+- Coordinated delivery of Python and React microservices on Amazon Web Services (AWS).
+- Utilized Jira, Confluence, and Git to streamline backlog tracking and sprint reporting.
+- Resolved technical bottlenecks involving PostgreSQL databases and Docker containers.
+
+Associate Project Manager at Delta Logistics (2018 - 2021)
+- Spearheaded implementation of automated inventory tracking using SQL and Power BI.
+- Facilitated daily standups, sprint reviews, and sprint retrospectives for 15 engineers.
+
+EDUCATION
+Bachelor of Business Administration (BBA) in Information Systems
+University of Illinois at Urbana-Champaign (2014 - 2018)
+
+CERTIFICATIONS
+- Project Management Professional (PMP) - PMI (2021)
+- Certified ScrumMaster (CSM) - Scrum Alliance (2019)

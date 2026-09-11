@@ -1,0 +1,33 @@
+{
+  "job_id": "JOB-FE-005",
+  "title": "Frontend React Developer",
+  "company": "Starlight Digital Media",
+  "location": "Remote",
+  "employment_type": "Full-Time",
+  "experience_years": 2.0,
+  "education": "B.E / B.Tech / B.Sc in CS or relevant portfolio",
+  "required_skills": [
+    "React",
+    "JavaScript",
+    "TypeScript",
+    "HTML5",
+    "CSS3",
+    "Git"
+  ],
+  "preferred_skills": [
+    "Redux",
+    "Next.js",
+    "Tailwind CSS",
+    "REST APIs",
+    "Jest"
+  ],
+  "salary_range": "₹6,50,000 - ₹10,00,000 / year",
+  "description": "Build high-performance, polished front-end web experiences with state-of-the-art UI design patterns and smooth micro-interactions.",
+  "responsibilities": [
+    "Translate UI/UX wireframes into responsive, reusable component libraries.",
+    "Optimize frontend rendering speed and bundle size.",
+    "Integrate RESTful and WebSocket API contracts seamlessly."
+  ],
+  "status": "Active",
+  "created_at": "2026-08-27T16:00:00"
+}

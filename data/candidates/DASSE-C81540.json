@@ -1,0 +1,550 @@
+{
+  "candidate_id": "DASSE-C81540",
+  "name": "DASS E",
+  "professional_title": "Python Full Stack Developer",
+  "email": "dasse7794@gmail.com",
+  "phone": "+91-9344187794",
+  "location": "Chennai, Tamil Nadu, India",
+  "employment_status": "Fresher with Internship Experience",
+  "experience_years": 0.5,
+  "highest_education": "B.Sc. Computer Science",
+  "skills": [
+    "HTML",
+    "CSS",
+    "Python",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Tailwind CSS",
+    "Git",
+    "GitHub",
+    "{'skill': 'Python', 'canonical_name': 'Python', 'category': 'programming_languages', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'JavaScript', 'canonical_name': 'JavaScript', 'category': 'programming_languages', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'TypeScript', 'canonical_name': 'TypeScript', 'category': 'programming_languages', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'React', 'canonical_name': 'React', 'category': 'frameworks', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Tailwind CSS', 'canonical_name': 'Tailwind CSS', 'category': 'frameworks', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Git', 'canonical_name': 'Git', 'category': 'tools', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'GitHub', 'canonical_name': 'GitHub', 'category': 'tools', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'HTML', 'canonical_name': 'HTML', 'category': 'technical', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'CSS', 'canonical_name': 'CSS', 'category': 'technical', 'source': 'llm', 'confidence': 'high'}"
+  ],
+  "total_skills_count": 18,
+  "projects_count": 2,
+  "certifications_count": 1,
+  "summary": "Third-year B.Sc. Computer Science student and Python Full Stack Developer with hands-on internship experience and a strong portfolio of production-style full stack Projects. Skilled in building responsive, modern frontends with React and Tailwind CSS, and robust backends with Python. Experienced in designing interactive, real-time applications and Management systems, with a focus on clean UI, scalable architecture, and practical, real-world problem solving.",
+  "resume_filename": "Dass_E_MyResume (1).docx",
+  "profile_data": {
+    "personal_info": {
+      "full_name": "DASS E",
+      "name": "DASS E",
+      "email": "dasse7794@gmail.com",
+      "phone": "+91-9344187794",
+      "location": "Chennai, Tamil Nadu, India",
+      "professional_title": "Python Full Stack Developer",
+      "profiles": {
+        "linkedin": {
+          "label": "dass-e",
+          "display": "dass-e",
+          "url": "https://www.linkedin.com/in/dass-e",
+          "raw": "dass-e",
+          "source": "llm",
+          "confidence": "high",
+          "valid": true,
+          "valid_format": true
+        },
+        "github": null,
+        "leetcode": null,
+        "kaggle": null,
+        "portfolio": null,
+        "personal_website": null,
+        "other": []
+      },
+      "linkedin": "https://www.linkedin.com/in/dass-e",
+      "github": null,
+      "leetcode": null,
+      "kaggle": null,
+      "portfolio": null,
+      "personal_website": null,
+      "other_profiles": []
+    },
+    "candidate": {
+      "full_name": "DASS E",
+      "email": "dasse7794@gmail.com",
+      "phone": "+91-9344187794",
+      "location": "Chennai, Tamil Nadu, India",
+      "professional_title": "Python Full Stack Developer",
+      "linkedin_url": "https://www.linkedin.com/in/dass-e",
+      "github_url": null,
+      "leetcode_url": null,
+      "kaggle_url": null,
+      "portfolio_url": null,
+      "personal_website_url": null
+    },
+    "professional_summary": {
+      "heading": "Professional Summary",
+      "text": "Third-year B.Sc. Computer Science student and Python Full Stack Developer with hands-on internship experience and a strong portfolio of production-style full stack Projects. Skilled in building responsive, modern frontends with React and Tailwind CSS, and robust backends with Python. Experienced in designing interactive, real-time applications and Management systems, with a focus on clean UI, scalable architecture, and practical, real-world problem solving.",
+      "source_text": "Third-year B.Sc. Computer Science student and Python Full Stack Developer with hands-on internship experience and a strong portfolio of production-style full stack Projects. Skilled in building responsive, modern frontends with React and Tailwind CSS, and robust backends with Python. Experienced in designing interactive, real-time applications and Management systems, with a focus on clean UI, scalable architecture, and practical, real-world problem solving."
+    },
+    "summary": "Third-year B.Sc. Computer Science student and Python Full Stack Developer with hands-on internship experience and a strong portfolio of production-style full stack Projects. Skilled in building responsive, modern frontends with React and Tailwind CSS, and robust backends with Python. Experienced in designing interactive, real-time applications and Management systems, with a focus on clean UI, scalable architecture, and practical, real-world problem solving.",
+    "skills": {
+      "technical": [
+        "HTML",
+        "CSS"
+      ],
+      "programming_languages": [
+        "Python",
+        "JavaScript",
+        "TypeScript"
+      ],
+      "frontend": [],
+      "backend": [],
+      "databases": [],
+      "frameworks": [
+        "React",
+        "Tailwind CSS"
+      ],
+      "libraries": [],
+      "tools": [
+        "Git",
+        "GitHub"
+      ],
+      "ui_ux_tools": [],
+      "office_productivity": [],
+      "cloud": [],
+      "platforms": [],
+      "apis": [],
+      "other_technical_skills": [],
+      "soft_skills": [],
+      "business_skills": [],
+      "languages": [],
+      "web_technologies": [],
+      "technical_disciplines": [],
+      "other": [],
+      "skill_evidence": [
+        {
+          "skill": "Python",
+          "canonical_name": "Python",
+          "category": "programming_languages",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "JavaScript",
+          "canonical_name": "JavaScript",
+          "category": "programming_languages",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "TypeScript",
+          "canonical_name": "TypeScript",
+          "category": "programming_languages",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "React",
+          "canonical_name": "React",
+          "category": "frameworks",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Tailwind CSS",
+          "canonical_name": "Tailwind CSS",
+          "category": "frameworks",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Git",
+          "canonical_name": "Git",
+          "category": "tools",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "GitHub",
+          "canonical_name": "GitHub",
+          "category": "tools",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "HTML",
+          "canonical_name": "HTML",
+          "category": "technical",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "CSS",
+          "canonical_name": "CSS",
+          "category": "technical",
+          "source": "llm",
+          "confidence": "high"
+        }
+      ],
+      "source_text": null
+    },
+    "employment_status": "Fresher with Internship Experience",
+    "experience_summary": {
+      "employment_status": "Fresher with Internship Experience",
+      "total_years": null,
+      "total_months": null,
+      "total_display": "Duration not specified",
+      "full_time": [],
+      "internships": [
+        {
+          "role": "Web Development Intern",
+          "title": "Web Development Intern",
+          "company": "Infogro Technology",
+          "location": "Chennai",
+          "start_date": null,
+          "end_date": null,
+          "duration": null,
+          "original_duration": null,
+          "derived_duration": null,
+          "description": null,
+          "responsibilities": [
+            "Worked on live web development tasks, strengthening practical skills in HTML, CSS, JavaScript, and full stack workflows.",
+            "Collaborated in a professional team environment, gaining exposure to real-world Project timelines and code practices."
+          ],
+          "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+          ],
+          "details": [],
+          "source_text": "Web Development Intern | Infogro Technology, Chennai\nWorked on live web development tasks, strengthening practical skills in HTML, CSS, JavaScript, and full stack workflows.\nCollaborated in a professional team environment, gaining exposure to real-world Project timelines and code practices."
+        }
+      ]
+    },
+    "experience": [
+      {
+        "job_title": "Web Development Intern",
+        "role": "Web Development Intern",
+        "title": "Web Development Intern",
+        "company": "Infogro Technology",
+        "organization": "Infogro Technology",
+        "location": "Chennai",
+        "experience_type": "internship",
+        "type": "internship",
+        "start_date": null,
+        "end_date": null,
+        "duration": null,
+        "original_duration": null,
+        "derived_duration": null,
+        "duration_display": "Duration not specified",
+        "currently_working": null,
+        "description": null,
+        "responsibilities": [
+          "Worked on live web development tasks, strengthening practical skills in HTML, CSS, JavaScript, and full stack workflows.",
+          "Collaborated in a professional team environment, gaining exposure to real-world Project timelines and code practices."
+        ],
+        "technologies": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "details": [
+          "Worked on live web development tasks, strengthening practical skills in HTML, CSS, JavaScript, and full stack workflows.",
+          "Collaborated in a professional team environment, gaining exposure to real-world Project timelines and code practices."
+        ],
+        "source_text": "Web Development Intern | Infogro Technology, Chennai\nWorked on live web development tasks, strengthening practical skills in HTML, CSS, JavaScript, and full stack workflows.\nCollaborated in a professional team environment, gaining exposure to real-world Project timelines and code practices.",
+        "achievements": []
+      }
+    ],
+    "internships": [
+      {
+        "job_title": "Web Development Intern",
+        "role": "Web Development Intern",
+        "title": "Web Development Intern",
+        "company": "Infogro Technology",
+        "organization": "Infogro Technology",
+        "location": "Chennai",
+        "experience_type": "internship",
+        "type": "internship",
+        "start_date": null,
+        "end_date": null,
+        "duration": null,
+        "original_duration": null,
+        "derived_duration": null,
+        "duration_display": "Duration not specified",
+        "currently_working": null,
+        "description": null,
+        "responsibilities": [
+          "Worked on live web development tasks, strengthening practical skills in HTML, CSS, JavaScript, and full stack workflows.",
+          "Collaborated in a professional team environment, gaining exposure to real-world Project timelines and code practices."
+        ],
+        "technologies": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "details": [
+          "Worked on live web development tasks, strengthening practical skills in HTML, CSS, JavaScript, and full stack workflows.",
+          "Collaborated in a professional team environment, gaining exposure to real-world Project timelines and code practices."
+        ],
+        "source_text": "Web Development Intern | Infogro Technology, Chennai\nWorked on live web development tasks, strengthening practical skills in HTML, CSS, JavaScript, and full stack workflows.\nCollaborated in a professional team environment, gaining exposure to real-world Project timelines and code practices.",
+        "achievements": []
+      }
+    ],
+    "education": [
+      {
+        "qualification": "B.Sc. Computer Science",
+        "degree": "B.Sc. Computer Science",
+        "field_of_study": "Computer Science",
+        "specialization": "Computer Science",
+        "institution": "St. Joseph's College of Arts & Science, Kovur, Chennai",
+        "college": "St. Joseph's College of Arts & Science, Kovur, Chennai",
+        "school": null,
+        "university": "University of Madras",
+        "location": null,
+        "education_level": "College/University",
+        "category": "Undergraduate",
+        "type": "College/University",
+        "classification": "Degree",
+        "education_classification": "degree",
+        "canonical_education_category": "degree",
+        "status": "Currently Pursuing",
+        "start_date": "2024",
+        "start_year": "2024",
+        "end_date": "2027",
+        "end_year": "2027",
+        "expected_year": null,
+        "expected_graduation_year": null,
+        "year": "2027",
+        "completion_date": "2027",
+        "completion_year": "2027",
+        "graduation_year": "2027",
+        "percentage": null,
+        "grade": null,
+        "gpa": null,
+        "cgpa": null,
+        "aggregate_score": null,
+        "score": null,
+        "score_type": null,
+        "stream": null,
+        "details": [],
+        "academic_details": [],
+        "source_text": "B.Sc. Computer Science | St. Joseph's College of Arts & Science, Kovur, Chennai (University of Madras) 2024–2027",
+        "institution_type": "College/University",
+        "qualification_type": "Undergraduate"
+      }
+    ],
+    "projects": [
+      {
+        "project_name": "3 D Airline – Interactive Airline Booking Platform",
+        "name": "3 D Airline – Interactive Airline Booking Platform",
+        "title": "3 D Airline – Interactive Airline Booking Platform",
+        "type": null,
+        "project_type": null,
+        "description": "Built an interactive 3 Dairline booking platform with a Python backend and a modern frontend, featuring immersive visuals for flight browsing and booking.",
+        "technologies": [
+          "Python"
+        ],
+        "programming_languages": [
+          "Python"
+        ],
+        "frontend": [],
+        "backend": [],
+        "database": [],
+        "frameworks": [],
+        "tools": [],
+        "links": [],
+        "details": [
+          "Designed a smooth, engaging user experience combining 3 Dvisual elements with real-world airline booking workflows."
+        ],
+        "role": null,
+        "link": null,
+        "url": null,
+        "date": null,
+        "source_text": "3 D Airline – Interactive Airline Booking Platform | Personal Project\nBuilt an interactive 3 Dairline booking platform with a Python backend and a modern frontend, featuring immersive visuals for flight browsing and booking.\nDesigned a smooth, engaging user experience combining 3 Dvisual elements with real-world airline booking workflows."
+      },
+      {
+        "project_name": "Smart Hospital Management System",
+        "name": "Smart Hospital Management System",
+        "title": "Smart Hospital Management System",
+        "type": null,
+        "project_type": null,
+        "description": "Developed a full stack hospital Management System using React and Tailwind CSS on the frontend with a Python backend.",
+        "technologies": [
+          "React",
+          "Tailwind CSS",
+          "Python"
+        ],
+        "programming_languages": [
+          "Python"
+        ],
+        "frontend": [],
+        "backend": [],
+        "database": [],
+        "frameworks": [],
+        "tools": [],
+        "links": [],
+        "details": [
+          "Built features for managing patient records, appointments, and hospital resources through a clean, responsive interface."
+        ],
+        "role": null,
+        "link": null,
+        "url": null,
+        "date": null,
+        "source_text": "Smart Hospital Management System | Personal Project\nDeveloped a full stack hospital Management System using React and Tailwind CSS on the frontend with a Python backend.\nBuilt features for managing patient records, appointments, and hospital resources through a clean, responsive interface."
+      }
+    ],
+    "certifications": [
+      {
+        "name": "Web Development Certification",
+        "certification_name": "Web Development Certification",
+        "issuer": "Sololearn",
+        "issuing_organization": "Sololearn",
+        "date": null,
+        "credential_id": null,
+        "credential_url": null,
+        "url": null,
+        "details": null,
+        "source_text": "Sololearn – Web Development Certification"
+      }
+    ],
+    "achievements": [],
+    "awards_achievements": [],
+    "publications": [],
+    "additional_qualifications": [],
+    "languages": [],
+    "interests": [],
+    "hobbies": [],
+    "strengths": [],
+    "declaration": {
+      "text": null,
+      "source_text": null,
+      "signature": "DASS E"
+    },
+    "signature": {
+      "present": false,
+      "text": null
+    },
+    "other_sections": [
+      {
+        "heading": "ADDITIONAL INFORMATION",
+        "text": "Preparing for SSC CGL (e.g., Income Tax Inspector) as a competitive government-job backup path.",
+        "source_text": "Preparing for SSC CGL (e.g., Income Tax Inspector) as a competitive government-job backup path.",
+        "source": "ocr"
+      }
+    ],
+    "source_spans": {
+      "name": {
+        "value": "DASS E",
+        "source": "llm"
+      },
+      "full_name": {
+        "value": "DASS E",
+        "source": "llm"
+      },
+      "email": {
+        "value": "dasse7794@gmail.com",
+        "source": "llm"
+      },
+      "phone": {
+        "value": "+91-9344187794",
+        "source": "llm"
+      },
+      "location": {
+        "value": "Chennai, Tamil Nadu, India",
+        "source": "llm"
+      },
+      "summary": {
+        "value": "Third-year B.Sc. Computer Science student and Python Full Stack Developer with hands-on internship experience and a strong portfolio of production-style full stack Projects. Skilled in building responsive, modern frontends with React and Tailwind CSS, and robust backends with Python. Experienced in designing interactive, real-time applications and Management systems, with a focus on clean UI, scalable architecture, and practical, real-world problem solving.",
+        "source": "llm"
+      },
+      "professional_summary": {
+        "value": "Third-year B.Sc. Computer Science student and Python Full Stack Developer with hands-on internship experience and a strong portfolio of production-style full stack Projects. Skilled in building responsive, modern frontends with React and Tailwind CSS, and robust backends with Python. Experienced in designing interactive, real-time applications and Management systems, with a focus on clean UI, scalable architecture, and practical, real-world problem solving.",
+        "source": "llm"
+      },
+      "education": [
+        {
+          "degree": "B.Sc. Computer Science",
+          "institution": "St. Joseph's College of Arts & Science, Kovur, Chennai",
+          "source": "llm"
+        }
+      ],
+      "skills": [
+        {
+          "skill": "Git",
+          "source": "llm"
+        },
+        {
+          "skill": "GitHub",
+          "source": "llm"
+        },
+        {
+          "skill": "HTML",
+          "source": "llm"
+        },
+        {
+          "skill": "CSS",
+          "source": "llm"
+        },
+        {
+          "skill": "Python",
+          "source": "llm"
+        },
+        {
+          "skill": "JavaScript",
+          "source": "llm"
+        },
+        {
+          "skill": "TypeScript",
+          "source": "llm"
+        }
+      ],
+      "declaration": {
+        "value": {
+          "text": null,
+          "source_text": null,
+          "signature": "DASS E"
+        },
+        "source": "llm"
+      }
+    },
+    "other_information": [],
+    "raw_text": "DASS E\nPython Full Stack Developer\nChennai, Tamil Nadu, India  |  dasse7794@gmail.com  |  +91-9344187794\nLinkedIn: dass-e\nPROFESSIONAL SUMMARY\nThird-year B.Sc. Computer Science student and Python Full Stack Developer with hands-on internship experience and a strong portfolio of production-style full stack projects. Skilled in building responsive, modern frontends with React and Tailwind CSS, and robust backends with Python. Experienced in designing interactive, real-time applications and management systems, with a focus on clean UI, scalable architecture, and practical, real-world problem solving.\nTECHNICAL SKILLS\nLanguages: Python, JavaScript, TypeScript\nFrontend: HTML, CSS, React, Tailwind CSS\nBackend: Python (Full Stack Development)\nTools & Platforms: Git, GitHub\nEXPERIENCE\nWeb Development Intern  |  Infogro Technology, Chennai\nWorked on live web development tasks, strengthening practical skills in HTML, CSS, JavaScript, and full stack workflows.\nCollaborated in a professional team environment, gaining exposure to real-world project timelines and code practices.\nKEY PROJECTS\n3D Airline – Interactive Airline Booking Platform  |  Personal Project\nBuilt an interactive 3D airline booking platform with a Python backend and a modern frontend, featuring immersive visuals for flight browsing and booking.\nDesigned a smooth, engaging user experience combining 3D visual elements with real-world airline booking workflows.\nSmart Hospital Management System  |  Personal Project\nDeveloped a full stack hospital management system using React and Tailwind CSS on the frontend with a Python backend.\nBuilt features for managing patient records, appointments, and hospital resources through a clean, responsive interface.\nEDUCATION\nB.Sc. Computer Science  |  St. Joseph's College of Arts & Science, Kovur, Chennai (University of Madras)\t 2024 – 2027\nCERTIFICATIONS\nSololearn – Web Development Certification\nADDITIONAL INFORMATION\nPreparing for SSC CGL (e.g., Income Tax Inspector) as a competitive government-job backup path.",
+    "extraction_metadata": {
+      "method": "native",
+      "lossless_extraction": true,
+      "character_count": 1748
+    },
+    "metadata": {
+      "file_name": "Dass_E_MyResume (1).docx",
+      "file_type": "docx",
+      "status": "success",
+      "extraction_method": "native",
+      "ocr_confidence": null,
+      "ocr_pages_count": 0,
+      "is_scanned": false,
+      "raw_text": "DASS E\nPython Full Stack Developer\nChennai, Tamil Nadu, India  |  dasse7794@gmail.com  |  +91-9344187794\nLinkedIn: dass-e\nPROFESSIONAL SUMMARY\nThird-year B.Sc. Computer Science student and Python Full Stack Developer with hands-on internship experience and a strong portfolio of production-style full stack projects. Skilled in building responsive, modern frontends with React and Tailwind CSS, and robust backends with Python. Experienced in designing interactive, real-time applications and management systems, with a focus on clean UI, scalable architecture, and practical, real-world problem solving.\nTECHNICAL SKILLS\nLanguages: Python, JavaScript, TypeScript\nFrontend: HTML, CSS, React, Tailwind CSS\nBackend: Python (Full Stack Development)\nTools & Platforms: Git, GitHub\nEXPERIENCE\nWeb Development Intern  |  Infogro Technology, Chennai\nWorked on live web development tasks, strengthening practical skills in HTML, CSS, JavaScript, and full stack workflows.\nCollaborated in a professional team environment, gaining exposure to real-world project timelines and code practices.\nKEY PROJECTS\n3D Airline – Interactive Airline Booking Platform  |  Personal Project\nBuilt an interactive 3D airline booking platform with a Python backend and a modern frontend, featuring immersive visuals for flight browsing and booking.\nDesigned a smooth, engaging user experience combining 3D visual elements with real-world airline booking workflows.\nSmart Hospital Management System  |  Personal Project\nDeveloped a full stack hospital management system using React and Tailwind CSS on the frontend with a Python backend.\nBuilt features for managing patient records, appointments, and hospital resources through a clean, responsive interface.\nEDUCATION\nB.Sc. Computer Science  |  St. Joseph's College of Arts & Science, Kovur, Chennai (University of Madras)\t 2024 – 2027\nCERTIFICATIONS\nSololearn – Web Development Certification\nADDITIONAL INFORMATION\nPreparing for SSC CGL (e.g., Income Tax Inspector) as a competitive government-job backup path."
+    },
+    "confidence": {
+      "personal_info.name": "high",
+      "personal_info.email": "high",
+      "personal_info.phone": "high",
+      "personal_info.location": "high",
+      "personal_info.linkedin": "not_found",
+      "personal_info.github": "not_found",
+      "personal_info.leetcode": "not_found",
+      "personal_info.portfolio": "not_found",
+      "summary": "high",
+      "experience": "not_found",
+      "education": "high",
+      "skills": "high",
+      "certifications": "not_found",
+      "projects": "not_found",
+      "languages": "not_found",
+      "publications": "not_found",
+      "additional_qualifications": "not_found",
+      "interests": "not_found"
+    }
+  },
+  "created_at": "2026-09-01T04:02:31.944822",
+  "updated_at": "2026-09-01T04:02:31.944822"
+}

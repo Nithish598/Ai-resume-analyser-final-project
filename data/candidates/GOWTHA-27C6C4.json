@@ -1,0 +1,665 @@
+{
+  "candidate_id": "GOWTHA-27C6C4",
+  "name": "GOWTHAM S",
+  "professional_title": "Python Full Stack Developer",
+  "email": "gowthamcodes225@gmail.com",
+  "phone": "+91-7200697310",
+  "location": "Chennai, Tamil Nadu, India",
+  "employment_status": "Experienced",
+  "experience_years": 1.0,
+  "highest_education": "B.Sc. Computer Science",
+  "skills": [
+    "Python",
+    "JavaScript",
+    "TypeScript",
+    "My SQL",
+    "React",
+    "Next.js",
+    "Tailwind CSS",
+    "Bootstrap",
+    "Django",
+    "Django REST Framework (DRF)",
+    "Framer Motion",
+    "Three.js",
+    "React Three Fiber",
+    "Vercel",
+    "Render",
+    "GitHub Pages",
+    "Git",
+    "GitHub",
+    "Vite",
+    "REST AP Is",
+    "JWT Authentication (Simple JWT)",
+    "{'skill': 'Python', 'canonical_name': 'Python', 'category': 'programming_languages', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'JavaScript', 'canonical_name': 'JavaScript', 'category': 'programming_languages', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'TypeScript', 'canonical_name': 'TypeScript', 'category': 'programming_languages', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'My SQL', 'canonical_name': 'MySQL', 'category': 'databases', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'React', 'canonical_name': 'React', 'category': 'frameworks', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Next.js', 'canonical_name': 'Next.js', 'category': 'frameworks', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Tailwind CSS', 'canonical_name': 'Tailwind CSS', 'category': 'frameworks', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Bootstrap', 'canonical_name': 'Bootstrap', 'category': 'frameworks', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Django', 'canonical_name': 'Django', 'category': 'frameworks', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Django REST Framework (DRF)', 'canonical_name': 'Django REST Framework (DRF)', 'category': 'frameworks', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Framer Motion', 'canonical_name': 'Framer Motion', 'category': 'libraries', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Three.js', 'canonical_name': 'Three.js', 'category': 'libraries', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'React Three Fiber', 'canonical_name': 'React Three Fiber', 'category': 'libraries', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Vercel', 'canonical_name': 'Vercel', 'category': 'cloud', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Render', 'canonical_name': 'Render', 'category': 'cloud', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'GitHub Pages', 'canonical_name': 'GitHub Pages', 'category': 'cloud', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Git', 'canonical_name': 'Git', 'category': 'platforms', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'GitHub', 'canonical_name': 'GitHub', 'category': 'platforms', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Vite', 'canonical_name': 'Vite', 'category': 'platforms', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'REST AP Is', 'canonical_name': 'REST AP Is', 'category': 'other', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'JWT Authentication (Simple JWT)', 'canonical_name': 'JWT Authentication (Simple JWT)', 'category': 'other', 'source': 'llm', 'confidence': 'high'}"
+  ],
+  "total_skills_count": 42,
+  "projects_count": 3,
+  "certifications_count": 1,
+  "summary": "Third-year B.Sc. Computer Science student and Python Full Stack Developer with hands-on internship experience and a strong portfolio of production-style full stack Projects. Skilled in building responsive frontends with React and Next.js, and robust backends with Python, Django, and My SQL. Experienced in JWT-based authentication, role-based access control, REST AP Is, and cloud deployment (Render, Vercel, GitHub Pages). Passionate about building AI-integrated, real-world solutions such as an emergency triage and hospital bed availability network.",
+  "resume_filename": "Gowtham_S_MyResume.docx",
+  "profile_data": {
+    "personal_info": {
+      "full_name": "GOWTHAM S",
+      "name": "GOWTHAM S",
+      "email": "gowthamcodes225@gmail.com",
+      "phone": "+91-7200697310",
+      "location": "Chennai, Tamil Nadu, India",
+      "professional_title": "Python Full Stack Developer",
+      "profiles": {
+        "linkedin": {
+          "label": "gowtham-s-2205gs",
+          "display": "gowtham-s-2205gs",
+          "url": "https://www.linkedin.com/in/gowtham-s-2205gs",
+          "raw": "gowtham-s-2205gs",
+          "source": "llm",
+          "confidence": "high",
+          "valid": true,
+          "valid_format": true
+        },
+        "github": {
+          "label": "gowthamcodes225",
+          "display": "gowthamcodes225",
+          "url": "https://github.com/gowthamcodes225",
+          "raw": "gowthamcodes225",
+          "source": "llm",
+          "confidence": "high",
+          "valid": true,
+          "valid_format": true
+        },
+        "leetcode": {
+          "label": "s Gowtham Codes",
+          "display": "s Gowtham Codes",
+          "url": "https://leetcode.com/sGowthamCodes",
+          "raw": "https://leetcode.com/sGowthamCodes",
+          "source": "llm",
+          "confidence": "high",
+          "valid": true,
+          "valid_format": true
+        },
+        "kaggle": null,
+        "portfolio": null,
+        "personal_website": null,
+        "other": []
+      },
+      "linkedin": "https://www.linkedin.com/in/gowtham-s-2205gs",
+      "github": "https://github.com/gowthamcodes225",
+      "leetcode": "https://leetcode.com/sGowthamCodes",
+      "kaggle": null,
+      "portfolio": null,
+      "personal_website": null,
+      "other_profiles": []
+    },
+    "candidate": {
+      "full_name": "GOWTHAM S",
+      "email": "gowthamcodes225@gmail.com",
+      "phone": "+91-7200697310",
+      "location": "Chennai, Tamil Nadu, India",
+      "professional_title": "Python Full Stack Developer",
+      "linkedin_url": "https://www.linkedin.com/in/gowtham-s-2205gs",
+      "github_url": "https://github.com/gowthamcodes225",
+      "leetcode_url": "https://leetcode.com/sGowthamCodes",
+      "kaggle_url": null,
+      "portfolio_url": null,
+      "personal_website_url": null
+    },
+    "professional_summary": {
+      "heading": "Professional Summary",
+      "text": "Third-year B.Sc. Computer Science student and Python Full Stack Developer with hands-on internship experience and a strong portfolio of production-style full stack Projects. Skilled in building responsive frontends with React and Next.js, and robust backends with Python, Django, and My SQL. Experienced in JWT-based authentication, role-based access control, REST AP Is, and cloud deployment (Render, Vercel, GitHub Pages). Passionate about building AI-integrated, real-world solutions such as an emergency triage and hospital bed availability network.",
+      "source_text": "Third-year B.Sc. Computer Science student and Python Full Stack Developer with hands-on internship experience and a strong portfolio of production-style full stack Projects. Skilled in building responsive frontends with React and Next.js, and robust backends with Python, Django, and My SQL. Experienced in JWT-based authentication, role-based access control, REST AP Is, and cloud deployment (Render, Vercel, GitHub Pages). Passionate about building AI-integrated, real-world solutions such as an emergency triage and hospital bed availability network."
+    },
+    "summary": "Third-year B.Sc. Computer Science student and Python Full Stack Developer with hands-on internship experience and a strong portfolio of production-style full stack Projects. Skilled in building responsive frontends with React and Next.js, and robust backends with Python, Django, and My SQL. Experienced in JWT-based authentication, role-based access control, REST AP Is, and cloud deployment (Render, Vercel, GitHub Pages). Passionate about building AI-integrated, real-world solutions such as an emergency triage and hospital bed availability network.",
+    "skills": {
+      "technical": [],
+      "programming_languages": [
+        "Python",
+        "JavaScript",
+        "TypeScript"
+      ],
+      "frontend": [],
+      "backend": [],
+      "databases": [
+        "My SQL"
+      ],
+      "frameworks": [
+        "React",
+        "Next.js",
+        "Tailwind CSS",
+        "Bootstrap",
+        "Django",
+        "Django REST Framework (DRF)"
+      ],
+      "libraries": [
+        "Framer Motion",
+        "Three.js",
+        "React Three Fiber"
+      ],
+      "tools": [],
+      "ui_ux_tools": [],
+      "office_productivity": [],
+      "cloud": [
+        "Vercel",
+        "Render",
+        "GitHub Pages"
+      ],
+      "platforms": [
+        "Git",
+        "GitHub",
+        "Vite"
+      ],
+      "apis": [],
+      "other_technical_skills": [],
+      "soft_skills": [],
+      "business_skills": [],
+      "languages": [],
+      "web_technologies": [],
+      "technical_disciplines": [],
+      "other": [
+        "REST AP Is",
+        "JWT Authentication (Simple JWT)"
+      ],
+      "skill_evidence": [
+        {
+          "skill": "Python",
+          "canonical_name": "Python",
+          "category": "programming_languages",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "JavaScript",
+          "canonical_name": "JavaScript",
+          "category": "programming_languages",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "TypeScript",
+          "canonical_name": "TypeScript",
+          "category": "programming_languages",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "My SQL",
+          "canonical_name": "MySQL",
+          "category": "databases",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "React",
+          "canonical_name": "React",
+          "category": "frameworks",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Next.js",
+          "canonical_name": "Next.js",
+          "category": "frameworks",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Tailwind CSS",
+          "canonical_name": "Tailwind CSS",
+          "category": "frameworks",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Bootstrap",
+          "canonical_name": "Bootstrap",
+          "category": "frameworks",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Django",
+          "canonical_name": "Django",
+          "category": "frameworks",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Django REST Framework (DRF)",
+          "canonical_name": "Django REST Framework (DRF)",
+          "category": "frameworks",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Framer Motion",
+          "canonical_name": "Framer Motion",
+          "category": "libraries",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Three.js",
+          "canonical_name": "Three.js",
+          "category": "libraries",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "React Three Fiber",
+          "canonical_name": "React Three Fiber",
+          "category": "libraries",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Vercel",
+          "canonical_name": "Vercel",
+          "category": "cloud",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Render",
+          "canonical_name": "Render",
+          "category": "cloud",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "GitHub Pages",
+          "canonical_name": "GitHub Pages",
+          "category": "cloud",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Git",
+          "canonical_name": "Git",
+          "category": "platforms",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "GitHub",
+          "canonical_name": "GitHub",
+          "category": "platforms",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Vite",
+          "canonical_name": "Vite",
+          "category": "platforms",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "REST AP Is",
+          "canonical_name": "REST AP Is",
+          "category": "other",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "JWT Authentication (Simple JWT)",
+          "canonical_name": "JWT Authentication (Simple JWT)",
+          "category": "other",
+          "source": "llm",
+          "confidence": "high"
+        }
+      ],
+      "source_text": null
+    },
+    "employment_status": "Experienced",
+    "experience_summary": {
+      "employment_status": "Experienced",
+      "total_years": null,
+      "total_months": null,
+      "total_display": null,
+      "full_time": [
+        {
+          "title": "Web Development Intern",
+          "role": "Web Development Intern",
+          "company": "Infogro Technology",
+          "location": "Chennai",
+          "duration": null,
+          "original_duration": null,
+          "derived_duration": null,
+          "start_date": null,
+          "end_date": null,
+          "experience_type": "full_time",
+          "responsibilities": [
+            "Worked on live web development tasks, strengthening practical skills in HTML, CSS, JavaScript, and full stack workflows.",
+            "Collaborated in a professional team environment, gaining exposure to real-world Project timelines and code practices."
+          ],
+          "technologies": [
+            "HTML",
+            "CSS",
+            "JavaScript"
+          ],
+          "details": [],
+          "source_text": "Web Development Intern | Infogro Technology, Chennai\nWorked on live web development tasks, strengthening practical skills in HTML, CSS, JavaScript, and full stack workflows.\nCollaborated in a professional team environment, gaining exposure to real-world Project timelines and code practices."
+        }
+      ],
+      "internships": []
+    },
+    "experience": [
+      {
+        "job_title": "Web Development Intern",
+        "role": "Web Development Intern",
+        "title": "Web Development Intern",
+        "company": "Infogro Technology",
+        "organization": "Infogro Technology",
+        "location": "Chennai",
+        "experience_type": "full_time",
+        "type": "full_time",
+        "start_date": null,
+        "end_date": null,
+        "duration": null,
+        "original_duration": null,
+        "derived_duration": null,
+        "currently_working": null,
+        "responsibilities": [
+          "Worked on live web development tasks, strengthening practical skills in HTML, CSS, JavaScript, and full stack workflows.",
+          "Collaborated in a professional team environment, gaining exposure to real-world Project timelines and code practices."
+        ],
+        "technologies": [
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ],
+        "details": [
+          "Worked on live web development tasks, strengthening practical skills in HTML, CSS, JavaScript, and full stack workflows.",
+          "Collaborated in a professional team environment, gaining exposure to real-world Project timelines and code practices."
+        ],
+        "source_text": "Web Development Intern | Infogro Technology, Chennai\nWorked on live web development tasks, strengthening practical skills in HTML, CSS, JavaScript, and full stack workflows.\nCollaborated in a professional team environment, gaining exposure to real-world Project timelines and code practices.",
+        "achievements": []
+      }
+    ],
+    "internships": [],
+    "education": [
+      {
+        "qualification": "B.Sc. Computer Science",
+        "degree": "B.Sc. Computer Science",
+        "field_of_study": "Computer Science",
+        "specialization": "Computer Science",
+        "institution": "St. Joseph's College of Arts & Science, Kovur, Chennai",
+        "college": "St. Joseph's College of Arts & Science, Kovur, Chennai",
+        "school": null,
+        "university": "University of Madras",
+        "location": null,
+        "education_level": "College/University",
+        "category": "degree",
+        "type": "College/University",
+        "classification": "Degree",
+        "education_classification": "degree",
+        "canonical_education_category": "degree",
+        "status": "Currently Pursuing",
+        "start_date": "2024",
+        "start_year": "2024",
+        "end_date": "2027",
+        "end_year": "2027",
+        "expected_year": null,
+        "expected_graduation_year": null,
+        "year": "2027",
+        "completion_date": "2027",
+        "completion_year": "2027",
+        "graduation_year": "2027",
+        "percentage": null,
+        "grade": null,
+        "gpa": null,
+        "cgpa": null,
+        "aggregate_score": null,
+        "score": null,
+        "score_type": null,
+        "stream": null,
+        "details": [],
+        "academic_details": [],
+        "source_text": "B.Sc. Computer Science | St. Joseph's College of Arts & Science, Kovur, Chennai (University of Madras) 2024–2027",
+        "institution_type": "College/University",
+        "qualification_type": "degree"
+      }
+    ],
+    "projects": [
+      {
+        "project_name": "Medi Queue – AI Emergency Triage & Hospital Bed Network",
+        "name": "Medi Queue – AI Emergency Triage & Hospital Bed Network",
+        "title": "Medi Queue – AI Emergency Triage & Hospital Bed Network",
+        "type": null,
+        "project_type": null,
+        "description": "Designing an AI-powered platform connecting patients, hospital staff, and ambulance drivers for real-time emergency triage and live hospital bed availability.",
+        "technologies": [],
+        "programming_languages": [],
+        "frontend": [],
+        "backend": [],
+        "database": [],
+        "frameworks": [],
+        "tools": [],
+        "links": [],
+        "details": [
+          "Final Year Project / Hackathon",
+          "Built for competitive MNC internship selection and as a hackathon submission, targeting practical healthcare logistics problems."
+        ],
+        "role": null,
+        "link": null,
+        "url": null,
+        "date": null,
+        "source_text": "Medi Queue – AI Emergency Triage & Hospital Bed Network | Final Year Project / Hackathon\nDesigning an AI-powered platform connecting patients, hospital staff, and ambulance drivers for real-time emergency triage and live hospital bed availability.\nBuilt for competitive MNC internship selection and as a hackathon submission, targeting practical healthcare logistics problems."
+      },
+      {
+        "project_name": "Campus Connect – Full Stack College Platform",
+        "name": "Campus Connect – Full Stack College Platform",
+        "title": "Campus Connect – Full Stack College Platform",
+        "type": null,
+        "project_type": null,
+        "description": "Built a full stack college platform using Django + DRF (backend) and React + Vite + Tailwind CSS (frontend), backed by My SQL.",
+        "technologies": [
+          "Django",
+          "Django REST Framework (DRF)",
+          "React",
+          "Vite",
+          "Tailwind CSS",
+          "My SQL"
+        ],
+        "programming_languages": [],
+        "frontend": [],
+        "backend": [],
+        "database": [],
+        "frameworks": [],
+        "tools": [],
+        "links": [],
+        "details": [
+          "Implemented 5 Django apps with JWT authentication (Simple JWT) and role-based access control (RBAC).",
+          "Designed a 3 Danimated hero section with post-processing visual effects; deployed backend on Render and frontend on Vercel."
+        ],
+        "role": null,
+        "link": null,
+        "url": null,
+        "date": null,
+        "source_text": "Campus Connect – Full Stack College Platform | Personal Project\nBuilt a full stack college platform using Django + DRF (backend) and React + Vite + Tailwind CSS (frontend), backed by My SQL.\nImplemented 5 Django apps with JWT authentication (Simple JWT) and role-based access control (RBAC).\nDesigned a 3 Danimated hero section with post-processing visual effects; deployed backend on Render and frontend on Vercel."
+      },
+      {
+        "project_name": "Luxury Hotel Campus – 3 D Hostel Exploration Website",
+        "name": "Luxury Hotel Campus – 3 D Hostel Exploration Website",
+        "title": "Luxury Hotel Campus – 3 D Hostel Exploration Website",
+        "type": null,
+        "project_type": null,
+        "description": "Built a premium AAA-quality 3 Dexploration website using React, Three.js, React Three Fiber, and Framer Motion with GLB-based interactive room walkthroughs.",
+        "technologies": [
+          "React",
+          "Three.js",
+          "React Three Fiber",
+          "Framer Motion"
+        ],
+        "programming_languages": [],
+        "frontend": [],
+        "backend": [],
+        "database": [],
+        "frameworks": [],
+        "tools": [],
+        "links": [],
+        "details": [],
+        "role": null,
+        "link": null,
+        "url": null,
+        "date": null,
+        "source_text": "Luxury Hotel Campus – 3 D Hostel Exploration Website | Personal Project\nBuilt a premium AAA-quality 3 Dexploration website using React, Three.js, React Three Fiber, and Framer Motion with GLB-based interactive room walkthroughs."
+      }
+    ],
+    "certifications": [
+      {
+        "name": "Web Development Certification",
+        "certification_name": "Web Development Certification",
+        "issuer": "Sololearn",
+        "issuing_organization": "Sololearn",
+        "date": null,
+        "credential_id": null,
+        "credential_url": null,
+        "url": null,
+        "details": null,
+        "source_text": "Sololearn – Web Development Certification"
+      }
+    ],
+    "achievements": [],
+    "awards_achievements": [],
+    "publications": [],
+    "additional_qualifications": [],
+    "languages": [],
+    "interests": [],
+    "hobbies": [],
+    "strengths": [],
+    "declaration": {
+      "text": null,
+      "source_text": null,
+      "signature": "GOWTHAM S"
+    },
+    "signature": {
+      "present": false,
+      "text": null
+    },
+    "other_sections": [
+      {
+        "heading": "ADDITIONAL INFORMATION",
+        "text": "Preparing for SSC CGL (e.g., Income Tax Inspector) as a competitive government-job backup path.",
+        "source_text": "ADDITIONAL INFORMATION\nPreparing for SSC CGL (e.g., Income Tax Inspector) as a competitive government-job backup path.",
+        "source": "ocr"
+      }
+    ],
+    "source_spans": {
+      "name": {
+        "value": "GOWTHAM S",
+        "source": "llm"
+      },
+      "full_name": {
+        "value": "GOWTHAM S",
+        "source": "llm"
+      },
+      "email": {
+        "value": "gowthamcodes225@gmail.com",
+        "source": "llm"
+      },
+      "phone": {
+        "value": "+91-7200697310",
+        "source": "llm"
+      },
+      "location": {
+        "value": "Chennai, Tamil Nadu, India",
+        "source": "llm"
+      },
+      "summary": {
+        "value": "Third-year B.Sc. Computer Science student and Python Full Stack Developer with hands-on internship experience and a strong portfolio of production-style full stack Projects. Skilled in building responsive frontends with React and Next.js, and robust backends with Python, Django, and My SQL. Experienced in JWT-based authentication, role-based access control, REST AP Is, and cloud deployment (Render, Vercel, GitHub Pages). Passionate about building AI-integrated, real-world solutions such as an emergency triage and hospital bed availability network.",
+        "source": "llm"
+      },
+      "professional_summary": {
+        "value": "Third-year B.Sc. Computer Science student and Python Full Stack Developer with hands-on internship experience and a strong portfolio of production-style full stack Projects. Skilled in building responsive frontends with React and Next.js, and robust backends with Python, Django, and My SQL. Experienced in JWT-based authentication, role-based access control, REST AP Is, and cloud deployment (Render, Vercel, GitHub Pages). Passionate about building AI-integrated, real-world solutions such as an emergency triage and hospital bed availability network.",
+        "source": "llm"
+      },
+      "education": [
+        {
+          "degree": "B.Sc. Computer Science",
+          "institution": "St. Joseph's College of Arts & Science, Kovur, Chennai",
+          "source": "llm"
+        }
+      ],
+      "skills": [
+        {
+          "skill": "Python",
+          "source": "llm"
+        },
+        {
+          "skill": "JavaScript",
+          "source": "llm"
+        },
+        {
+          "skill": "TypeScript",
+          "source": "llm"
+        }
+      ],
+      "declaration": {
+        "value": {
+          "text": null,
+          "source_text": null,
+          "signature": "GOWTHAM S"
+        },
+        "source": "llm"
+      }
+    },
+    "other_information": [],
+    "raw_text": "GOWTHAM S\nPython Full Stack Developer\nChennai, Tamil Nadu, India  |  gowthamcodes225@gmail.com  |  +91-7200697310\nGitHub: gowthamcodes225   |   LinkedIn: gowtham-s-2205gs   |   LeetCode: sGowthamCodes\nPROFESSIONAL SUMMARY\nThird-year B.Sc. Computer Science student and Python Full Stack Developer with hands-on internship experience and a strong portfolio of production-style full stack projects. Skilled in building responsive frontends with React and Next.js, and robust backends with Python, Django, and MySQL. Experienced in JWT-based authentication, role-based access control, REST APIs, and cloud deployment (Render, Vercel, GitHub Pages). Passionate about building AI-integrated, real-world solutions such as an emergency triage and hospital bed availability network.\nTECHNICAL SKILLS\nLanguages: Python, JavaScript, TypeScript\nFrontend: HTML, CSS, React, Next.js, Tailwind CSS, Bootstrap, Framer Motion\nBackend: Django, Django REST Framework (DRF), REST APIs, JWT Authentication (SimpleJWT)\nDatabase: MySQL\nTools & Platforms: Git, GitHub, Vite, Vercel, Render, GitHub Pages, Three.js / React Three Fiber\nEXPERIENCE\nWeb Development Intern  |  Infogro Technology, Chennai\nWorked on live web development tasks, strengthening practical skills in HTML, CSS, JavaScript, and full stack workflows.\nCollaborated in a professional team environment, gaining exposure to real-world project timelines and code practices.\nKEY PROJECTS\nMediQueue – AI Emergency Triage & Hospital Bed Network  |  Final Year Project / Hackathon\nDesigning an AI-powered platform connecting patients, hospital staff, and ambulance drivers for real-time emergency triage and live hospital bed availability.\nBuilt for competitive MNC internship selection and as a hackathon submission, targeting practical healthcare logistics problems.\nCampus Connect – Full Stack College Platform  |  Personal Project\nBuilt a full stack college platform using Django + DRF (backend) and React + Vite + Tailwind CSS (frontend), backed by MySQL.\nImplemented 5 Django apps with JWT authentication (SimpleJWT) and role-based access control (RBAC).\nDesigned a 3D animated hero section with post-processing visual effects; deployed backend on Render and frontend on Vercel.\nLuxury Hotel Campus – 3D Hostel Exploration Website  |  Personal Project\nBuilt a premium AAA-quality 3D exploration website using React, Three.js, React Three Fiber, and Framer Motion with GLB-based interactive room walkthroughs.\nEDUCATION\nB.Sc. Computer Science  |  St. Joseph's College of Arts & Science, Kovur, Chennai (University of Madras)\t 2024 – 2027\nCERTIFICATIONS\nSololearn – Web Development Certification\nADDITIONAL INFORMATION\nPreparing for SSC CGL (e.g., Income Tax Inspector) as a competitive government-job backup path.",
+    "extraction_metadata": {
+      "method": "native",
+      "lossless_extraction": true,
+      "character_count": 2364
+    },
+    "metadata": {
+      "file_name": "Gowtham_S_MyResume.docx",
+      "file_type": "docx",
+      "status": "success",
+      "extraction_method": "native",
+      "ocr_confidence": null,
+      "ocr_pages_count": 0,
+      "is_scanned": false,
+      "raw_text": "GOWTHAM S\nPython Full Stack Developer\nChennai, Tamil Nadu, India  |  gowthamcodes225@gmail.com  |  +91-7200697310\nGitHub: gowthamcodes225   |   LinkedIn: gowtham-s-2205gs   |   LeetCode: sGowthamCodes\nPROFESSIONAL SUMMARY\nThird-year B.Sc. Computer Science student and Python Full Stack Developer with hands-on internship experience and a strong portfolio of production-style full stack projects. Skilled in building responsive frontends with React and Next.js, and robust backends with Python, Django, and MySQL. Experienced in JWT-based authentication, role-based access control, REST APIs, and cloud deployment (Render, Vercel, GitHub Pages). Passionate about building AI-integrated, real-world solutions such as an emergency triage and hospital bed availability network.\nTECHNICAL SKILLS\nLanguages: Python, JavaScript, TypeScript\nFrontend: HTML, CSS, React, Next.js, Tailwind CSS, Bootstrap, Framer Motion\nBackend: Django, Django REST Framework (DRF), REST APIs, JWT Authentication (SimpleJWT)\nDatabase: MySQL\nTools & Platforms: Git, GitHub, Vite, Vercel, Render, GitHub Pages, Three.js / React Three Fiber\nEXPERIENCE\nWeb Development Intern  |  Infogro Technology, Chennai\nWorked on live web development tasks, strengthening practical skills in HTML, CSS, JavaScript, and full stack workflows.\nCollaborated in a professional team environment, gaining exposure to real-world project timelines and code practices.\nKEY PROJECTS\nMediQueue – AI Emergency Triage & Hospital Bed Network  |  Final Year Project / Hackathon\nDesigning an AI-powered platform connecting patients, hospital staff, and ambulance drivers for real-time emergency triage and live hospital bed availability.\nBuilt for competitive MNC internship selection and as a hackathon submission, targeting practical healthcare logistics problems.\nCampus Connect – Full Stack College Platform  |  Personal Project\nBuilt a full stack college platform using Django + DRF (backend) and React + Vite + Tailwind CSS (frontend), backed by MySQL.\nImplemented 5 Django apps with JWT authentication (SimpleJWT) and role-based access control (RBAC).\nDesigned a 3D animated hero section with post-processing visual effects; deployed backend on Render and frontend on Vercel.\nLuxury Hotel Campus – 3D Hostel Exploration Website  |  Personal Project\nBuilt a premium AAA-quality 3D exploration website using React, Three.js, React Three Fiber, and Framer Motion with GLB-based interactive room walkthroughs.\nEDUCATION\nB.Sc. Computer Science  |  St. Joseph's College of Arts & Science, Kovur, Chennai (University of Madras)\t 2024 – 2027\nCERTIFICATIONS\nSololearn – Web Development Certification\nADDITIONAL INFORMATION\nPreparing for SSC CGL (e.g., Income Tax Inspector) as a competitive government-job backup path."
+    },
+    "confidence": {
+      "personal_info.name": "high",
+      "personal_info.email": "high",
+      "personal_info.phone": "high",
+      "personal_info.location": "high",
+      "personal_info.linkedin": "not_found",
+      "personal_info.github": "not_found",
+      "personal_info.leetcode": "not_found",
+      "personal_info.portfolio": "not_found",
+      "summary": "high",
+      "experience": "not_found",
+      "education": "high",
+      "skills": "high",
+      "certifications": "not_found",
+      "projects": "not_found",
+      "languages": "not_found",
+      "publications": "not_found",
+      "additional_qualifications": "not_found",
+      "interests": "not_found"
+    }
+  },
+  "created_at": "2026-09-01T04:00:03.526325",
+  "updated_at": "2026-09-01T04:00:03.526325"
+}

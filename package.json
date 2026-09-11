@@ -1,0 +1,19 @@
+{
+  "name": "ai-recruitment-platform",
+  "version": "1.0.0",
+  "description": "AI Recruitment Platform - Dual Experience Candidate & HR Talent Acquisition System",
+  "scripts": {
+    "dev": "streamlit run app.py",
+    "start": "streamlit run app.py",
+    "portal": "streamlit run app.py",
+    "api": "uvicorn src.api.main:app --reload --port 8000",
+    "test": "pytest tests/"
+  },
+  "keywords": [
+    "recruitment",
+    "ai",
+    "streamlit",
+    "fastapi"
+  ],
+  "license": "ISC"
+}

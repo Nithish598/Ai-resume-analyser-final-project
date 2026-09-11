@@ -1,0 +1,457 @@
+{
+  "candidate_id": "JOSHIK-66767B",
+  "name": "JOSHIKA M",
+  "professional_title": "",
+  "email": "joshikamurugan9@gmail.com",
+  "phone": "8015886407",
+  "location": "Chennai 600128",
+  "employment_status": "Fresher / Student",
+  "experience_years": 0.0,
+  "highest_education": "B.Com",
+  "skills": [
+    "Tally",
+    "SPSS",
+    "MS Excel",
+    "MS Word",
+    "MS PowerPoint",
+    "Basic Computer Knowledge",
+    "Communication Skills",
+    "Tamil",
+    "English",
+    "{'skill': 'MS Excel', 'canonical_name': 'Microsoft Excel', 'category': 'office_productivity', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'MS Word', 'canonical_name': 'Microsoft Word', 'category': 'office_productivity', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'MS PowerPoint', 'canonical_name': 'Microsoft PowerPoint', 'category': 'office_productivity', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Basic Computer Knowledge', 'canonical_name': 'Basic Computer Knowledge', 'category': 'office_productivity', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Tally', 'canonical_name': 'Tally', 'category': 'tools', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'SPSS', 'canonical_name': 'SPSS', 'category': 'tools', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Communication Skills', 'canonical_name': 'Communication', 'category': 'soft_skills', 'source': 'llm', 'confidence': 'high'}"
+  ],
+  "total_skills_count": 16,
+  "projects_count": 0,
+  "certifications_count": 0,
+  "summary": "Enthusiastic, detail-oriented, and highly motivated B.Com student with a strong foundation in accounting, finance, business Management, and commerce principles. Eager to secure an entrylevel position where I can apply my academic knowledge, develop practical skills, and contribute to organizational growth. Possess excellent communication, analytical, and problem-solving abilities, along with a willingness to learn and adapt in a professional environment. Committed to delivering quality work, collaborating effectively with teams, and continuously improving through hands-on experience while supporting the achievement of organizational goals.",
+  "resume_filename": "JOSHIKA_M_Resume_2 (1) (1).pdf",
+  "profile_data": {
+    "personal_info": {
+      "full_name": "JOSHIKA M",
+      "name": "JOSHIKA M",
+      "email": "joshikamurugan9@gmail.com",
+      "phone": "8015886407",
+      "location": "Chennai 600128",
+      "professional_title": null,
+      "profiles": {
+        "linkedin": null,
+        "github": null,
+        "leetcode": null,
+        "kaggle": null,
+        "portfolio": null,
+        "personal_website": null,
+        "other": []
+      },
+      "linkedin": null,
+      "github": null,
+      "leetcode": null,
+      "kaggle": null,
+      "portfolio": null,
+      "personal_website": null,
+      "other_profiles": []
+    },
+    "candidate": {
+      "full_name": "JOSHIKA M",
+      "email": "joshikamurugan9@gmail.com",
+      "phone": "8015886407",
+      "location": "Chennai 600128",
+      "professional_title": null,
+      "linkedin_url": null,
+      "github_url": null,
+      "leetcode_url": null,
+      "kaggle_url": null,
+      "portfolio_url": null,
+      "personal_website_url": null
+    },
+    "professional_summary": {
+      "heading": "Professional Summary",
+      "text": "Enthusiastic, detail-oriented, and highly motivated B.Com student with a strong foundation in accounting, finance, business Management, and commerce principles. Eager to secure an entrylevel position where I can apply my academic knowledge, develop practical skills, and contribute to organizational growth. Possess excellent communication, analytical, and problem-solving abilities, along with a willingness to learn and adapt in a professional environment. Committed to delivering quality work, collaborating effectively with teams, and continuously improving through hands-on experience while supporting the achievement of organizational goals.",
+      "source_text": "Enthusiastic, detail-oriented, and highly motivated B.Com student with a strong foundation in accounting, finance, business Management, and commerce principles. Eager to secure an entrylevel position where I can apply my academic knowledge, develop practical skills, and contribute to organizational growth. Possess excellent communication, analytical, and problem-solving abilities, along with a willingness to learn and adapt in a professional environment. Committed to delivering quality work, collaborating effectively with teams, and continuously improving through hands-on experience while supporting the achievement of organizational goals."
+    },
+    "summary": "Enthusiastic, detail-oriented, and highly motivated B.Com student with a strong foundation in accounting, finance, business Management, and commerce principles. Eager to secure an entrylevel position where I can apply my academic knowledge, develop practical skills, and contribute to organizational growth. Possess excellent communication, analytical, and problem-solving abilities, along with a willingness to learn and adapt in a professional environment. Committed to delivering quality work, collaborating effectively with teams, and continuously improving through hands-on experience while supporting the achievement of organizational goals.",
+    "skills": {
+      "technical": [],
+      "programming_languages": [],
+      "frontend": [],
+      "backend": [],
+      "databases": [],
+      "frameworks": [],
+      "libraries": [],
+      "tools": [
+        "Tally",
+        "SPSS"
+      ],
+      "ui_ux_tools": [],
+      "office_productivity": [
+        "MS Excel",
+        "MS Word",
+        "MS PowerPoint",
+        "Basic Computer Knowledge"
+      ],
+      "cloud": [],
+      "platforms": [],
+      "apis": [],
+      "other_technical_skills": [],
+      "soft_skills": [
+        "Communication Skills"
+      ],
+      "business_skills": [],
+      "languages": [
+        "Tamil",
+        "English"
+      ],
+      "web_technologies": [],
+      "technical_disciplines": [],
+      "other": [],
+      "skill_evidence": [
+        {
+          "skill": "MS Excel",
+          "canonical_name": "Microsoft Excel",
+          "category": "office_productivity",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "MS Word",
+          "canonical_name": "Microsoft Word",
+          "category": "office_productivity",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "MS PowerPoint",
+          "canonical_name": "Microsoft PowerPoint",
+          "category": "office_productivity",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Basic Computer Knowledge",
+          "canonical_name": "Basic Computer Knowledge",
+          "category": "office_productivity",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Tally",
+          "canonical_name": "Tally",
+          "category": "tools",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "SPSS",
+          "canonical_name": "SPSS",
+          "category": "tools",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Communication Skills",
+          "canonical_name": "Communication",
+          "category": "soft_skills",
+          "source": "llm",
+          "confidence": "high"
+        }
+      ],
+      "source_text": null
+    },
+    "employment_status": "Fresher / Student",
+    "experience_summary": {
+      "employment_status": "Fresher / Student",
+      "total_years": null,
+      "total_months": null,
+      "total_display": null,
+      "full_time": [],
+      "internships": []
+    },
+    "experience": [],
+    "internships": [],
+    "education": [
+      {
+        "qualification": "B.Com",
+        "degree": "B.Com",
+        "field_of_study": "General",
+        "specialization": "General",
+        "institution": "Shrimathi Devkunvar Nanalal Bhatt Vaishnav College for Women",
+        "college": "Shrimathi Devkunvar Nanalal Bhatt Vaishnav College for Women",
+        "school": null,
+        "university": null,
+        "location": null,
+        "education_level": "College/University",
+        "category": "Undergraduate",
+        "type": "College/University",
+        "classification": "Degree",
+        "education_classification": "degree",
+        "canonical_education_category": "degree",
+        "status": "Not specified",
+        "start_date": null,
+        "start_year": null,
+        "end_date": null,
+        "end_year": null,
+        "expected_year": null,
+        "expected_graduation_year": null,
+        "year": null,
+        "completion_date": null,
+        "completion_year": null,
+        "graduation_year": null,
+        "percentage": null,
+        "grade": null,
+        "gpa": null,
+        "cgpa": null,
+        "aggregate_score": null,
+        "score": null,
+        "score_type": null,
+        "stream": null,
+        "details": [],
+        "academic_details": [],
+        "source_text": "B.Com: (General)\nShrimathi Devkunvar Nanalal Bhatt Vaishnav College for Women",
+        "institution_type": "College/University",
+        "qualification_type": "Undergraduate"
+      },
+      {
+        "qualification": "Class XII (HSLC)",
+        "degree": "Class XII (HSLC)",
+        "field_of_study": null,
+        "specialization": null,
+        "institution": "Sri RKM Sarada Vidhyalaya Modern Hr Sec School",
+        "college": null,
+        "school": "Sri RKM Sarada Vidhyalaya Modern Hr Sec School",
+        "university": null,
+        "location": "Chennai, India",
+        "education_level": "School",
+        "category": "Higher Secondary",
+        "type": "School",
+        "classification": "School",
+        "education_classification": "school",
+        "canonical_education_category": "school",
+        "status": "Not specified",
+        "start_date": null,
+        "start_year": null,
+        "end_date": null,
+        "end_year": null,
+        "expected_year": null,
+        "expected_graduation_year": null,
+        "year": null,
+        "completion_date": null,
+        "completion_year": null,
+        "graduation_year": null,
+        "percentage": "92.33%",
+        "grade": null,
+        "gpa": null,
+        "cgpa": null,
+        "aggregate_score": null,
+        "score": "92.33%",
+        "score_type": "Percentage",
+        "stream": null,
+        "details": [],
+        "academic_details": [],
+        "source_text": "Class X II (HSLC)\nSri RKM Sarada Vidhyalaya Modern Hr Sec School - Chennai, India\nGPA: 92.33%",
+        "institution_type": "School",
+        "qualification_type": "Higher Secondary"
+      },
+      {
+        "qualification": "Class X (SSLC)",
+        "degree": "Class X (SSLC)",
+        "field_of_study": null,
+        "specialization": null,
+        "institution": "Sri RKM Sarada Vidhyalaya Modern Hr Sec School",
+        "college": null,
+        "school": "Sri RKM Sarada Vidhyalaya Modern Hr Sec School",
+        "university": null,
+        "location": "Chennai, India",
+        "education_level": "School",
+        "category": "Secondary",
+        "type": "School",
+        "classification": "School",
+        "education_classification": "school",
+        "canonical_education_category": "school",
+        "status": "Not specified",
+        "start_date": null,
+        "start_year": null,
+        "end_date": null,
+        "end_year": null,
+        "expected_year": null,
+        "expected_graduation_year": null,
+        "year": null,
+        "completion_date": null,
+        "completion_year": null,
+        "graduation_year": null,
+        "percentage": "88.8%",
+        "grade": null,
+        "gpa": null,
+        "cgpa": null,
+        "aggregate_score": null,
+        "score": "88.8%",
+        "score_type": "Percentage",
+        "stream": null,
+        "details": [],
+        "academic_details": [],
+        "source_text": "Class X (SSLC)\nSri RKM Sarada Vidhyalaya Modern Hr Sec School - Chennai, India\nGPA: 88.8%",
+        "institution_type": "School",
+        "qualification_type": "Secondary"
+      }
+    ],
+    "projects": [],
+    "certifications": [],
+    "achievements": [],
+    "awards_achievements": [],
+    "publications": [],
+    "additional_qualifications": [],
+    "languages": [
+      "Tamil",
+      "English"
+    ],
+    "interests": [
+      "Listening Music",
+      "Travelling",
+      "Craft Works"
+    ],
+    "hobbies": [
+      "Listening Music",
+      "Travelling",
+      "Craft Works"
+    ],
+    "strengths": [],
+    "declaration": {
+      "text": "I hereby declare that the above information is true and correct to the best of my knowledge.",
+      "source_text": "Ihereby declare that the above information is true and correct to the best of my knowledge.",
+      "signature": "JOSHIKA M"
+    },
+    "signature": {
+      "present": false,
+      "text": null
+    },
+    "other_sections": [],
+    "source_spans": {
+      "name": {
+        "value": "JOSHIKA M",
+        "source": "llm"
+      },
+      "full_name": {
+        "value": "JOSHIKA M",
+        "source": "llm"
+      },
+      "email": {
+        "value": "joshikamurugan9@gmail.com",
+        "source": "llm"
+      },
+      "phone": {
+        "value": "8015886407",
+        "source": "llm"
+      },
+      "location": {
+        "value": "Chennai 600128",
+        "source": "llm"
+      },
+      "summary": {
+        "value": "Enthusiastic, detail-oriented, and highly motivated B.Com student with a strong foundation in accounting, finance, business Management, and commerce principles. Eager to secure an entrylevel position where I can apply my academic knowledge, develop practical skills, and contribute to organizational growth. Possess excellent communication, analytical, and problem-solving abilities, along with a willingness to learn and adapt in a professional environment. Committed to delivering quality work, collaborating effectively with teams, and continuously improving through hands-on experience while supporting the achievement of organizational goals.",
+        "source": "llm"
+      },
+      "professional_summary": {
+        "value": "Enthusiastic, detail-oriented, and highly motivated B.Com student with a strong foundation in accounting, finance, business Management, and commerce principles. Eager to secure an entrylevel position where I can apply my academic knowledge, develop practical skills, and contribute to organizational growth. Possess excellent communication, analytical, and problem-solving abilities, along with a willingness to learn and adapt in a professional environment. Committed to delivering quality work, collaborating effectively with teams, and continuously improving through hands-on experience while supporting the achievement of organizational goals.",
+        "source": "llm"
+      },
+      "education": [
+        {
+          "degree": "B.Com",
+          "institution": "Shrimathi Devkunvar Nanalal Bhatt Vaishnav College for Women",
+          "source": "llm"
+        },
+        {
+          "degree": "Class XII (HSLC)",
+          "institution": "Sri RKM Sarada Vidhyalaya Modern Hr Sec School",
+          "source": "llm"
+        },
+        {
+          "degree": "Class X (SSLC)",
+          "institution": "Sri RKM Sarada Vidhyalaya Modern Hr Sec School",
+          "source": "llm"
+        }
+      ],
+      "skills": [
+        {
+          "skill": "Tally",
+          "source": "llm"
+        },
+        {
+          "skill": "SPSS",
+          "source": "llm"
+        },
+        {
+          "skill": "MS Excel",
+          "source": "llm"
+        },
+        {
+          "skill": "MS Word",
+          "source": "llm"
+        },
+        {
+          "skill": "MS PowerPoint",
+          "source": "llm"
+        },
+        {
+          "skill": "Basic Computer Knowledge",
+          "source": "llm"
+        },
+        {
+          "skill": "Communication Skills",
+          "source": "llm"
+        }
+      ],
+      "declaration": {
+        "value": {
+          "text": "I hereby declare that the above information is true and correct to the best of my knowledge.",
+          "source_text": "Ihereby declare that the above information is true and correct to the best of my knowledge.",
+          "signature": "JOSHIKA M"
+        },
+        "source": "llm"
+      }
+    },
+    "other_information": [],
+    "raw_text": "JOSHIKA M\n8015886407\nChennai 600128\njoshikamurugan9@gmail.com\nPROFESSIONAL SUMMARY\nE nthusiastic, detail-oriented, and highly motivated B.Com student with a strong foundation in\naccounting, finance, business management, and commerce principles. Eager to secure an entry-\nlevel position where I can apply my academic knowledge, develop practical skills, and\ncontribute to organizational growth. Possess excellent communication, analytical, and\nproblem-solving abilities, along with a willingness to learn and adapt in a professional\nenvironment. Committed to delivering quality work, collaborating effectively with teams, and\ncontinuously improving through hands-on experience while supporting the achievement of\norganizational goals.\nSKILLS\n•\n•\nBasic Computer Knowledge\nCommunication Skills\n•\n•\nMS Excel\nMS Word\n•\n•\nMS Power Point\nTally\n•\nSPSS\nEDUCATION\nB.Com: (General)\nShrimathi Devkunvar Nanalal Bhatt Vaishnav College For Women\nClass X II (HSLC)\nSri RKM Sarada Vidhyalaya Modern Hr Sec School - Chennai, India\nGPA: 92.33%\nClass X (SSLC)\nSri RKM Sarada Vidhyalaya Modern Hr Sec School - Chennai, India\nGPA: 88.8%\nLANGUAGES\nTamil\nEnglish\nBilingual or Proficient (C2)\nBilingual or Proficient (C2)\nHOBBIES\n•\nListening Music\n•\nTravelling\n•\nCraft Works\nDECLARATION\nI hereby declare that the above information is true and correct to the best of my knowledge.",
+    "extraction_metadata": {
+      "method": "native",
+      "lossless_extraction": true,
+      "character_count": 1161
+    },
+    "metadata": {
+      "file_name": "JOSHIKA_M_Resume_2 (1) (1).pdf",
+      "file_type": "pdf",
+      "status": "success",
+      "extraction_method": "native",
+      "ocr_confidence": null,
+      "ocr_pages_count": 0,
+      "is_scanned": false,
+      "raw_text": "JOSHIKA M\n8015886407\nChennai 600128\njoshikamurugan9@gmail.com\nPROFESSIONAL SUMMARY\nE nthusiastic, detail-oriented, and highly motivated B.Com student with a strong foundation in\naccounting, finance, business management, and commerce principles. Eager to secure an entry-\nlevel position where I can apply my academic knowledge, develop practical skills, and\ncontribute to organizational growth. Possess excellent communication, analytical, and\nproblem-solving abilities, along with a willingness to learn and adapt in a professional\nenvironment. Committed to delivering quality work, collaborating effectively with teams, and\ncontinuously improving through hands-on experience while supporting the achievement of\norganizational goals.\nSKILLS\n•\n•\nBasic Computer Knowledge\nCommunication Skills\n•\n•\nMS Excel\nMS Word\n•\n•\nMS Power Point\nTally\n•\nSPSS\nEDUCATION\nB.Com: (General)\nShrimathi Devkunvar Nanalal Bhatt Vaishnav College For Women\nClass X II (HSLC)\nSri RKM Sarada Vidhyalaya Modern Hr Sec School - Chennai, India\nGPA: 92.33%\nClass X (SSLC)\nSri RKM Sarada Vidhyalaya Modern Hr Sec School - Chennai, India\nGPA: 88.8%\nLANGUAGES\nTamil\nEnglish\nBilingual or Proficient (C2)\nBilingual or Proficient (C2)\nHOBBIES\n•\nListening Music\n•\nTravelling\n•\nCraft Works\nDECLARATION\nI hereby declare that the above information is true and correct to the best of my knowledge."
+    },
+    "confidence": {
+      "personal_info.name": "high",
+      "personal_info.email": "high",
+      "personal_info.phone": "high",
+      "personal_info.location": "high",
+      "personal_info.linkedin": "not_found",
+      "personal_info.github": "not_found",
+      "personal_info.leetcode": "not_found",
+      "personal_info.portfolio": "not_found",
+      "summary": "high",
+      "experience": "not_found",
+      "education": "high",
+      "skills": "high",
+      "certifications": "not_found",
+      "projects": "not_found",
+      "languages": "not_found",
+      "publications": "not_found",
+      "additional_qualifications": "not_found",
+      "interests": "not_found"
+    }
+  },
+  "created_at": "2026-09-01T04:05:49.959710",
+  "updated_at": "2026-09-01T04:05:49.959710"
+}

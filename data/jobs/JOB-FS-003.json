@@ -1,0 +1,34 @@
+{
+  "job_id": "JOB-FS-003",
+  "title": "Full Stack Developer",
+  "company": "Apex Infotech Solutions",
+  "location": "Hyderabad / Hybrid",
+  "employment_type": "Full-Time",
+  "experience_years": 1.0,
+  "education": "B.Tech / B.Sc / BCA / MCA in Computer Science",
+  "required_skills": [
+    "Python",
+    "JavaScript",
+    "HTML5",
+    "CSS3",
+    "React",
+    "SQL",
+    "Git"
+  ],
+  "preferred_skills": [
+    "Node.js",
+    "MongoDB",
+    "Tailwind CSS",
+    "TypeScript"
+  ],
+  "salary_range": "₹5,50,000 - ₹8,50,000 / year",
+  "description": "Looking for a dynamic Full Stack Developer to build responsive user interfaces and backend services for our enterprise web applications.",
+  "responsibilities": [
+    "Develop modern, accessible web dashboards with React and interactive widgets.",
+    "Create backend routes, authentication flows, and relational database schemas.",
+    "Ensure cross-browser compatibility, responsive mobile layouts, and high performance.",
+    "Participate in code reviews and agile sprint planning."
+  ],
+  "status": "Active",
+  "created_at": "2026-08-25T09:15:00"
+}

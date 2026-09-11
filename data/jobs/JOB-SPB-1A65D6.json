@@ -1,0 +1,27 @@
+{
+  "job_id": "JOB-SPB-1A65D6",
+  "title": "Senior Python Backend Engineer",
+  "company": "Global AI Systems",
+  "location": "Remote",
+  "employment_type": "Full-Time",
+  "experience_years": 2.5,
+  "education": "Bachelor's Degree in Computer Science or related",
+  "required_skills": [
+    "Python",
+    "Django",
+    "PostgreSQL",
+    "Docker",
+    "Git"
+  ],
+  "preferred_skills": [
+    "AWS",
+    "Kubernetes",
+    "Redis"
+  ],
+  "salary_range": "Competitive",
+  "description": "",
+  "responsibilities": [],
+  "status": "Closed",
+  "created_at": "2026-08-31T21:57:24.474694",
+  "updated_at": "2026-08-31T21:57:24.479345"
+}

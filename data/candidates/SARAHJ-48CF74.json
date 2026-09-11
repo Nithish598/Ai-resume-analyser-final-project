@@ -1,0 +1,848 @@
+{
+  "candidate_id": "SARAHJ-48CF74",
+  "name": "Sarah Jenkins",
+  "professional_title": "Lead Full Stack Developer",
+  "email": "sarah.jenkins@techpros.io",
+  "phone": "+1-415-555-0199",
+  "location": "Austin, TX",
+  "employment_status": "Experienced",
+  "experience_years": 2.0,
+  "highest_education": "Master of Science in Software Engineering",
+  "skills": [
+    "JavaScript",
+    "TypeScript",
+    "Python",
+    "Go",
+    "HTML5",
+    "CSS3",
+    "SQL",
+    "PostgreSQL",
+    "MongoDB",
+    "Redis",
+    "My SQL",
+    "Dynamo DB",
+    "React",
+    "Next.js",
+    "Vue.js",
+    "Node.js",
+    "Nest JS",
+    "Express.js",
+    "Django",
+    "Redux",
+    "Docker",
+    "Kubernetes",
+    "Terraform",
+    "Jenkins",
+    "Git",
+    "CI/CD",
+    "AWS",
+    "EC2",
+    "S3",
+    "Lambda",
+    "English (Native)",
+    "French (Intermediate)",
+    "{'skill': 'JavaScript', 'canonical_name': 'JavaScript', 'category': 'programming_languages', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'TypeScript', 'canonical_name': 'TypeScript', 'category': 'programming_languages', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Python', 'canonical_name': 'Python', 'category': 'programming_languages', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Go', 'canonical_name': 'Go', 'category': 'programming_languages', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'HTML5', 'canonical_name': 'HTML5', 'category': 'programming_languages', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'CSS3', 'canonical_name': 'CSS3', 'category': 'programming_languages', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'SQL', 'canonical_name': 'SQL', 'category': 'programming_languages', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'PostgreSQL', 'canonical_name': 'PostgreSQL', 'category': 'databases', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'MongoDB', 'canonical_name': 'MongoDB', 'category': 'databases', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Redis', 'canonical_name': 'Redis', 'category': 'databases', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'My SQL', 'canonical_name': 'MySQL', 'category': 'databases', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Dynamo DB', 'canonical_name': 'Dynamo DB', 'category': 'databases', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'React', 'canonical_name': 'React', 'category': 'frameworks', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Next.js', 'canonical_name': 'Next.js', 'category': 'frameworks', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Vue.js', 'canonical_name': 'Vue.js', 'category': 'frameworks', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Node.js', 'canonical_name': 'Node.js', 'category': 'frameworks', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Nest JS', 'canonical_name': 'Nest JS', 'category': 'frameworks', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Express.js', 'canonical_name': 'Express.js', 'category': 'frameworks', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Django', 'canonical_name': 'Django', 'category': 'frameworks', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Redux', 'canonical_name': 'Redux', 'category': 'libraries', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Docker', 'canonical_name': 'Docker', 'category': 'tools', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Kubernetes', 'canonical_name': 'Kubernetes', 'category': 'tools', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Terraform', 'canonical_name': 'Terraform', 'category': 'tools', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Jenkins', 'canonical_name': 'Jenkins', 'category': 'tools', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Git', 'canonical_name': 'Git', 'category': 'tools', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'CI/CD', 'canonical_name': 'CI/CD', 'category': 'tools', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'AWS', 'canonical_name': 'AWS', 'category': 'cloud', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'EC2', 'canonical_name': 'AWS EC2', 'category': 'cloud', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'S3', 'canonical_name': 'AWS S3', 'category': 'cloud', 'source': 'llm', 'confidence': 'high'}",
+    "{'skill': 'Lambda', 'canonical_name': 'AWS Lambda', 'category': 'cloud', 'source': 'llm', 'confidence': 'high'}"
+  ],
+  "total_skills_count": 62,
+  "projects_count": 0,
+  "certifications_count": 2,
+  "summary": "Lead Full Stack Developer with 6+ years of hands-on experience designing and scaling modern enterprise web applications. Specialized in TypeScript, React, Node.js, GraphQL, and AWS cloud architecture.",
+  "resume_filename": "02_experienced_fullstack_dev.docx",
+  "profile_data": {
+    "personal_info": {
+      "full_name": "Sarah Jenkins",
+      "name": "Sarah Jenkins",
+      "email": "sarah.jenkins@techpros.io",
+      "phone": "+1-415-555-0199",
+      "location": "Austin, TX",
+      "professional_title": "Lead Full Stack Developer",
+      "profiles": {
+        "linkedin": {
+          "label": "sarahjenkins-dev",
+          "display": "sarahjenkins-dev",
+          "url": "https://linkedin.com/in/sarahjenkins-dev",
+          "raw": "https://linkedin.com/in/sarahjenkins-dev",
+          "source": "llm",
+          "confidence": "high",
+          "valid": true,
+          "valid_format": true
+        },
+        "github": {
+          "label": "sjenkins-fullstack",
+          "display": "sjenkins-fullstack",
+          "url": "https://GitHub.com/sjenkins-fullstack",
+          "raw": "https://GitHub.com/sjenkins-fullstack",
+          "source": "llm",
+          "confidence": "high",
+          "valid": true,
+          "valid_format": true
+        },
+        "leetcode": null,
+        "kaggle": null,
+        "portfolio": null,
+        "personal_website": null,
+        "other": []
+      },
+      "linkedin": "https://linkedin.com/in/sarahjenkins-dev",
+      "github": "https://GitHub.com/sjenkins-fullstack",
+      "leetcode": null,
+      "kaggle": null,
+      "portfolio": null,
+      "personal_website": null,
+      "other_profiles": []
+    },
+    "candidate": {
+      "full_name": "Sarah Jenkins",
+      "email": "sarah.jenkins@techpros.io",
+      "phone": "+1-415-555-0199",
+      "location": "Austin, TX",
+      "professional_title": "Lead Full Stack Developer",
+      "linkedin_url": "https://linkedin.com/in/sarahjenkins-dev",
+      "github_url": "https://GitHub.com/sjenkins-fullstack",
+      "leetcode_url": null,
+      "kaggle_url": null,
+      "portfolio_url": null,
+      "personal_website_url": null
+    },
+    "professional_summary": {
+      "heading": "Professional Summary",
+      "text": "Lead Full Stack Developer with 6+ years of hands-on experience designing and scaling modern enterprise web applications. Specialized in TypeScript, React, Node.js, GraphQL, and AWS cloud architecture.",
+      "source_text": "Lead Full Stack Developer with 6+ years of hands-on experience designing and scaling modern enterprise web applications. Specialized in TypeScript, React, Node.js, GraphQL, and AWS cloud architecture."
+    },
+    "summary": "Lead Full Stack Developer with 6+ years of hands-on experience designing and scaling modern enterprise web applications. Specialized in TypeScript, React, Node.js, GraphQL, and AWS cloud architecture.",
+    "skills": {
+      "technical": [],
+      "programming_languages": [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "Go",
+        "HTML5",
+        "CSS3",
+        "SQL"
+      ],
+      "frontend": [],
+      "backend": [],
+      "databases": [
+        "PostgreSQL",
+        "MongoDB",
+        "Redis",
+        "My SQL",
+        "Dynamo DB"
+      ],
+      "frameworks": [
+        "React",
+        "Next.js",
+        "Vue.js",
+        "Node.js",
+        "Nest JS",
+        "Express.js",
+        "Django"
+      ],
+      "libraries": [
+        "Redux"
+      ],
+      "tools": [
+        "Docker",
+        "Kubernetes",
+        "Terraform",
+        "Jenkins",
+        "Git",
+        "CI/CD"
+      ],
+      "ui_ux_tools": [],
+      "office_productivity": [],
+      "cloud": [
+        "AWS",
+        "EC2",
+        "S3",
+        "Lambda"
+      ],
+      "platforms": [],
+      "apis": [],
+      "other_technical_skills": [],
+      "soft_skills": [],
+      "business_skills": [],
+      "languages": [
+        "English (Native)",
+        "French (Intermediate)"
+      ],
+      "web_technologies": [],
+      "technical_disciplines": [],
+      "other": [],
+      "skill_evidence": [
+        {
+          "skill": "JavaScript",
+          "canonical_name": "JavaScript",
+          "category": "programming_languages",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "TypeScript",
+          "canonical_name": "TypeScript",
+          "category": "programming_languages",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Python",
+          "canonical_name": "Python",
+          "category": "programming_languages",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Go",
+          "canonical_name": "Go",
+          "category": "programming_languages",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "HTML5",
+          "canonical_name": "HTML5",
+          "category": "programming_languages",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "CSS3",
+          "canonical_name": "CSS3",
+          "category": "programming_languages",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "SQL",
+          "canonical_name": "SQL",
+          "category": "programming_languages",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "PostgreSQL",
+          "canonical_name": "PostgreSQL",
+          "category": "databases",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "MongoDB",
+          "canonical_name": "MongoDB",
+          "category": "databases",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Redis",
+          "canonical_name": "Redis",
+          "category": "databases",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "My SQL",
+          "canonical_name": "MySQL",
+          "category": "databases",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Dynamo DB",
+          "canonical_name": "Dynamo DB",
+          "category": "databases",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "React",
+          "canonical_name": "React",
+          "category": "frameworks",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Next.js",
+          "canonical_name": "Next.js",
+          "category": "frameworks",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Vue.js",
+          "canonical_name": "Vue.js",
+          "category": "frameworks",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Node.js",
+          "canonical_name": "Node.js",
+          "category": "frameworks",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Nest JS",
+          "canonical_name": "Nest JS",
+          "category": "frameworks",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Express.js",
+          "canonical_name": "Express.js",
+          "category": "frameworks",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Django",
+          "canonical_name": "Django",
+          "category": "frameworks",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Redux",
+          "canonical_name": "Redux",
+          "category": "libraries",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Docker",
+          "canonical_name": "Docker",
+          "category": "tools",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Kubernetes",
+          "canonical_name": "Kubernetes",
+          "category": "tools",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Terraform",
+          "canonical_name": "Terraform",
+          "category": "tools",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Jenkins",
+          "canonical_name": "Jenkins",
+          "category": "tools",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Git",
+          "canonical_name": "Git",
+          "category": "tools",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "CI/CD",
+          "canonical_name": "CI/CD",
+          "category": "tools",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "AWS",
+          "canonical_name": "AWS",
+          "category": "cloud",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "EC2",
+          "canonical_name": "AWS EC2",
+          "category": "cloud",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "S3",
+          "canonical_name": "AWS S3",
+          "category": "cloud",
+          "source": "llm",
+          "confidence": "high"
+        },
+        {
+          "skill": "Lambda",
+          "canonical_name": "AWS Lambda",
+          "category": "cloud",
+          "source": "llm",
+          "confidence": "high"
+        }
+      ],
+      "source_text": null
+    },
+    "employment_status": "Experienced",
+    "experience_summary": {
+      "employment_status": "Experienced",
+      "total_years": null,
+      "total_months": null,
+      "total_display": null,
+      "full_time": [
+        {
+          "title": "Senior Software Engineer",
+          "role": "Senior Software Engineer",
+          "company": "Horizon Cloud Systems",
+          "location": null,
+          "duration": null,
+          "original_duration": null,
+          "derived_duration": null,
+          "start_date": "Jan 2021",
+          "end_date": "Present",
+          "experience_type": "full_time",
+          "responsibilities": [
+            "Architected scalable micro-frontend architecture using React, Next.js, and TypeScript for 500k active users.",
+            "Engineered high-throughput RESTful and GraphQL backend services in Node.js and Nest JS backed by PostgreSQL and Redis.",
+            "Led a squad of 6 engineers, conducting code reviews and mentoring junior developers in Agile/Scrum environment.",
+            "Deployed multi-region infrastructure on AWS using Terraform, ECS, S3, and Cloud Front."
+          ],
+          "technologies": [
+            "React",
+            "Next.js",
+            "TypeScript",
+            "Node.js",
+            "Nest JS",
+            "PostgreSQL",
+            "Redis",
+            "AWS",
+            "Terraform",
+            "ECS",
+            "S3",
+            "Cloud Front"
+          ],
+          "details": [],
+          "source_text": "Senior Software Engineer at Horizon Cloud Systems (Jan 2021 - Present)\n- Architected scalable micro-frontend architecture using React, Next.js, and TypeScript for 500k active users.\n- Engineered high-throughput RESTful and GraphQL backend services in Node.js and Nest JS backed by PostgreSQL and Redis.\n- Led a squad of 6 engineers, conducting code reviews and mentoring junior developers in Agile/Scrum environment.\n- Deployed multi-region infrastructure on AWS using Terraform, ECS, S3, and Cloud Front."
+        },
+        {
+          "title": "Full Stack Developer",
+          "role": "Full Stack Developer",
+          "company": "Apex Digital Solutions",
+          "location": null,
+          "duration": null,
+          "original_duration": null,
+          "derived_duration": null,
+          "start_date": "Jun 2018",
+          "end_date": "2020",
+          "experience_type": "full_time",
+          "responsibilities": [
+            "Developed customer onboarding portals with React, Redux, Python Django, and My SQL.",
+            "Implemented JWT-based authentication and role-based access control (RBAC).",
+            "Automated deployment pipelines using Jenkins and Docker, decreasing release turnaround by 45%."
+          ],
+          "technologies": [
+            "React",
+            "Redux",
+            "Python",
+            "Django",
+            "My SQL",
+            "Jenkins",
+            "Docker"
+          ],
+          "details": [],
+          "source_text": "Full Stack Developer at Apex Digital Solutions (Jun 2018–2020)\n- Developed customer onboarding portals with React, Redux, Python Django, and My SQL.\n- Implemented JWT-based authentication and role-based access control (RBAC).\n- Automated deployment pipelines using Jenkins and Docker, decreasing release turnaround by 45%."
+        }
+      ],
+      "internships": []
+    },
+    "experience": [
+      {
+        "job_title": "Senior Software Engineer",
+        "role": "Senior Software Engineer",
+        "title": "Senior Software Engineer",
+        "company": "Horizon Cloud Systems",
+        "organization": "Horizon Cloud Systems",
+        "location": null,
+        "experience_type": "full_time",
+        "type": "full_time",
+        "start_date": "Jan 2021",
+        "end_date": "Present",
+        "duration": null,
+        "original_duration": null,
+        "derived_duration": null,
+        "currently_working": true,
+        "responsibilities": [
+          "Architected scalable micro-frontend architecture using React, Next.js, and TypeScript for 500k active users.",
+          "Engineered high-throughput RESTful and GraphQL backend services in Node.js and Nest JS backed by PostgreSQL and Redis.",
+          "Led a squad of 6 engineers, conducting code reviews and mentoring junior developers in Agile/Scrum environment.",
+          "Deployed multi-region infrastructure on AWS using Terraform, ECS, S3, and Cloud Front."
+        ],
+        "technologies": [
+          "React",
+          "Next.js",
+          "TypeScript",
+          "Node.js",
+          "Nest JS",
+          "PostgreSQL",
+          "Redis",
+          "AWS",
+          "Terraform",
+          "ECS",
+          "S3",
+          "Cloud Front"
+        ],
+        "details": [
+          "Architected scalable micro-frontend architecture using React, Next.js, and TypeScript for 500k active users.",
+          "Engineered high-throughput RESTful and GraphQL backend services in Node.js and Nest JS backed by PostgreSQL and Redis.",
+          "Led a squad of 6 engineers, conducting code reviews and mentoring junior developers in Agile/Scrum environment.",
+          "Deployed multi-region infrastructure on AWS using Terraform, ECS, S3, and Cloud Front."
+        ],
+        "source_text": "Senior Software Engineer at Horizon Cloud Systems (Jan 2021 - Present)\n- Architected scalable micro-frontend architecture using React, Next.js, and TypeScript for 500k active users.\n- Engineered high-throughput RESTful and GraphQL backend services in Node.js and Nest JS backed by PostgreSQL and Redis.\n- Led a squad of 6 engineers, conducting code reviews and mentoring junior developers in Agile/Scrum environment.\n- Deployed multi-region infrastructure on AWS using Terraform, ECS, S3, and Cloud Front.",
+        "achievements": []
+      },
+      {
+        "job_title": "Full Stack Developer",
+        "role": "Full Stack Developer",
+        "title": "Full Stack Developer",
+        "company": "Apex Digital Solutions",
+        "organization": "Apex Digital Solutions",
+        "location": null,
+        "experience_type": "full_time",
+        "type": "full_time",
+        "start_date": "Jun 2018",
+        "end_date": "2020",
+        "duration": null,
+        "original_duration": null,
+        "derived_duration": null,
+        "currently_working": false,
+        "responsibilities": [
+          "Developed customer onboarding portals with React, Redux, Python Django, and My SQL.",
+          "Implemented JWT-based authentication and role-based access control (RBAC).",
+          "Automated deployment pipelines using Jenkins and Docker, decreasing release turnaround by 45%."
+        ],
+        "technologies": [
+          "React",
+          "Redux",
+          "Python",
+          "Django",
+          "My SQL",
+          "Jenkins",
+          "Docker"
+        ],
+        "details": [
+          "Developed customer onboarding portals with React, Redux, Python Django, and My SQL.",
+          "Implemented JWT-based authentication and role-based access control (RBAC).",
+          "Automated deployment pipelines using Jenkins and Docker, decreasing release turnaround by 45%."
+        ],
+        "source_text": "Full Stack Developer at Apex Digital Solutions (Jun 2018–2020)\n- Developed customer onboarding portals with React, Redux, Python Django, and My SQL.\n- Implemented JWT-based authentication and role-based access control (RBAC).\n- Automated deployment pipelines using Jenkins and Docker, decreasing release turnaround by 45%.",
+        "achievements": []
+      }
+    ],
+    "internships": [],
+    "education": [
+      {
+        "qualification": "Master of Science in Software Engineering",
+        "degree": "Master of Science in Software Engineering",
+        "field_of_study": "Software Engineering",
+        "specialization": "Software Engineering",
+        "institution": "University of Texas at Austin",
+        "college": "University of Texas at Austin",
+        "school": null,
+        "university": "University of Texas at Austin",
+        "location": null,
+        "education_level": "College/University",
+        "category": "Master's degree",
+        "type": "College/University",
+        "classification": "Degree",
+        "education_classification": "degree",
+        "canonical_education_category": "degree",
+        "status": "Completed",
+        "start_date": "2016",
+        "start_year": "2016",
+        "end_date": "2018",
+        "end_year": "2018",
+        "expected_year": null,
+        "expected_graduation_year": null,
+        "year": "2018",
+        "completion_date": "2018",
+        "completion_year": "2018",
+        "graduation_year": "2018",
+        "percentage": null,
+        "grade": null,
+        "gpa": null,
+        "cgpa": null,
+        "aggregate_score": null,
+        "score": null,
+        "score_type": null,
+        "stream": null,
+        "details": [],
+        "academic_details": [],
+        "source_text": "Master of Science in Software Engineering\nUniversity of Texas at Austin (2016–2018)",
+        "institution_type": "College/University",
+        "qualification_type": "Master's degree"
+      },
+      {
+        "qualification": "Bachelor of Technology in Information Technology",
+        "degree": "Bachelor of Technology in Information Technology",
+        "field_of_study": "Information Technology",
+        "specialization": "Information Technology",
+        "institution": "Texas State University",
+        "college": "Texas State University",
+        "school": null,
+        "university": "Texas State University",
+        "location": null,
+        "education_level": "College/University",
+        "category": "Undergraduate",
+        "type": "College/University",
+        "classification": "Degree",
+        "education_classification": "degree",
+        "canonical_education_category": "degree",
+        "status": "Completed",
+        "start_date": "2012",
+        "start_year": "2012",
+        "end_date": "2016",
+        "end_year": "2016",
+        "expected_year": null,
+        "expected_graduation_year": null,
+        "year": "2016",
+        "completion_date": "2016",
+        "completion_year": "2016",
+        "graduation_year": "2016",
+        "percentage": null,
+        "grade": null,
+        "gpa": null,
+        "cgpa": null,
+        "aggregate_score": null,
+        "score": null,
+        "score_type": null,
+        "stream": null,
+        "details": [],
+        "academic_details": [],
+        "source_text": "Bachelor of Technology in Information Technology\nTexas State University (2012–2016)",
+        "institution_type": "College/University",
+        "qualification_type": "Undergraduate"
+      }
+    ],
+    "projects": [],
+    "certifications": [
+      {
+        "name": "AWS Certified Solutions Architect - Associate",
+        "certification_name": "AWS Certified Solutions Architect - Associate",
+        "issuer": null,
+        "issuing_organization": null,
+        "date": "2022",
+        "credential_id": null,
+        "credential_url": null,
+        "url": null,
+        "details": null,
+        "source_text": "AWS Certified Solutions Architect - Associate (2022)"
+      },
+      {
+        "name": "Certified Kubernetes Application Developer (CKAD)",
+        "certification_name": "Certified Kubernetes Application Developer (CKAD)",
+        "issuer": "Linux Foundation",
+        "issuing_organization": "Linux Foundation",
+        "date": "2021",
+        "credential_id": null,
+        "credential_url": null,
+        "url": null,
+        "details": null,
+        "source_text": "Certified Kubernetes Application Developer (CKAD) - Linux Foundation (2021)"
+      }
+    ],
+    "achievements": [],
+    "awards_achievements": [],
+    "publications": [],
+    "additional_qualifications": [],
+    "languages": [
+      "English (Native)",
+      "French (Intermediate)"
+    ],
+    "interests": [],
+    "hobbies": [],
+    "strengths": [],
+    "declaration": {
+      "text": null,
+      "source_text": null,
+      "signature": "Sarah Jenkins"
+    },
+    "signature": {
+      "present": false,
+      "text": null
+    },
+    "other_sections": [],
+    "source_spans": {
+      "name": {
+        "value": "Sarah Jenkins",
+        "source": "llm"
+      },
+      "full_name": {
+        "value": "Sarah Jenkins",
+        "source": "llm"
+      },
+      "email": {
+        "value": "sarah.jenkins@techpros.io",
+        "source": "llm"
+      },
+      "phone": {
+        "value": "+1-415-555-0199",
+        "source": "llm"
+      },
+      "location": {
+        "value": "Austin, TX",
+        "source": "llm"
+      },
+      "summary": {
+        "value": "Lead Full Stack Developer with 6+ years of hands-on experience designing and scaling modern enterprise web applications. Specialized in TypeScript, React, Node.js, GraphQL, and AWS cloud architecture.",
+        "source": "llm"
+      },
+      "professional_summary": {
+        "value": "Lead Full Stack Developer with 6+ years of hands-on experience designing and scaling modern enterprise web applications. Specialized in TypeScript, React, Node.js, GraphQL, and AWS cloud architecture.",
+        "source": "llm"
+      },
+      "education": [
+        {
+          "degree": "Master of Science in Software Engineering",
+          "institution": "University of Texas at Austin",
+          "source": "llm"
+        },
+        {
+          "degree": "Bachelor of Technology in Information Technology",
+          "institution": "Texas State University",
+          "source": "llm"
+        }
+      ],
+      "skills": [
+        {
+          "skill": "Docker",
+          "source": "llm"
+        },
+        {
+          "skill": "Kubernetes",
+          "source": "llm"
+        },
+        {
+          "skill": "Terraform",
+          "source": "llm"
+        },
+        {
+          "skill": "Jenkins",
+          "source": "llm"
+        },
+        {
+          "skill": "Git",
+          "source": "llm"
+        },
+        {
+          "skill": "CI/CD",
+          "source": "llm"
+        },
+        {
+          "skill": "JavaScript",
+          "source": "llm"
+        },
+        {
+          "skill": "TypeScript",
+          "source": "llm"
+        },
+        {
+          "skill": "Python",
+          "source": "llm"
+        },
+        {
+          "skill": "Go",
+          "source": "llm"
+        },
+        {
+          "skill": "HTML5",
+          "source": "llm"
+        },
+        {
+          "skill": "CSS3",
+          "source": "llm"
+        },
+        {
+          "skill": "SQL",
+          "source": "llm"
+        }
+      ],
+      "declaration": {
+        "value": {
+          "text": null,
+          "source_text": null,
+          "signature": "Sarah Jenkins"
+        },
+        "source": "llm"
+      }
+    },
+    "other_information": [],
+    "raw_text": "Sarah Jenkins\nsarah.jenkins@techpros.io | +1-415-555-0199 | Austin, TX\nLinkedIn: https://linkedin.com/in/sarahjenkins-dev | GitHub: https://github.com/sjenkins-fullstack\nPROFESSIONAL SUMMARY\nLead Full Stack Developer with 6+ years of hands-on experience designing and scaling modern enterprise web applications. Specialized in TypeScript, React, Node.js, GraphQL, and AWS cloud architecture.\nWORK EXPERIENCE\nSenior Software Engineer at Horizon Cloud Systems (Jan 2021 - Present)\n- Architected scalable micro-frontend architecture using React, Next.js, and TypeScript for 500k active users.\n- Engineered high-throughput RESTful and GraphQL backend services in Node.js and NestJS backed by PostgreSQL and Redis.\n- Led a squad of 6 engineers, conducting code reviews and mentoring junior developers in Agile/Scrum environment.\n- Deployed multi-region infrastructure on AWS using Terraform, ECS, S3, and CloudFront.\nFull Stack Developer at Apex Digital Solutions (Jun 2018 - Dec 2020)\n- Developed customer onboarding portals with React, Redux, Python Django, and MySQL.\n- Implemented JWT-based authentication and role-based access control (RBAC).\n- Automated deployment pipelines using Jenkins and Docker, decreasing release turnaround by 45%.\nSKILLS\nProgramming Languages: JavaScript, TypeScript, Python, Go, HTML5, CSS3, SQL\nFrameworks & Web: React, Next.js, Vue.js, Node.js, NestJS, Express.js, Django\nDatabases: PostgreSQL, MongoDB, Redis, MySQL, DynamoDB\nCloud & DevOps: AWS (EC2, S3, Lambda), Docker, Kubernetes, Terraform, CI/CD, Git\nEDUCATION\nMaster of Science in Software Engineering\nUniversity of Texas at Austin (2016 - 2018)\nBachelor of Technology in Information Technology\nTexas State University (2012 - 2016)\nCERTIFICATIONS\nAWS Certified Solutions Architect - Associate (2022)\nCertified Kubernetes Application Developer (CKAD) - Linux Foundation (2021)\nLANGUAGES\nEnglish (Native), French (Intermediate)",
+    "extraction_metadata": {
+      "method": "native",
+      "lossless_extraction": true,
+      "character_count": 1665
+    },
+    "metadata": {
+      "file_name": "02_experienced_fullstack_dev.docx",
+      "file_type": "docx",
+      "status": "success",
+      "extraction_method": "native",
+      "ocr_confidence": null,
+      "ocr_pages_count": 0,
+      "is_scanned": false,
+      "raw_text": "Sarah Jenkins\nsarah.jenkins@techpros.io | +1-415-555-0199 | Austin, TX\nLinkedIn: https://linkedin.com/in/sarahjenkins-dev | GitHub: https://github.com/sjenkins-fullstack\nPROFESSIONAL SUMMARY\nLead Full Stack Developer with 6+ years of hands-on experience designing and scaling modern enterprise web applications. Specialized in TypeScript, React, Node.js, GraphQL, and AWS cloud architecture.\nWORK EXPERIENCE\nSenior Software Engineer at Horizon Cloud Systems (Jan 2021 - Present)\n- Architected scalable micro-frontend architecture using React, Next.js, and TypeScript for 500k active users.\n- Engineered high-throughput RESTful and GraphQL backend services in Node.js and NestJS backed by PostgreSQL and Redis.\n- Led a squad of 6 engineers, conducting code reviews and mentoring junior developers in Agile/Scrum environment.\n- Deployed multi-region infrastructure on AWS using Terraform, ECS, S3, and CloudFront.\nFull Stack Developer at Apex Digital Solutions (Jun 2018 - Dec 2020)\n- Developed customer onboarding portals with React, Redux, Python Django, and MySQL.\n- Implemented JWT-based authentication and role-based access control (RBAC).\n- Automated deployment pipelines using Jenkins and Docker, decreasing release turnaround by 45%.\nSKILLS\nProgramming Languages: JavaScript, TypeScript, Python, Go, HTML5, CSS3, SQL\nFrameworks & Web: React, Next.js, Vue.js, Node.js, NestJS, Express.js, Django\nDatabases: PostgreSQL, MongoDB, Redis, MySQL, DynamoDB\nCloud & DevOps: AWS (EC2, S3, Lambda), Docker, Kubernetes, Terraform, CI/CD, Git\nEDUCATION\nMaster of Science in Software Engineering\nUniversity of Texas at Austin (2016 - 2018)\nBachelor of Technology in Information Technology\nTexas State University (2012 - 2016)\nCERTIFICATIONS\nAWS Certified Solutions Architect - Associate (2022)\nCertified Kubernetes Application Developer (CKAD) - Linux Foundation (2021)\nLANGUAGES\nEnglish (Native), French (Intermediate)"
+    },
+    "confidence": {
+      "personal_info.name": "high",
+      "personal_info.email": "high",
+      "personal_info.phone": "high",
+      "personal_info.location": "high",
+      "personal_info.linkedin": "not_found",
+      "personal_info.github": "not_found",
+      "personal_info.leetcode": "not_found",
+      "personal_info.portfolio": "not_found",
+      "summary": "high",
+      "experience": "not_found",
+      "education": "high",
+      "skills": "high",
+      "certifications": "not_found",
+      "projects": "not_found",
+      "languages": "not_found",
+      "publications": "not_found",
+      "additional_qualifications": "not_found",
+      "interests": "not_found"
+    }
+  },
+  "created_at": "2026-08-31T21:59:49.684971",
+  "updated_at": "2026-08-31T21:59:49.684971"
+}

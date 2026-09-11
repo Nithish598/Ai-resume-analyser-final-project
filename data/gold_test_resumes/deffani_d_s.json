@@ -1,0 +1,127 @@
+{
+  "personal_info": {
+    "name": "DEFFANI D.S",
+    "email": "deffanids@gmail.com",
+    "phone": "9360875603",
+    "location": "Chennai, Tamil Nadu",
+    "linkedin": "https://linkedin.com/in/deffani-ds-861031317",
+    "github": null
+  },
+  "professional_summary": "Aspiring Python Developer with a strong foundation in computer science and basic web development knowledge. Eager to contribute to dynamic software projects, learn new technologies, and grow within a collaborative team environment.",
+  "skills": {
+    "programming_languages": [
+      "Python"
+    ],
+    "frontend": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "databases": [
+      "MySQL"
+    ],
+    "tools": [
+      "Git",
+      "GitHub"
+    ],
+    "other_technical_skills": [
+      "Database Management",
+      "Object-Oriented Programming (OOP)"
+    ],
+    "soft_skills": [
+      "Problem-solving",
+      "Team collaboration",
+      "Continuous learning",
+      "Adaptability",
+      "Communication"
+    ]
+  },
+  "education": [
+    {
+      "degree": "B.Sc",
+      "field_of_study": "Computer Science",
+      "institution": "Shrimathi Devkunvar Nanalal Bhatt Vaishnav College For Women",
+      "university": "University of Madras",
+      "location": "Chennai",
+      "start_year": "2022",
+      "end_year": "2025",
+      "status": "Currently Pursuing",
+      "score": "80%",
+      "score_type": "Aggregate Score"
+    },
+    {
+      "degree": "Higher Secondary",
+      "field_of_study": "Maths with Computer Science",
+      "institution": "Government Girls Higher Secondary School",
+      "location": "Chennai",
+      "year": "2022",
+      "score": "88%",
+      "score_type": "Percentage"
+    },
+    {
+      "degree": "SSLC",
+      "field_of_study": "General",
+      "institution": "Government Girls Higher Secondary School",
+      "location": "Chennai",
+      "year": "2020",
+      "score": "80%",
+      "score_type": "Percentage"
+    }
+  ],
+  "internships": [
+    {
+      "role": "Full Stack Development Intern",
+      "company": "Infogro Technology",
+      "location": "Maduravoyal, Chennai",
+      "duration": "One month",
+      "start_date": "17 Apr 2024",
+      "end_date": "18 May 2024"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Database-Oriented Online Examination System Concept",
+      "description": "Designed a database-oriented online examination system concept with features for student, subject and examination management using structured data.",
+      "technologies": [
+        "Python",
+        "MySQL",
+        "Database Management"
+      ]
+    },
+    {
+      "name": "Online Vehicle Service Management System",
+      "description": "Designed a web application concept for vehicle servicing management with organized database concepts for sales, service tracking, and customer management.",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Database Management"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Python Essentials 1",
+      "issuer": "Cisco Networking Academy",
+      "date": "2024"
+    },
+    {
+      "name": "Mastering Data Structures & Algorithms Using C & C++",
+      "issuer": "Udemy",
+      "date": "2024"
+    },
+    {
+      "name": "Artificial Intelligence Fundamentals",
+      "issuer": "IBM SkillsBuild",
+      "date": "2024"
+    }
+  ],
+  "achievements": [
+    "Joint Secretary in the Department of Computer Science (Shift II) - SDNBVCW (2024 - 2025)",
+    "Student of the Year Award by LIC (2020)"
+  ],
+  "languages": [
+    "English",
+    "Tamil"
+  ]
+}

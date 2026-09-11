@@ -1,0 +1,36 @@
+# Configurable Multi-Signal Candidate Ranking Weights (Module 6)
+
+ranking_framework:
+  default_profile: "balanced"
+  
+  weights:
+    # Balanced profile: Equal emphasis on skill matching, experience relevance, and education fit
+    balanced:
+      skill_match_weight: 0.35
+      experience_relevance_weight: 0.25
+      education_fit_weight: 0.15
+      screening_score_weight: 0.15
+      certifications_weight: 0.10
+      
+    # Technical-heavy: Prioritizes technical competencies and project experience
+    technical_focused:
+      skill_match_weight: 0.50
+      experience_relevance_weight: 0.20
+      education_fit_weight: 0.10
+      screening_score_weight: 0.10
+      certifications_weight: 0.10
+
+    # Experience-heavy: Prioritizes years of relevant commercial industry experience
+    experience_focused:
+      skill_match_weight: 0.25
+      experience_relevance_weight: 0.45
+      education_fit_weight: 0.10
+      screening_score_weight: 0.10
+      certifications_weight: 0.10
+
+  scoring_rules:
+    min_skill_threshold: 0.20
+    tier_thresholds:
+      top_tier_pct: 80.0
+      qualified_tier_pct: 60.0
+      review_tier_pct: 40.0

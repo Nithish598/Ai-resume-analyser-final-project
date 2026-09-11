@@ -1,0 +1,34 @@
+{
+  "job_id": "JOB-DS-002",
+  "title": "Data Scientist & ML Engineer",
+  "company": "Cognitive AI Labs",
+  "location": "Bengaluru / Remote",
+  "employment_type": "Full-Time",
+  "experience_years": 1.5,
+  "education": "Bachelor's / Master's in CS, Data Science, AI, or Mathematics",
+  "required_skills": [
+    "Python",
+    "Machine Learning",
+    "Pandas",
+    "Scikit-Learn",
+    "SQL"
+  ],
+  "preferred_skills": [
+    "TensorFlow",
+    "PyTorch",
+    "NLP",
+    "LLM",
+    "Docker",
+    "GCP"
+  ],
+  "salary_range": "₹8,00,000 - ₹14,00,000 / year",
+  "description": "Join our AI research team to build predictive models, recommendation engines, and natural language processing solutions for high-volume enterprise document understanding.",
+  "responsibilities": [
+    "Develop and calibrate machine learning classifiers and neural network architectures.",
+    "Clean and preprocess multi-modal structured and unstructured datasets.",
+    "Evaluate model performance with rigorous cross-validation and error diagnostics.",
+    "Deploy inference APIs using FastAPI and cloud microservices."
+  ],
+  "status": "Active",
+  "created_at": "2026-08-22T14:30:00"
+}

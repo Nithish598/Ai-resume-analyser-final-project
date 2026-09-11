@@ -1,0 +1,19 @@
+{
+  "application_id": "APP-202609-5C5F39",
+  "candidate_id": "NITHIS-08DCF2",
+  "job_id": "JOB-AE-887362",
+  "candidate_name": "Nithish S",
+  "candidate_email": "nithish@example.com",
+  "job_title": "AI Engineer",
+  "company": "Neural Labs",
+  "match_score_pct": 88.5,
+  "matched_skills": [
+    "Python",
+    "Machine Learning"
+  ],
+  "missing_skills": [],
+  "status": "Shortlisted",
+  "recruiter_notes": "Excellent project background.",
+  "applied_at": "2026-09-01T00:26:11.795385",
+  "updated_at": "2026-09-01T00:26:11.797388"
+}

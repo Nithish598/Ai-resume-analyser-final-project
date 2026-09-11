@@ -1,0 +1,334 @@
+{
+  "candidate_id": "NITHIS-08DCF2",
+  "name": "Nithish S",
+  "professional_title": "Python Developer",
+  "email": "nithish@example.com",
+  "phone": "+91 9876543210",
+  "location": "Chennai, India",
+  "employment_status": "Fresher with Internship Experience",
+  "experience_years": 0.5,
+  "highest_education": "B.Tech Computer Science and Engineering",
+  "skills": [
+    "Python",
+    "SQL",
+    "JavaScript",
+    "PostgreSQL",
+    "SQLite",
+    "Django",
+    "FastAPI",
+    "Git",
+    "Docker"
+  ],
+  "total_skills_count": 9,
+  "projects_count": 1,
+  "certifications_count": 0,
+  "summary": "Dedicated Python and backend developer with expertise in REST APIs, Django, SQL, and Machine Learning.",
+  "resume_filename": "uploaded_resume",
+  "profile_data": {
+    "personal_info": {
+      "full_name": "Nithish S",
+      "name": "Nithish S",
+      "email": "nithish@example.com",
+      "phone": "+91 9876543210",
+      "location": "Chennai, India",
+      "professional_title": "Python Developer",
+      "profiles": {
+        "linkedin": null,
+        "github": null,
+        "leetcode": null,
+        "kaggle": null,
+        "portfolio": null,
+        "personal_website": null,
+        "other": []
+      },
+      "linkedin": null,
+      "github": null,
+      "leetcode": null,
+      "kaggle": null,
+      "portfolio": null,
+      "personal_website": null,
+      "other_profiles": []
+    },
+    "candidate": {
+      "full_name": "Nithish S",
+      "email": "nithish@example.com",
+      "phone": "+91 9876543210",
+      "location": "Chennai, India",
+      "professional_title": "Python Developer",
+      "linkedin_url": null,
+      "github_url": null,
+      "leetcode_url": null,
+      "kaggle_url": null,
+      "portfolio_url": null,
+      "personal_website_url": null
+    },
+    "professional_summary": {
+      "heading": "Professional Summary",
+      "text": "Dedicated Python and backend developer with expertise in REST APIs, Django, SQL, and Machine Learning.",
+      "source_text": "Dedicated Python and backend developer with expertise in REST APIs, Django, SQL, and Machine Learning."
+    },
+    "summary": "Dedicated Python and backend developer with expertise in REST APIs, Django, SQL, and Machine Learning.",
+    "skills": {
+      "technical": [],
+      "programming_languages": [
+        "Python",
+        "SQL",
+        "JavaScript"
+      ],
+      "frontend": [],
+      "backend": [],
+      "databases": [
+        "PostgreSQL",
+        "SQLite"
+      ],
+      "frameworks": [
+        "Django",
+        "FastAPI"
+      ],
+      "libraries": [],
+      "tools": [
+        "Git",
+        "Docker"
+      ],
+      "ui_ux_tools": [],
+      "office_productivity": [],
+      "cloud": [],
+      "platforms": [],
+      "apis": [],
+      "other_technical_skills": [],
+      "soft_skills": [],
+      "business_skills": [],
+      "languages": [],
+      "web_technologies": [],
+      "technical_disciplines": [],
+      "other": [],
+      "skill_evidence": [],
+      "source_text": null
+    },
+    "employment_status": "Fresher with Internship Experience",
+    "experience_summary": {
+      "employment_status": "Fresher with Internship Experience",
+      "total_years": null,
+      "total_months": null,
+      "total_display": null,
+      "full_time": [],
+      "internships": [
+        {
+          "role": "Python Backend Intern",
+          "title": "Python Backend Intern",
+          "company": "TechCorp Labs",
+          "location": null,
+          "start_date": null,
+          "end_date": null,
+          "duration": "6 months",
+          "original_duration": "6 months",
+          "derived_duration": "6 months",
+          "description": null,
+          "responsibilities": [
+            "Developed RESTful endpoints for candidate data handling."
+          ],
+          "technologies": [
+            "Python",
+            "Django",
+            "SQL"
+          ],
+          "details": [],
+          "source_text": null
+        }
+      ]
+    },
+    "experience": [
+      {
+        "job_title": "Python Backend Intern",
+        "role": "Python Backend Intern",
+        "title": "Python Backend Intern",
+        "company": "TechCorp Labs",
+        "organization": "TechCorp Labs",
+        "location": null,
+        "experience_type": "internship",
+        "type": "internship",
+        "start_date": null,
+        "end_date": null,
+        "duration": "6 months",
+        "original_duration": "6 months",
+        "derived_duration": "6 months",
+        "duration_display": "6 months",
+        "currently_working": null,
+        "description": null,
+        "responsibilities": [
+          "Developed RESTful endpoints for candidate data handling."
+        ],
+        "technologies": [
+          "Python",
+          "Django",
+          "SQL"
+        ],
+        "details": [
+          "Developed RESTful endpoints for candidate data handling."
+        ],
+        "source_text": null,
+        "achievements": []
+      }
+    ],
+    "internships": [
+      {
+        "job_title": "Python Backend Intern",
+        "role": "Python Backend Intern",
+        "title": "Python Backend Intern",
+        "company": "TechCorp Labs",
+        "organization": "TechCorp Labs",
+        "location": null,
+        "experience_type": "internship",
+        "type": "internship",
+        "start_date": null,
+        "end_date": null,
+        "duration": "6 months",
+        "original_duration": "6 months",
+        "derived_duration": "6 months",
+        "duration_display": "6 months",
+        "currently_working": null,
+        "description": null,
+        "responsibilities": [
+          "Developed RESTful endpoints for candidate data handling."
+        ],
+        "technologies": [
+          "Python",
+          "Django",
+          "SQL"
+        ],
+        "details": [
+          "Developed RESTful endpoints for candidate data handling."
+        ],
+        "source_text": null,
+        "achievements": []
+      }
+    ],
+    "education": [
+      {
+        "qualification": "B.Tech Computer Science and Engineering",
+        "degree": "B.Tech Computer Science and Engineering",
+        "field_of_study": null,
+        "specialization": null,
+        "institution": "Anna University",
+        "college": "Anna University",
+        "school": null,
+        "university": null,
+        "location": null,
+        "education_level": "College/University",
+        "category": "degree",
+        "type": "College/University",
+        "classification": "Degree",
+        "education_classification": "degree",
+        "canonical_education_category": "degree",
+        "status": "Completed",
+        "start_date": null,
+        "start_year": null,
+        "end_date": null,
+        "end_year": null,
+        "expected_year": null,
+        "expected_graduation_year": null,
+        "year": null,
+        "completion_date": null,
+        "completion_year": null,
+        "graduation_year": null,
+        "percentage": null,
+        "grade": null,
+        "gpa": null,
+        "cgpa": null,
+        "aggregate_score": null,
+        "score": "8.8 CGPA",
+        "score_type": null,
+        "stream": null,
+        "details": [],
+        "academic_details": [],
+        "source_text": null,
+        "institution_type": "College/University",
+        "qualification_type": "degree"
+      }
+    ],
+    "projects": [
+      {
+        "project_name": "AI Recruitment Platform",
+        "name": "AI Recruitment Platform",
+        "title": "AI Recruitment Platform",
+        "type": null,
+        "project_type": null,
+        "description": "Built automated resume parsing and candidate ranking microservices.",
+        "technologies": [
+          "Python",
+          "Django",
+          "PostgreSQL",
+          "Machine Learning"
+        ],
+        "programming_languages": [],
+        "frontend": [],
+        "backend": [],
+        "database": [],
+        "frameworks": [],
+        "tools": [],
+        "links": [],
+        "details": [],
+        "role": null,
+        "link": null,
+        "url": null,
+        "date": null,
+        "source_text": null
+      }
+    ],
+    "certifications": [],
+    "achievements": [],
+    "awards_achievements": [],
+    "publications": [],
+    "additional_qualifications": [],
+    "languages": [],
+    "interests": [],
+    "hobbies": [],
+    "strengths": [],
+    "declaration": null,
+    "signature": {
+      "present": false,
+      "text": null
+    },
+    "other_sections": [],
+    "source_spans": {},
+    "other_information": [],
+    "raw_text": null,
+    "extraction_metadata": {
+      "method": "native",
+      "lossless_extraction": true,
+      "character_count": 0
+    },
+    "metadata": {
+      "file_name": null,
+      "file_type": null,
+      "status": "success",
+      "extraction_method": "native",
+      "ocr_confidence": null,
+      "ocr_pages_count": 0,
+      "is_scanned": false,
+      "raw_text": null
+    },
+    "confidence": {
+      "personal_info.name": "not_found",
+      "personal_info.email": "not_found",
+      "personal_info.phone": "not_found",
+      "personal_info.location": "not_found",
+      "personal_info.linkedin": "not_found",
+      "personal_info.github": "not_found",
+      "personal_info.leetcode": "not_found",
+      "personal_info.portfolio": "not_found",
+      "summary": "not_found",
+      "experience": "not_found",
+      "education": "not_found",
+      "skills": "not_found",
+      "certifications": "not_found",
+      "projects": "not_found",
+      "languages": "not_found",
+      "publications": "not_found",
+      "additional_qualifications": "not_found",
+      "interests": "not_found"
+    }
+  },
+  "created_at": "2026-09-11T14:15:22.403679",
+  "updated_at": "2026-09-11T14:15:22.403679"
+}

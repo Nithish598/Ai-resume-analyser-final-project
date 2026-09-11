@@ -1,0 +1,35 @@
+# Centralized Dataset Path Configuration for AI Recruitment Platform
+
+datasets:
+  # 1. Conversational Multi-Task Dataset (22,855 records)
+  conversational:
+    path: "training_data.jsonl"
+    format: "jsonl"
+    description: "Conversational resume assistant data (summarization, rewriting, critique, skills)"
+    primary_modules: ["General Resume Understanding", "Module 1", "Module 5"]
+
+  # 2. AI Resume Screening Dataset (1,000 rows)
+  screening:
+    path: "AI_Resume_Screening.csv"
+    format: "csv"
+    description: "Structured recruiter decisions, AI scores, salary expectations, and candidate metrics"
+    primary_modules: ["Module 6: Candidate Ranking", "Screening Decision Support"]
+
+  # 3. AI Resume Analyzer - Job Role Prediction Dataset (10,000 resumes + 324 job roles)
+  job_role_prediction:
+    directory: "AI Resume Analyzer – Job Role Prediction Dataset"
+    training_data: "AI Resume Analyzer – Job Role Prediction Dataset/training_data.csv"
+    job_roles: "AI Resume Analyzer – Job Role Prediction Dataset/job_roles.csv"
+    skills_database: "AI Resume Analyzer – Job Role Prediction Dataset/skills_database.json"
+    skills_list: "AI Resume Analyzer – Job Role Prediction Dataset/skills_list.csv"
+    format: "csv_json"
+    description: "10K resumes labeled with 324 job roles and 42 categories + 324 detailed job requirement profiles"
+    primary_modules: ["Module 2: Job Role Recommendation", "Module 3: Resume Classification", "Module 4: Resume-to-Job Matching", "Module 5: Skill Gap Analysis"]
+
+  # 4. Resume Dataset Samples (3,500 real resumes)
+  resume_samples:
+    directory: "resume dataset samples(3500 resume samples)"
+    path: "resume dataset samples(3500 resume samples)/resumes_dataset.jsonl"
+    format: "jsonl"
+    description: "3,500 real-world candidate resumes with semi-structured fields (Name, Skills, Experience, Education)"
+    primary_modules: ["Module 1: Resume Information Extraction Grounding", "Module 3: Domain Extraction"]

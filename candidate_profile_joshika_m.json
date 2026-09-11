@@ -1,0 +1,399 @@
+{
+  "personal_info": {
+    "full_name": "Joshika M",
+    "name": "Joshika M",
+    "email": "joshikamurugan9@gmail.com",
+    "phone": "8015886407",
+    "location": null,
+    "professional_title": null,
+    "profiles": {
+      "linkedin": null,
+      "github": null,
+      "leetcode": null,
+      "kaggle": null,
+      "portfolio": null,
+      "personal_website": null,
+      "other": []
+    },
+    "linkedin": null,
+    "github": null,
+    "leetcode": null,
+    "kaggle": null,
+    "portfolio": null,
+    "personal_website": null,
+    "other_profiles": []
+  },
+  "candidate": {
+    "full_name": "Joshika M",
+    "email": "joshikamurugan9@gmail.com",
+    "phone": "8015886407",
+    "location": null,
+    "linkedin_url": null,
+    "github_url": null,
+    "leetcode_url": null,
+    "kaggle_url": null,
+    "portfolio_url": null,
+    "personal_website_url": null
+  },
+  "professional_summary": {
+    "heading": "Professional Summary",
+    "text": "Enthusiastic and detail-oriented final-year B.Com student with a strong foundation in accounting, finance, and business Management. Strong communication, analytical, and problem-solving skills with a willingness to learn and adapt quickly. Eager to contribute to organizational growth while gaining practical experience in a professional environment.",
+    "source_text": "Enthusiastic and detail-oriented final-year B.Com student with a strong foundation in accounting, finance, and business Management. Strong communication, analytical, and problem-solving skills with a willingness to learn and adapt quickly. Eager to contribute to organizational growth while gaining practical experience in a professional environment."
+  },
+  "summary": "Enthusiastic and detail-oriented final-year B.Com student with a strong foundation in accounting, finance, and business Management. Strong communication, analytical, and problem-solving skills with a willingness to learn and adapt quickly. Eager to contribute to organizational growth while gaining practical experience in a professional environment.",
+  "skills": {
+    "technical": [
+      "Basic Computer Knowledge",
+      "Microsoft Excel",
+      "Microsoft PowerPoint",
+      "Microsoft Word",
+      "SPSS",
+      "Tally"
+    ],
+    "programming_languages": [],
+    "frontend": [],
+    "backend": [],
+    "databases": [],
+    "frameworks": [],
+    "libraries": [],
+    "tools": [
+      "Basic Computer Knowledge",
+      "Microsoft Excel",
+      "Microsoft PowerPoint",
+      "Microsoft Word",
+      "SPSS",
+      "Tally"
+    ],
+    "office_productivity": [
+      "Microsoft Excel",
+      "Microsoft PowerPoint",
+      "Microsoft Word"
+    ],
+    "cloud": [],
+    "platforms": [],
+    "apis": [],
+    "other_technical_skills": [],
+    "soft_skills": [
+      "Communication",
+      "Communication Skills"
+    ],
+    "languages": [
+      "Tamil",
+      "English"
+    ],
+    "web_technologies": [],
+    "technical_disciplines": [],
+    "other": [],
+    "source_text": "Basic Computer Knowledge\nMS Word\nMS Excel\nMS PowerPoint\nTally\nSPSS(Statistical Package for the\nSocial Sciences)\nCommunication Skills"
+  },
+  "employment_status": "Fresher with Internship Experience",
+  "experience_summary": {
+    "employment_status": "Fresher with Internship Experience",
+    "total_years": 0.0,
+    "total_months": 0,
+    "total_display": "Duration not specified",
+    "full_time": [],
+    "internships": [
+      {
+        "role": "Completed one month internship in the Banking Division.",
+        "title": "Completed one month internship in the Banking Division.",
+        "company": null,
+        "location": null,
+        "start_date": null,
+        "end_date": null,
+        "duration": "1 month",
+        "original_duration": "1 month",
+        "derived_duration": "1 month",
+        "description": "Demonstrated strong learning ability, professionalism, and attention to detail while completing assigned responsibilities.",
+        "responsibilities": [
+          "Demonstrated strong learning ability, professionalism, and attention to detail",
+          "while completing assigned responsibilities."
+        ],
+        "technologies": [],
+        "details": [
+          "Demonstrated strong learning ability, professionalism, and attention to detail",
+          "while completing assigned responsibilities."
+        ],
+        "source_text": "Demonstrated strong learning ability, professionalism, and attention to detail while completing assigned responsibilities."
+      }
+    ]
+  },
+  "experience": [
+    {
+      "job_title": "Completed one month internship in the Banking Division.",
+      "role": "Completed one month internship in the Banking Division.",
+      "title": "Completed one month internship in the Banking Division.",
+      "company": null,
+      "organization": null,
+      "location": null,
+      "experience_type": "internship",
+      "type": "internship",
+      "start_date": null,
+      "end_date": null,
+      "duration": "1 month",
+      "original_duration": "1 month",
+      "derived_duration": "1 month",
+      "currently_working": null,
+      "description": "Demonstrated strong learning ability, professionalism, and attention to detail while completing assigned responsibilities.",
+      "responsibilities": [
+        "Demonstrated strong learning ability, professionalism, and attention to detail",
+        "while completing assigned responsibilities."
+      ],
+      "technologies": [],
+      "details": [
+        "Demonstrated strong learning ability, professionalism, and attention to detail",
+        "while completing assigned responsibilities."
+      ],
+      "source_text": "Demonstrated strong learning ability, professionalism, and attention to detail while completing assigned responsibilities.",
+      "achievements": []
+    }
+  ],
+  "internships": [
+    {
+      "job_title": "Completed one month internship in the Banking Division.",
+      "role": "Completed one month internship in the Banking Division.",
+      "title": "Completed one month internship in the Banking Division.",
+      "company": null,
+      "organization": null,
+      "location": null,
+      "experience_type": "internship",
+      "type": "internship",
+      "start_date": null,
+      "end_date": null,
+      "duration": "1 month",
+      "original_duration": "1 month",
+      "derived_duration": "1 month",
+      "currently_working": null,
+      "description": "Demonstrated strong learning ability, professionalism, and attention to detail while completing assigned responsibilities.",
+      "responsibilities": [
+        "Demonstrated strong learning ability, professionalism, and attention to detail",
+        "while completing assigned responsibilities."
+      ],
+      "technologies": [],
+      "details": [
+        "Demonstrated strong learning ability, professionalism, and attention to detail",
+        "while completing assigned responsibilities."
+      ],
+      "source_text": "Demonstrated strong learning ability, professionalism, and attention to detail while completing assigned responsibilities.",
+      "achievements": []
+    }
+  ],
+  "education": [
+    {
+      "qualification": "B.Com in General",
+      "degree": "B.Com",
+      "field_of_study": "General",
+      "specialization": "General",
+      "institution": "SDNB Vaishnav College For Women",
+      "college": "SDNB Vaishnav College For Women",
+      "school": null,
+      "university": null,
+      "location": null,
+      "education_level": "College/University",
+      "category": "degree",
+      "type": "College/University",
+      "status": null,
+      "start_date": null,
+      "start_year": null,
+      "end_date": null,
+      "end_year": null,
+      "expected_year": null,
+      "expected_graduation_year": null,
+      "year": null,
+      "completion_date": null,
+      "completion_year": null,
+      "graduation_year": null,
+      "percentage": "78%",
+      "grade": "78%",
+      "gpa": null,
+      "cgpa": null,
+      "aggregate_score": null,
+      "score": "78%",
+      "score_type": "GPA",
+      "stream": null,
+      "details": [],
+      "academic_details": [],
+      "source_text": "B.Com: (General) SDNB Vaishnav College For Women",
+      "institution_type": "College/University",
+      "qualification_type": "degree"
+    },
+    {
+      "qualification": "Class XII (HSLC)",
+      "degree": "Class XII (HSLC)",
+      "field_of_study": null,
+      "specialization": null,
+      "institution": "Sri RKM Sarada Vidhyalaya Modern Hr Sec School",
+      "college": null,
+      "school": "Sri RKM Sarada Vidhyalaya Modern Hr Sec School",
+      "university": null,
+      "location": null,
+      "education_level": "School/Secondary",
+      "category": "higher_secondary",
+      "type": "School/Secondary",
+      "status": null,
+      "start_date": null,
+      "start_year": null,
+      "end_date": null,
+      "end_year": null,
+      "expected_year": null,
+      "expected_graduation_year": null,
+      "year": null,
+      "completion_date": null,
+      "completion_year": null,
+      "graduation_year": null,
+      "percentage": "92.33%",
+      "grade": "92.33%",
+      "gpa": null,
+      "cgpa": null,
+      "aggregate_score": null,
+      "score": "92.33%",
+      "score_type": "GPA",
+      "stream": null,
+      "details": [
+        "GPA: 92.33%"
+      ],
+      "academic_details": [
+        "GPA: 92.33%"
+      ],
+      "source_text": "Class XII (HSLC) Sri RKM Sarada Vidhyalaya Modern Hr Sec School",
+      "institution_type": "School/Secondary",
+      "qualification_type": "higher_secondary"
+    },
+    {
+      "qualification": "Class X (SSLC)",
+      "degree": "Class X (SSLC)",
+      "field_of_study": null,
+      "specialization": null,
+      "institution": "Sri RKM Sarada Vidhyalaya Modern Hr Sec School",
+      "college": null,
+      "school": "Sri RKM Sarada Vidhyalaya Modern Hr Sec School",
+      "university": null,
+      "location": null,
+      "education_level": "School/Secondary",
+      "category": "sslc_secondary",
+      "type": "School/Secondary",
+      "status": null,
+      "start_date": null,
+      "start_year": null,
+      "end_date": null,
+      "end_year": null,
+      "expected_year": null,
+      "expected_graduation_year": null,
+      "year": null,
+      "completion_date": null,
+      "completion_year": null,
+      "graduation_year": null,
+      "percentage": "88.8%",
+      "grade": "88.8%",
+      "gpa": null,
+      "cgpa": null,
+      "aggregate_score": null,
+      "score": "88.8%",
+      "score_type": "GPA",
+      "stream": null,
+      "details": [],
+      "academic_details": [],
+      "source_text": "Class X (SSLC) Sri RKM Sarada Vidhyalaya Modern Hr Sec School",
+      "institution_type": "School/Secondary",
+      "qualification_type": "sslc_secondary"
+    }
+  ],
+  "projects": [],
+  "certifications": [],
+  "achievements": [
+    "Published 2 Research Papers in International conference proceedings/journals."
+  ],
+  "awards_achievements": [
+    "Published 2 Research Papers in International conference proceedings/journals."
+  ],
+  "publications": [],
+  "additional_qualifications": [],
+  "languages": [
+    "Tamil",
+    "English"
+  ],
+  "interests": [
+    "Listening Music",
+    "Travelling",
+    "Craft works"
+  ],
+  "hobbies": [
+    "Listening Music",
+    "Travelling",
+    "Craft works"
+  ],
+  "declaration": null,
+  "other_sections": [],
+  "source_spans": {
+    "name": {
+      "value": "Joshika M",
+      "confidence": "high"
+    },
+    "email": {
+      "value": "joshikamurugan9@gmail.com",
+      "confidence": "high"
+    },
+    "phone": {
+      "value": "8015886407",
+      "confidence": "high"
+    },
+    "location": {
+      "value": null,
+      "confidence": "not_found"
+    },
+    "linkedin": {
+      "value": null,
+      "confidence": "not_found"
+    },
+    "github": {
+      "value": null,
+      "confidence": "not_found"
+    },
+    "sections_found": [
+      "personal_info_header",
+      "summary",
+      "skills",
+      "education",
+      "internship",
+      "achievements",
+      "languages",
+      "interests"
+    ],
+    "total_education_entries": 3,
+    "total_internship_entries": 1,
+    "total_projects": 0
+  },
+  "other_information": [],
+  "metadata": {
+    "file_name": "resume.pdf",
+    "file_type": "pdf",
+    "status": "success",
+    "extraction_method": "native",
+    "ocr_confidence": null,
+    "ocr_pages_count": 0,
+    "is_scanned": false
+  },
+  "confidence": {
+    "personal_info.name": "high",
+    "personal_info.email": "high",
+    "personal_info.phone": "high",
+    "personal_info.location": "not_found",
+    "personal_info.linkedin": "not_found",
+    "personal_info.github": "not_found",
+    "personal_info.leetcode": "not_found",
+    "personal_info.kaggle": "not_found",
+    "personal_info.portfolio": "not_found",
+    "personal_info.personal_website": "not_found",
+    "summary": "high",
+    "skills": "high",
+    "education": "high",
+    "experience": "high",
+    "certifications": "not_found",
+    "projects": "not_found",
+    "achievements": "high",
+    "publications": "not_found",
+    "additional_qualifications": "not_found",
+    "languages": "high",
+    "interests": "high"
+  }
+}

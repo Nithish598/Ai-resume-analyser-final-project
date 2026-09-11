@@ -1,0 +1,28 @@
+
+
+                 RAHUL    SHARMA
+    rahul.sharma@coders.in   |   +91-9988776655   |   Delhi, India
+      https://github.com/rahul-sharma-code
+
+
+ABOUT   ME:
+Self-taught   passionate backend developer specializing in Python,  Django,  and microservices.
+
+
+E X P E R I E N C E:
+Backend Developer  at  Zomato  Foods  (Jan 2022  -  Present)
+   • Developed REST APIs using Django and PostgreSQL
+   • Implemented caching using Redis to handle 50k rpm
+   • Wrote unit tests and automated CI/CD using GitHub Actions
+
+
+E D U C A T I O N:
+Bachelor of Technology in Computer Science
+Delhi Technological University (2018 - 2022)
+CGPA: 8.4/10
+
+
+S K I L L S:
+Python, Django, FastAPI, PostgreSQL, Redis, Docker, Git, REST API, Linux
+
+

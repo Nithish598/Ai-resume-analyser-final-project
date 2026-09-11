@@ -1,0 +1,31 @@
+{
+  "job_id": "JOB-DA-004",
+  "title": "Data Analyst",
+  "company": "Quantum Analytics Group",
+  "location": "Chennai / On-Site",
+  "employment_type": "Full-Time",
+  "experience_years": 0.5,
+  "education": "B.Sc / B.Com / BCA / B.Tech or equivalent",
+  "required_skills": [
+    "SQL",
+    "Python",
+    "Microsoft Excel",
+    "Pandas",
+    "Data Visualization"
+  ],
+  "preferred_skills": [
+    "Power BI",
+    "Tableau",
+    "Statistics",
+    "Git"
+  ],
+  "salary_range": "₹4,50,000 - ₹6,50,000 / year",
+  "description": "Responsible for extracting business intelligence from operational data, building executive KPI dashboards, and delivering actionable insights.",
+  "responsibilities": [
+    "Write complex SQL queries to extract and transform raw database tables.",
+    "Design clear, impactful visualization reports and executive presentations.",
+    "Identify operational bottlenecks and recommend data-driven workflow improvements."
+  ],
+  "status": "Active",
+  "created_at": "2026-08-26T11:00:00"
+}

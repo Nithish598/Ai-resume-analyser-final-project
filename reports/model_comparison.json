@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-08-22T12:25:30",
+  "module1_extraction": {
+    "benchmark_documents_count": 5,
+    "name_accuracy_pct": 100.0,
+    "email_accuracy_pct": 100.0,
+    "phone_accuracy_pct": 100.0,
+    "location_preservation_accuracy_pct": 100.0,
+    "url_fidelity_accuracy_pct": 100.0,
+    "employment_status_accuracy_pct": 80.0,
+    "project_count_preservation_accuracy_pct": 100.0,
+    "project_technology_isolation_pct": 100.0,
+    "line_wrapping_integrity_pct": 100.0,
+    "hallucination_rate_pct": 0.0,
+    "mean_latency_ms_per_resume": 195.47
+  },
+  "module2_job_role_recommender": {
+    "test_samples": 1000,
+    "total_classes": 324,
+    "top1_accuracy_pct": 99.2,
+    "top3_accuracy_pct": 100.0,
+    "top5_accuracy_pct": 100.0,
+    "macro_f1": 0.991,
+    "weighted_f1": 0.992,
+    "latency_ms_per_doc": 0.022
+  },
+  "module3_resume_classification": {
+    "test_samples": 1000,
+    "total_classes": 42,
+    "accuracy_pct": 99.1,
+    "macro_f1": 0.9909,
+    "weighted_f1": 0.991,
+    "precision": 0.9914,
+    "recall": 0.991,
+    "latency_ms_per_doc": 0.03
+  },
+  "module6_candidate_screening": {
+    "dataset_rows": 1000,
+    "recruiter_decision_accuracy_pct": 98.6,
+    "recruiter_decision_f1": 0.9913,
+    "recruiter_decision_roc_auc": 0.9986,
+    "ai_score_mae": 2.36,
+    "ai_score_r2": 0.9749
+  }
+}
