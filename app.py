@@ -2822,6 +2822,8 @@ if "current_profile" in st.session_state and st.session_state.current_profile is
         st.session_state.last_selected_sample_jd = "-- Custom Job Description (Enter below) --"
     if "jd_text_content" not in st.session_state:
         st.session_state.jd_text_content = ""
+    if "last_uploaded_jd_sig" not in st.session_state:
+        st.session_state.last_uploaded_jd_sig = None
     if "jd_analysis_submitted" not in st.session_state:
         st.session_state.jd_analysis_submitted = False
     if "analyzed_jd_text" not in st.session_state:
@@ -2848,7 +2850,6 @@ if "current_profile" in st.session_state and st.session_state.current_profile is
         )
 
     # Handle dropdown selection changes cleanly without running auto-analysis
-    # Handle dropdown selection changes cleanly without running auto-analysis
     if selected_sample_jd != st.session_state.last_selected_sample_jd:
         st.session_state.last_selected_sample_jd = selected_sample_jd
         st.session_state.jd_text_content = SAMPLE_JDS.get(selected_sample_jd, "")
@@ -2856,18 +2857,22 @@ if "current_profile" in st.session_state and st.session_state.current_profile is
         st.session_state.jd_input_key += 1
 
     # Handle uploaded JD file cleanly without running auto-analysis
-    if uploaded_jd_file is not None:
+    uploaded_sig = f"{uploaded_jd_file.name}_{uploaded_jd_file.size}" if uploaded_jd_file is not None else None
+    if uploaded_sig is not None and uploaded_sig != st.session_state.get("last_uploaded_jd_sig"):
+        st.session_state.last_uploaded_jd_sig = uploaded_sig
         try:
             from src.resume.file_handler import FileHandler
             fh = FileHandler()
             raw_jd_bytes = uploaded_jd_file.read()
             f_info = fh.handle_uploaded_file(raw_jd_bytes, uploaded_jd_file.name)
-            if f_info.raw_text and f_info.raw_text != st.session_state.jd_text_content:
+            if f_info.raw_text:
                 st.session_state.jd_text_content = f_info.raw_text
                 reset_jd_and_insights_session_state()
                 st.session_state.jd_input_key += 1
         except Exception as e:
             st.warning(f"Unable to parse uploaded JD file: {e}")
+    elif uploaded_sig is None:
+        st.session_state.last_uploaded_jd_sig = None
 
     jd_text_input = st.text_area(
         "Job Description Text:",
