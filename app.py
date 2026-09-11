@@ -6,12 +6,23 @@ analyze and extract structured candidate profiles, inspect categorized skills,
 review work experience and education timelines, and export structured JSON data.
 """
 import os
+import sys
 import re
 import json
 import html
 import hashlib
 import time
+from pathlib import Path
 from typing import Optional, List, Dict, Any
+
+# Ensure project root is first in sys.path for robust multi-environment imports
+_ROOT = str(Path(__file__).resolve().parent)
+if _ROOT not in sys.path:
+    sys.path.insert(0, _ROOT)
+elif sys.path[0] != _ROOT:
+    sys.path.remove(_ROOT)
+    sys.path.insert(0, _ROOT)
+
 from dotenv import load_dotenv
 load_dotenv(override=False)
 import streamlit as st
