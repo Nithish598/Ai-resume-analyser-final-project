@@ -86,3 +86,13 @@ class LLMProvider(ABC):
             "latency_ms": latency,
             "error": resp.error,
         }
+
+    def health_check(self) -> tuple:
+        """Verify API key validity and model accessibility. Returns (success, message)."""
+        if not self.is_available():
+            err = getattr(self, "_init_error", None) or "Provider not initialized"
+            return False, err
+        ping = self.ping_alive()
+        if ping["reachable"]:
+            return True, f"Connected to {self.provider_name} ({self.model_name}) successfully! ({ping['latency_ms']}ms)"
+        return False, ping["error"] or "Health check failed (unreachable)"

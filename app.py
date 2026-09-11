@@ -1813,7 +1813,90 @@ with st.sidebar:
         label_visibility="collapsed",
     )
 
-    demo_mode = True
+    # AI & LLM Engine Settings Section
+    st.markdown("<div style='margin-top: 1.25rem; border-top: 1px solid #E2E8F0; padding-top: 1rem;'></div>", unsafe_allow_html=True)
+    st.markdown("<div style='font-size: 0.75rem; font-weight: 700; color: #94A3B8; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem;'>🤖 AI & LLM Engine Settings</div>", unsafe_allow_html=True)
+
+    from services.llm.llm_factory import llm_config, get_llm_provider
+
+    current_api_key = llm_config.api_key
+    has_api_key = bool(current_api_key)
+
+    if has_api_key:
+        st.markdown(
+            f"""
+            <div style="background: #F0FDF4; border: 1px solid #BBF7D0; border-radius: 8px; padding: 8px 12px; margin-bottom: 10px;">
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                    <span style="font-size: 0.82rem; font-weight: 700; color: #166534;">🟢 LLM Extraction Active</span>
+                    <span style="font-size: 0.7rem; font-weight: 600; background: #DCFCE7; color: #15803D; padding: 2px 6px; border-radius: 4px;">{html.escape(llm_config.provider.title())}</span>
+                </div>
+                <div style="font-size: 0.72rem; color: #15803D; margin-top: 3px;">Model: <b>{html.escape(llm_config.model)}</b></div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+    else:
+        st.markdown(
+            """
+            <div style="background: #FEF3C7; border: 1px solid #FDE68A; border-radius: 8px; padding: 8px 12px; margin-bottom: 10px;">
+                <div style="font-size: 0.82rem; font-weight: 700; color: #92400E;">🟡 Deterministic Engine Active</div>
+                <div style="font-size: 0.72rem; color: #78350F; margin-top: 3px;">Enter your Gemini API key below to enable full LLM extraction.</div>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+
+    # Provider & Model Selector
+    model_options = [
+        "gemini-3.5-flash-lite",
+        "gemini-3.6-flash",
+        "gemini-2.0-flash",
+        "gemini-1.5-flash",
+        "gpt-4o-mini",
+    ]
+    cur_model = llm_config.model
+    model_idx = model_options.index(cur_model) if cur_model in model_options else 0
+    chosen_model = st.selectbox(
+        "LLM Model:",
+        options=model_options,
+        index=model_idx,
+        help="Select the LLM model to power structured candidate extraction."
+    )
+    if chosen_model != st.session_state.get("selected_llm_model"):
+        st.session_state.selected_llm_model = chosen_model
+        if "pipeline" in st.session_state and st.session_state.pipeline:
+            st.session_state.pipeline.reset_llm()
+
+    # API Key Input
+    saved_key = st.session_state.get("custom_api_key", "")
+    key_placeholder = "•••••••••••••••• (Configured)" if (has_api_key and not saved_key) else "Paste Gemini API Key (AQ... or AIza...)"
+    user_key_input = st.text_input(
+        "API Key:",
+        value=saved_key,
+        type="password",
+        placeholder=key_placeholder,
+        help="Enter your Gemini or OpenAI API key. Stored securely in your session only."
+    )
+    if user_key_input and user_key_input != saved_key:
+        st.session_state.custom_api_key = user_key_input.strip()
+        if "pipeline" in st.session_state and st.session_state.pipeline:
+            st.session_state.pipeline.reset_llm()
+        st.rerun()
+
+    # Test Connection Button
+    if st.button("⚡ Test AI Connection", use_container_width=True):
+        with st.spinner("Pinging LLM provider..."):
+            prov = get_llm_provider()
+            if prov is None:
+                st.error("❌ Provider unavailable. Please verify your API key above.")
+            else:
+                ok, msg = prov.health_check()
+                if ok:
+                    st.success(f"✅ {msg}")
+                else:
+                    st.error(f"❌ {msg}")
+
+    demo_mode = False
 
 
 
@@ -2000,40 +2083,39 @@ if "current_profile" in st.session_state and st.session_state.current_profile is
         # Professional Product-Facing Status Banner
         st.success("✓ **Resume Analysis Completed** — Candidate profile generated successfully.")
 
-        # In Developer Diagnostics Mode, display technical engine and runtime traces
-        if not demo_mode:
-            engine = getattr(meta, "extraction_engine", "deterministic")
-            llm_enhanced = getattr(meta, "llm_enhanced", False)
-            llm_provider = getattr(meta, "llm_provider", "Gemini") or "Gemini"
-            llm_model = getattr(meta, "llm_model", "") or ""
-            
-            if engine == "llm" or llm_enhanced:
-                pass2 = getattr(meta, "llm_pass2_used", False)
-                pass_info = "Pass 1 + Pass 2 (Validated)" if pass2 else "Single-Pass Direct"
-                cache_str = " (⚡ Cached)" if getattr(meta, "cache_hit", False) else ""
-                st.info(
-                    f"🤖 **LLM Extraction Active** — Engine: **{llm_provider}** (`{llm_model}`)"
-                    + f" | Mode: {pass_info}{cache_str} | Call ID: `{getattr(meta, 'llm_call_id', 'N/A')}`"
-                )
-            elif getattr(meta, "fallback_used", False):
-                st.warning(
-                    f"⚠️ **LLM Unavailable — Deterministic Fallback Used** (Reason: `{getattr(meta, 'fallback_reason', 'LLM call failed')}`)"
-                )
-            else:
-                st.info("⚙️ **Extraction Engine: Deterministic Mode**")
+        # Display technical engine status and runtime traces
+        engine = getattr(meta, "extraction_engine", "deterministic")
+        llm_enhanced = getattr(meta, "llm_enhanced", False)
+        llm_provider = getattr(meta, "llm_provider", "Gemini") or "Gemini"
+        llm_model = getattr(meta, "llm_model", "") or ""
+        
+        if engine == "llm" or llm_enhanced:
+            pass2 = getattr(meta, "llm_pass2_used", False)
+            pass_info = "Pass 1 + Pass 2 (Validated)" if pass2 else "Single-Pass Direct"
+            cache_str = " (⚡ Cached)" if getattr(meta, "cache_hit", False) else ""
+            st.info(
+                f"🤖 **LLM Extraction Active** — Engine: **{llm_provider}** (`{llm_model}`)"
+                + f" | Mode: {pass_info}{cache_str} | Call ID: `{getattr(meta, 'llm_call_id', 'N/A')}`"
+            )
+        elif getattr(meta, "fallback_used", False):
+            st.warning(
+                f"⚠️ **LLM Unavailable — Deterministic Fallback Used** (Reason: `{getattr(meta, 'fallback_reason', 'LLM call failed')}`)"
+            )
+        else:
+            st.info("⚙️ **Extraction Engine: Deterministic Mode**")
 
-            with st.expander("🔬 **LLM Diagnostics & Runtime Trace**", expanded=False):
-                d_col1, d_col2, d_col3, d_col4 = st.columns(4)
-                with d_col1:
-                    st.markdown(f"**Engine:** `{getattr(meta, 'extraction_engine', 'deterministic')}`")
-                    st.markdown(f"**LLM Enabled:** {'YES' if getattr(meta, 'llm_enabled', False) else 'NO'}")
-                    st.markdown(f"**Provider:** `{getattr(meta, 'llm_provider', 'None') or 'None'}`")
-                    st.markdown(f"**Call ID:** `{getattr(meta, 'llm_call_id', 'N/A') or 'N/A'}`")
-                with d_col2:
-                    st.markdown(f"**Model:** `{getattr(meta, 'llm_model', 'None') or 'None'}`")
-                    st.markdown(f"**Validation Model:** `{getattr(meta, 'llm_validation_model', 'None') or 'None'}`")
-                    st.markdown(f"**API Key Configured:** {'YES' if bool(os.getenv('LLM_API_KEY') or os.getenv('GEMINI_API_KEY')) else 'NO'}")
-                    st.markdown(f"**Client Initialized:** {'YES' if (getattr(meta, 'extraction_engine') == 'llm' or not getattr(meta, 'fallback_used', False)) else ('YES' if getattr(meta, 'llm_call_id') else 'NO')}")
+        with st.expander("🔬 **LLM Diagnostics & Runtime Trace**", expanded=False):
+            d_col1, d_col2, d_col3, d_col4 = st.columns(4)
+            with d_col1:
+                st.markdown(f"**Engine:** `{getattr(meta, 'extraction_engine', 'deterministic')}`")
+                st.markdown(f"**LLM Enabled:** {'YES' if getattr(meta, 'llm_enabled', False) else 'NO'}")
+                st.markdown(f"**Provider:** `{getattr(meta, 'llm_provider', 'None') or 'None'}`")
+                st.markdown(f"**Call ID:** `{getattr(meta, 'llm_call_id', 'N/A') or 'N/A'}`")
+            with d_col2:
+                st.markdown(f"**Model:** `{getattr(meta, 'llm_model', 'None') or 'None'}`")
+                st.markdown(f"**Validation Model:** `{getattr(meta, 'llm_validation_model', 'None') or 'None'}`")
+                st.markdown(f"**API Key Configured:** {'YES' if bool(llm_config.api_key) else 'NO'}")
+                st.markdown(f"**Client Initialized:** {'YES' if (getattr(meta, 'extraction_engine') == 'llm' or not getattr(meta, 'fallback_used', False)) else ('YES' if getattr(meta, 'llm_call_id') else 'NO')}")
                 with d_col3:
                     pass1_st = "SUCCESS" if (getattr(meta, 'llm_pass1_used', False) or getattr(meta, 'extraction_engine') == 'llm') else ("FAILED" if getattr(meta, 'fallback_used', False) else "NOT_RUN")
                     pass2_st = "SUCCESS" if getattr(meta, 'llm_pass2_used', False) else "SKIPPED"

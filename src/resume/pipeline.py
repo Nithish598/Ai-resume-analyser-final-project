@@ -67,10 +67,21 @@ class ResumeExtractionPipeline:
         self._llm_validation_provider = None
         self._llm_initialized = False
 
-    def _init_llm(self):
-        """Lazily initialize LLM providers on first use."""
+    def reset_llm(self):
+        """Force re-initialization of LLM providers (e.g. when API key or model changes in UI)."""
+        self._llm_extraction_provider = None
+        self._llm_validation_provider = None
+        self._llm_initialized = False
+        self._init_llm(force=True)
+
+    def _init_llm(self, force: bool = False):
+        """Lazily initialize LLM providers on first use or after reset."""
         try:
             from services.llm.llm_factory import get_llm_provider, get_validation_provider, llm_config
+            if force:
+                self._llm_extraction_provider = None
+                self._llm_validation_provider = None
+
             if llm_config.enabled:
                 if self._llm_extraction_provider is None or not self._llm_extraction_provider.is_available():
                     self._llm_extraction_provider = get_llm_provider()
@@ -187,7 +198,7 @@ class ResumeExtractionPipeline:
             if not llm_config.enabled:
                 fallback_reason = "LLM disabled in configuration (LLM_ENABLED=false)"
             elif not llm_config.api_key:
-                fallback_reason = "LLM API key not configured (set LLM_API_KEY in .env)"
+                fallback_reason = "LLM API key not configured (add to Streamlit Secrets, .env, or sidebar settings)"
             elif not self._llm_extraction_provider or not self._llm_extraction_provider.is_available():
                 init_err = getattr(self._llm_extraction_provider, "_init_error", None) if self._llm_extraction_provider else None
                 fallback_reason = init_err or f"LLM provider initialization failed for {llm_config.provider}"

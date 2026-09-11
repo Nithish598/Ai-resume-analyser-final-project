@@ -27,9 +27,8 @@ pillow>=10.0.0
 reportlab>=4.0.0
 
 # LLM Providers
-# Google Gemini: install ONE of these (google-generativeai is currently installed):
-#   pip install google-generativeai>=0.7.0   (legacy, still works)
-#   pip install google-genai>=1.0.0          (new SDK, preferred)
+# Google Gemini SDK (modern google-genai preferred for gemini-3.5-flash-lite):
+google-genai>=1.0.0
 google-generativeai>=0.7.0
 # OpenAI (v3+ supports new-style 'from openai import OpenAI'):
 openai>=1.30.0

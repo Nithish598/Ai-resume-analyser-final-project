@@ -1,6 +1,7 @@
 """LLM Provider Factory for AI Recruitment Platform.
 
-Reads configuration from environment variables and instantiates the appropriate LLM provider.
+Reads configuration from environment variables, Streamlit secrets, and UI session state.
+Instantiates the appropriate LLM provider.
 Never exposes API keys to the UI layer.
 """
 import logging
@@ -18,15 +19,40 @@ except ImportError:
 
 
 class LLMConfig:
-    """Centralized LLM configuration read from environment variables and Streamlit secrets."""
+    """Centralized LLM configuration read from session state, environment variables, and Streamlit secrets."""
+
+    _override_api_key: Optional[str] = None
+    _override_model: Optional[str] = None
+    _override_provider: Optional[str] = None
+
+    @classmethod
+    def set_override(
+        cls,
+        api_key: Optional[str] = None,
+        model: Optional[str] = None,
+        provider: Optional[str] = None,
+    ):
+        if api_key is not None:
+            cls._override_api_key = api_key.strip()
+        if model is not None:
+            cls._override_model = model.strip()
+        if provider is not None:
+            cls._override_provider = provider.strip()
 
     @property
     def enabled(self) -> bool:
+        if self._override_api_key:
+            return True
+
         val = os.getenv("LLM_ENABLED", "").strip().lower()
         if not val:
             try:
                 import streamlit as st
-                val = str(st.secrets.get("LLM_ENABLED", "")).strip().lower()
+                val = str(st.session_state.get("llm_enabled", "")).strip().lower()
+                if not val and hasattr(st, "secrets") and st.secrets:
+                    val = str(st.secrets.get("LLM_ENABLED", "")).strip().lower()
+                    if not val:
+                        val = str(st.secrets.get("llm_enabled", "")).strip().lower()
             except Exception:
                 pass
         if val:
@@ -36,29 +62,72 @@ class LLMConfig:
 
     @property
     def provider(self) -> str:
+        if self._override_provider:
+            return self._override_provider
+
+        try:
+            import streamlit as st
+            sess_p = st.session_state.get("selected_llm_provider", "")
+            if sess_p:
+                return str(sess_p).strip().lower()
+        except Exception:
+            pass
+
         prov = os.getenv("LLM_PROVIDER", "").strip().lower()
         if not prov:
             try:
                 import streamlit as st
-                prov = str(st.secrets.get("LLM_PROVIDER", "")).strip().lower()
+                if hasattr(st, "secrets") and st.secrets:
+                    prov = str(st.secrets.get("LLM_PROVIDER", "")).strip().lower()
+                    if not prov:
+                        prov = str(st.secrets.get("llm_provider", "")).strip().lower()
             except Exception:
                 pass
         return prov or "gemini"
 
     @property
     def api_key(self) -> str:
-        # Check standard env vars first, then Google/Gemini aliases, then Streamlit secrets
-        for env_var in ("LLM_API_KEY", "GEMINI_API_KEY", "GOOGLE_API_KEY", "GOOGLE_GENAI_API_KEY"):
+        if self._override_api_key:
+            return self._override_api_key
+
+        # 1. Check Streamlit session_state (user entered or modified in UI sidebar)
+        try:
+            import streamlit as st
+            for sess_key in ("custom_api_key", "llm_api_key", "gemini_api_key", "google_api_key", "user_api_key"):
+                val = str(st.session_state.get(sess_key, "")).strip()
+                if val and val != "your-api-key-here" and not val.startswith("••••"):
+                    return val
+        except Exception:
+            pass
+
+        # 2. Check standard environment variables (loaded from local .env or system env)
+        for env_var in ("LLM_API_KEY", "GEMINI_API_KEY", "GOOGLE_API_KEY", "GOOGLE_GENAI_API_KEY", "OPENAI_API_KEY"):
             val = os.getenv(env_var, "").strip()
             if val and val != "your-api-key-here":
                 return val
 
+        # 3. Check Streamlit Community Cloud secrets (configured via dashboard Settings -> Secrets)
         try:
             import streamlit as st
-            for sec_key in ("LLM_API_KEY", "GEMINI_API_KEY", "GOOGLE_API_KEY", "GOOGLE_GENAI_API_KEY"):
-                val = str(st.secrets.get(sec_key, "")).strip()
-                if val and val != "your-api-key-here":
-                    return val
+            if hasattr(st, "secrets") and st.secrets:
+                # Direct top-level keys
+                candidate_keys = (
+                    "LLM_API_KEY", "GEMINI_API_KEY", "GOOGLE_API_KEY", "GOOGLE_GENAI_API_KEY", "OPENAI_API_KEY",
+                    "llm_api_key", "gemini_api_key", "google_api_key", "openai_api_key", "api_key"
+                )
+                for sec_key in candidate_keys:
+                    val = str(st.secrets.get(sec_key, "")).strip()
+                    if val and val != "your-api-key-here":
+                        return val
+
+                # Check nested TOML tables (e.g. [gemini] api_key = "..." or [general] GEMINI_API_KEY = "...")
+                for sec_section in ("gemini", "general", "openai", "secrets"):
+                    section_dict = st.secrets.get(sec_section, {})
+                    if isinstance(section_dict, dict) or hasattr(section_dict, "get"):
+                        for sub_key in ("api_key", "API_KEY", "GEMINI_API_KEY", "gemini_api_key", "LLM_API_KEY"):
+                            sub_val = str(section_dict.get(sub_key, "")).strip()
+                            if sub_val and sub_val != "your-api-key-here":
+                                return sub_val
         except Exception:
             pass
 
@@ -66,11 +135,25 @@ class LLMConfig:
 
     @property
     def model(self) -> str:
+        if self._override_model:
+            return self._override_model
+
+        try:
+            import streamlit as st
+            sess_m = st.session_state.get("selected_llm_model", "")
+            if sess_m:
+                return str(sess_m).strip()
+        except Exception:
+            pass
+
         m = os.getenv("LLM_MODEL", "").strip()
         if not m:
             try:
                 import streamlit as st
-                m = str(st.secrets.get("LLM_MODEL", "")).strip()
+                if hasattr(st, "secrets") and st.secrets:
+                    m = str(st.secrets.get("LLM_MODEL", "")).strip()
+                    if not m:
+                        m = str(st.secrets.get("llm_model", "")).strip()
             except Exception:
                 pass
         return m or "gemini-3.5-flash-lite"
@@ -81,7 +164,10 @@ class LLMConfig:
         if not m:
             try:
                 import streamlit as st
-                m = str(st.secrets.get("LLM_VALIDATION_MODEL", "")).strip()
+                if hasattr(st, "secrets") and st.secrets:
+                    m = str(st.secrets.get("LLM_VALIDATION_MODEL", "")).strip()
+                    if not m:
+                        m = str(st.secrets.get("llm_validation_model", "")).strip()
             except Exception:
                 pass
         return m or self.model
@@ -133,7 +219,7 @@ def get_llm_provider(model_override: Optional[str] = None):
 
     api_key = llm_config.api_key
     if not api_key:
-        logger.warning("LLM API key not configured (set LLM_API_KEY or GEMINI_API_KEY in .env).")
+        logger.warning("LLM API key not configured (set LLM_API_KEY or GEMINI_API_KEY in .env, Streamlit secrets, or sidebar).")
         return None
 
     model = model_override or llm_config.model
@@ -145,7 +231,7 @@ def get_llm_provider(model_override: Optional[str] = None):
             p = GeminiProvider(api_key=api_key, model=model, timeout=llm_config.timeout_seconds)
             if p.is_available():
                 return p
-            logger.warning("Gemini provider initialized but reported unavailable.")
+            logger.warning(f"Gemini provider initialized but reported unavailable. Error: {getattr(p, '_init_error', None)}")
             return None
 
         elif provider_name == "openai":
@@ -153,7 +239,7 @@ def get_llm_provider(model_override: Optional[str] = None):
             p = OpenAIProvider(api_key=api_key, model=model, timeout=llm_config.timeout_seconds)
             if p.is_available():
                 return p
-            logger.warning("OpenAI provider initialized but reported unavailable.")
+            logger.warning(f"OpenAI provider initialized but reported unavailable. Error: {getattr(p, '_init_error', None)}")
             return None
 
         else:
