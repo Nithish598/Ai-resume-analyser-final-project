@@ -6,7 +6,7 @@ Never exposes API keys to the UI layer.
 """
 import logging
 import os
-from typing import Optional
+from typing import Any, List, Optional
 
 logger = logging.getLogger(__name__)
 
@@ -132,7 +132,7 @@ class LLMConfig:
         # 4. Built-in platform key (ensures seamless deployment without prompting user)
         import base64
         try:
-            return base64.b64decode(b"QVEuQWI4Uk42SmVVOE90LUFVUi16MmJoOWVTVFRzZXdyQjN6SU5LUV82WWZMVmJCcFFNM3c=").decode("utf-8")
+            return base64.b64decode(b"QVEuQWI4Uk42SmllbnN6YUVpZWhGMlZQVWZDeUxCUVRsR0NlU2VBNjgxQ09BZ1lQNTZzUGc=").decode("utf-8")
         except Exception:
             return ""
 
@@ -160,6 +160,25 @@ class LLMConfig:
             except Exception:
                 pass
         return m or "gemini-3.5-flash-lite"
+
+    @property
+    def primary_model(self) -> str:
+        return os.getenv("GEMINI_PRIMARY_MODEL", "").strip() or self.model
+
+    @property
+    def fallback_models(self) -> List[str]:
+        raw = os.getenv("GEMINI_FALLBACK_MODELS", "").strip()
+        if raw:
+            models = [m.strip() for m in raw.split(",") if m.strip()]
+            if models:
+                return models
+        return ["gemini-3.1-flash-lite"]
+
+    @property
+    def model_priority(self) -> List[str]:
+        primary = self.primary_model
+        fallbacks = [m for m in self.fallback_models if m and m != primary]
+        return [primary] + fallbacks
 
     @property
     def validation_model(self) -> str:
@@ -195,6 +214,9 @@ class LLMConfig:
             "enabled": self.enabled,
             "provider": self.provider,
             "model": self.model,
+            "primary_model": self.primary_model,
+            "fallback_models": self.fallback_models,
+            "model_priority": self.model_priority,
             "validation_model": self.validation_model,
             "api_key_configured": bool(self.api_key),
         }
@@ -231,7 +253,13 @@ def get_llm_provider(model_override: Optional[str] = None):
     try:
         if provider_name in ("gemini", "google", "google_gemini"):
             from services.llm.gemini_provider import GeminiProvider
-            p = GeminiProvider(api_key=api_key, model=model, timeout=llm_config.timeout_seconds)
+            model_priority = [model_override] if model_override else llm_config.model_priority
+            p = GeminiProvider(
+                api_key=api_key,
+                model=model,
+                model_priority=model_priority,
+                timeout=llm_config.timeout_seconds,
+            )
             if p.is_available():
                 return p
             logger.warning(f"Gemini provider initialized but reported unavailable. Error: {getattr(p, '_init_error', None)}")
@@ -257,3 +285,44 @@ def get_llm_provider(model_override: Optional[str] = None):
 def get_validation_provider():
     """Build provider for the Pass 2 validation model (may differ from extraction model)."""
     return get_llm_provider(model_override=llm_config.validation_model)
+
+
+def call_gemini_with_fallback(
+    system_prompt: str,
+    user_message: str,
+    max_tokens: int = 8192,
+) -> Any:
+    """
+    Centralized helper to execute a structured Gemini completion request
+    with automatic model fallback (e.g. gemini-3.5-flash-lite -> gemini-3.1-flash-lite).
+    """
+    from services.llm.base import LLMResponse
+    provider = get_llm_provider()
+    if not provider:
+        return LLMResponse(
+            success=False,
+            error="Gemini provider is not available or API key is not configured.",
+            provider="Gemini",
+        )
+    return provider.complete_json(
+        system_prompt=system_prompt,
+        user_message=user_message,
+        max_tokens=max_tokens,
+    )
+
+
+def generate_with_fallback(prompt: str, max_tokens: int = 8192) -> str:
+    """
+    Centralized helper for raw text generation with automatic Gemini model fallback.
+    """
+    provider = get_llm_provider()
+    if not provider:
+        return ""
+    if hasattr(provider, "generate_text"):
+        return provider.generate_text(prompt, max_tokens=max_tokens)
+    resp = provider.complete_json(
+        system_prompt="You are an expert recruitment assistant.",
+        user_message=prompt,
+        max_tokens=max_tokens,
+    )
+    return resp.raw_text or ""
