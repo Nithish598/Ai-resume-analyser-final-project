@@ -182,24 +182,14 @@ st.markdown("""
         color: #0F172A !important;
     }
 
-    /* Hide Streamlit default footer & Streamlit Cloud deployment badge ("Created by nithish598" & "Hosted with Streamlit") */
+    /* Hide Streamlit default footer */
     footer,
     [data-testid="stFooter"],
-    .stFooter,
-    div[class*="viewerBadge"],
-    span[class*="viewerBadge"],
-    a[class*="viewerBadge"],
-    [class*="viewerBadge_container"],
-    [class*="styles_viewerBadge"],
-    [class*="ViewerBadge"],
-    a[href*="streamlit.io/cloud"],
-    a[href*="viewerBadge"] {
+    .stFooter {
         display: none !important;
         visibility: hidden !important;
         opacity: 0 !important;
-        pointer-events: none !important;
         height: 0 !important;
-        width: 0 !important;
         margin: 0 !important;
         padding: 0 !important;
         overflow: hidden !important;
@@ -2275,73 +2265,6 @@ with st.sidebar:
             }, 300);
         }
     }
-
-    // 6. Hide Streamlit Cloud deployment footer & viewer badge ("Created by nithish598" & "Hosted with Streamlit")
-    function removeViewerBadges() {
-        var windowsToSearch = [window];
-        try {
-            if (window.parent && window.parent.document && window.parent !== window) {
-                windowsToSearch.push(window.parent);
-            }
-            if (window.top && window.top.document && window.top !== window && window.top !== window.parent) {
-                windowsToSearch.push(window.top);
-            }
-        } catch(e) {}
-
-        var badgeSelectors = [
-            'footer',
-            '[data-testid="stFooter"]',
-            '.stFooter',
-            'div[class*="viewerBadge"]',
-            'span[class*="viewerBadge"]',
-            'a[class*="viewerBadge"]',
-            '[class*="viewerBadge_container"]',
-            '[class*="styles_viewerBadge"]',
-            '[class*="ViewerBadge"]',
-            'a[href*="streamlit.io/cloud"]',
-            'a[href*="viewerBadge"]'
-        ];
-
-        windowsToSearch.forEach(function(w) {
-            try {
-                if (!w || !w.document) return;
-                badgeSelectors.forEach(function(sel) {
-                    var items = w.document.querySelectorAll(sel);
-                    if (items && items.length > 0) {
-                        items.forEach(function(el) {
-                            el.style.setProperty('display', 'none', 'important');
-                            el.style.setProperty('visibility', 'hidden', 'important');
-                            el.style.setProperty('opacity', '0', 'important');
-                            el.style.setProperty('height', '0', 'important');
-                            el.style.setProperty('width', '0', 'important');
-                            el.style.setProperty('pointer-events', 'none', 'important');
-                        });
-                    }
-                });
-
-                var allLinksAndText = w.document.querySelectorAll('a, div, span');
-                allLinksAndText.forEach(function(el) {
-                    if (el.children.length <= 2) {
-                        var txt = (el.innerText || el.textContent || '').trim();
-                        if (txt === 'Hosted with Streamlit' || (txt.indexOf('Created by') === 0 && txt.indexOf('nithish598') !== -1)) {
-                            var parent = el.closest('[class*="viewerBadge"], div') || el;
-                            if (parent && parent !== w.document.body && !parent.id) {
-                                parent.style.setProperty('display', 'none', 'important');
-                                parent.style.setProperty('visibility', 'hidden', 'important');
-                                parent.style.setProperty('opacity', '0', 'important');
-                                parent.style.setProperty('pointer-events', 'none', 'important');
-                            }
-                        }
-                    }
-                });
-            } catch(e) {}
-        });
-    }
-    removeViewerBadges();
-    setTimeout(removeViewerBadges, 100);
-    setTimeout(removeViewerBadges, 500);
-    setTimeout(removeViewerBadges, 1500);
-    setInterval(removeViewerBadges, 2000);
 })();
 </script>
 """
